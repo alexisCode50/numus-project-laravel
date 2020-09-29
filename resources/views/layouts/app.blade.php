@@ -284,5 +284,8 @@
 <script type="text/javascript" src="{{ asset('cliente/assets/js/timepicker.js')}}"></script>
 <!-- Custom script for all pages -->
 <script type="text/javascript" src="{{ asset('cliente/assets/js/script.js')}}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM&callback=initMap"type="text/javascript"></script>
+<script type="text/javascript" src="{{ asset('cliente/assets/js/googlemaps1.js')}}"></script>
+<script type="text/javascript" src="{{ asset('cliente/assets/js/googlemaps2.js')}}"></script>
 </body>
 </html>

@@ -1,7 +1,648 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    
-</div>
+<section class="our-listing bgc-f7 pb30-991">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="listing_sidebar dn db-991">
+                    <div class="sidebar_content_details style3">
+                        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                        <div class="sidebar_listing_list style2 mobile_sytle_sidebar mb0">
+                            <div class="sidebar_advanced_search_widget">
+                                <h4 class="mb25">Búsqueda Avanzada<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
+                                <ul class="sasw_list style2 mb0">
+                                    <li class="search_area">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Palabra clave">
+                                            <label for="exampleInputEmail"><span class="flaticon-magnifying-glass"></span></label>
+                                        </div>
+                                    </li>
+                                    <li class="search_area">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleInputEmail" placeholder="Ubicación">
+                                            <label for="exampleInputEmail"><span class="flaticon-maps-and-flags"></span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="search_option_two">
+                                            <div class="candidate_revew_select">
+                                                <select class="selectpicker w100 show-tick">
+                                                    <option>Renta</option>
+                                                    <option>Venta</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="search_option_two">
+                                            <div class="candidate_revew_select">
+                                                <select class="selectpicker w100 show-tick">
+                                                    <option>Tipo de propiedad</option>
+                                                    <option>Departamento</option>
+                                                    <option>Casa</option>
+                                                    <option>Townhouse</option>
+                                                    <option>Terreno</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="search_option_two">
+                                            <div class="candidate_revew_select">
+                                                <select class="selectpicker w100 show-tick">
+                                                    <option>Baños</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="search_option_two">
+                                            <div class="candidate_revew_select">
+                                                <select class="selectpicker w100 show-tick">
+                                                    <option>Recamaras</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="search_option_two">
+                                            <div class="candidate_revew_select">
+                                                <select class="selectpicker w100 show-tick">
+                                                    <option>Garage</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="search_option_two">
+                                            <div class="candidate_revew_select">
+                                                <select class="selectpicker w100 show-tick">
+                                                    <option>Alberca</option>
+                                                    <option>Si</option>
+                                                    <option>No</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                          <div id="accordion" class="panel-group">
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="search_option_button">
+                                            <button type="submit" class="btn btn-block btn-thm">Buscar</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="breadcrumb_content style2 mb0-991">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Numus</a></li>
+                        <li class="breadcrumb-item active text-thm" aria-current="page">Propiedades</li>
+                    </ol>
+                    <h2 class="breadcrumb_title">Propiedades</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="dn db-991 mt25 mb15">
+                    <div id="main2">
+                        <span id="open2" class="flaticon-filter-results-button filter_open_btn style2">Buscador</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-xl-4">
+                <div class="sidebar_listing_grid1 dn-991">
+                    <div class="sidebar_listing_list">
+                        <div class="sidebar_advanced_search_widget">
+                            <ul class="sasw_list mb0">
+                                <li class="search_area">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Palabra clave">
+                                        <label for="exampleInputEmail"><span class="flaticon-magnifying-glass"></span></label>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="form-group">
+                                        <select class="selectpicker w100 show-tick">
+                                            <option>Ubicación</option>
+                                            <option>Conkal</option>
+                                            <option>Tizimín</option>
+                                            <option>Caucel</option>
+                                            <option>Progreso</option>
+
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="search_option_two">
+                                        <div class="candidate_revew_select">
+                                            <select class="selectpicker w100 show-tick">
+                                                <option>Renta</option>
+                                                <option>Venta</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="search_option_two">
+                                        <div class="candidate_revew_select">
+                                            <select class="selectpicker w100 show-tick">
+                                                <option>Tipo de propiedad</option>
+                                                <option>Departamento</option>
+                                                <option>Casa</option>
+                                                <option>Terreno</option>
+                                                <option>Townhouse</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="search_option_two">
+                                        <div class="candidate_revew_select">
+                                            <select class="selectpicker w100 show-tick">
+                                                <option>Baños</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="search_option_two">
+                                        <div class="candidate_revew_select">
+                                            <select class="selectpicker w100 show-tick">
+                                                <option>Recamaras</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="search_option_two">
+                                        <div class="candidate_revew_select">
+                                            <select class="selectpicker w100 show-tick">
+                                                <option>Garage</option>
+                                                <option>Si</option>
+                                                <option>No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="search_option_two">
+                                        <div class="candidate_revew_select">
+                                            <select class="selectpicker w100 show-tick">
+                                                <option>Alberca</option>
+                                                <option>Si</option>
+                                                <option>No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <div class="search_option_button">
+                                        <button type="submit" class="btn btn-block btn-thm">Buscar</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="terms_condition_widget">
+                        <h4 class="title">Propiedades Destacadas</h4>
+                        <div class="sidebar_feature_property_slider">
+                            <div class="item">
+                                <div class="feat_property home7">
+                                    <div class="thumb">
+                                        <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
+                                        <div class="thmb_cntnt">
+                                            <ul class="tag mb0">
+                                                <li class="list-inline-item"><a href="#">Renta</a></li>
+                                                <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                            </ul>
+                                            <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                            <h4 class="posr color-white">Departamento de lujo </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="feat_property home7">
+                                    <div class="thumb">
+                                        <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
+                                        <div class="thmb_cntnt">
+                                            <ul class="tag mb0">
+                                                <li class="list-inline-item"><a href="#">Renta</a></li>
+                                                <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                            </ul>
+                                            <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                            <h4 class="posr color-white">Departamento de lujo </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="feat_property home7">
+                                    <div class="thumb">
+                                        <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
+                                        <div class="thmb_cntnt">
+                                            <ul class="tag mb0">
+                                                <li class="list-inline-item"><a href="#">Renta</a></li>
+                                                <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                            </ul>
+                                            <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                            <h4 class="posr color-white">Departamento de lujo </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="feat_property home7">
+                                    <div class="thumb">
+                                        <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
+                                        <div class="thmb_cntnt">
+                                            <ul class="tag mb0">
+                                                <li class="list-inline-item"><a href="#">Renta</a></li>
+                                                <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                            </ul>
+                                            <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                            <h4 class="posr color-white">Departamento de lujo </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="feat_property home7">
+                                    <div class="thumb">
+                                        <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
+                                        <div class="thmb_cntnt">
+                                            <ul class="tag mb0">
+                                                <li class="list-inline-item"><a href="#">Renta</a></li>
+                                                <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                            </ul>
+                                            <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                            <h4 class="posr color-white">Departamento de lujo </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms_condition_widget">
+                        <h4 class="title">Categorias Propiedades</h4>
+                        <div class="widget_list">
+                            <ul class="list_details">
+                                <li><a href="#"><i class="fa fa-caret-right mr10"></i>Departamentos <span class="float-right">6 propiedades</span></a></li>
+                                <li><a href="#"><i class="fa fa-caret-right mr10"></i>Casas <span class="float-right">12 propiedades</span></a></li>
+                                <li><a href="#"><i class="fa fa-caret-right mr10"></i>Townhouses <span class="float-right">8 propiedades</span></a></li>
+                                <li><a href="#"><i class="fa fa-caret-right mr10"></i>Terrenos <span class="float-right">26 propiedades</span></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="grid_list_search_result">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-5">
+                            <div class="left_area tac-xsd">
+                                <p>9 Resultados de la búsqueda</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-7">
+                            <div class="right_area text-right tac-xsd">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="feat_property list">
+                            <div class="thumb">
+                                <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
+                                <div class="thmb_cntnt">
+                                    <ul class="icon mb0">
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="tc_content">
+                                    <div class="dtls_headr">
+                                        <ul class="tag">
+                                            <li class="list-inline-item"><a href="#">Renta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                        </ul>
+                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                    </div>
+                                    <p class="text-thm">Departamento</p>
+                                    <h4>Departamento de lujo en el norte de mérida</h4>
+                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
+                                    <ul class="prop_details mb0">
+                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
+                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
+                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="feat_property list">
+                            <div class="thumb">
+                                <img class="img-whp" src="images/property/fp3.jpg" alt="fp3.jpg">
+                                <div class="thmb_cntnt">
+                                    <ul class="icon mb0">
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="tc_content">
+                                    <div class="dtls_headr">
+                                        <ul class="tag">
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                        </ul>
+                                        <a class="fp_price" href="#">$3,500,000<small>mxn</small></a>
+                                    </div>
+                                    <p class="text-thm">Casa</p>
+                                    <h4>Casa Familiar de lujo </h4>
+                                    <p><span class="flaticon-placeholder"></span> Ubicación </p>
+                                    <ul class="prop_details mb0">
+                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
+                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
+                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="feat_property list">
+                            <div class="thumb">
+                                <img class="img-whp" src="images/property/fp2.jpg" alt="fp2.jpg">
+                                <div class="thmb_cntnt">
+                                    <ul class="icon mb0">
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="tc_content">
+                                    <div class="dtls_headr">
+                                        <ul class="tag">
+                                            <li class="list-inline-item"><a href="#">Renta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                        </ul>
+                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                    </div>
+                                    <p class="text-thm">Departamento</p>
+                                    <h4>Departamento de lujo en el norte de mérida</h4>
+                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
+                                    <ul class="prop_details mb0">
+                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
+                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
+                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="feat_property list">
+                            <div class="thumb">
+                                <img class="img-whp" src="images/property/fp15.jpg" alt="fp15.jpg">
+                                <div class="thmb_cntnt">
+                                    <ul class="icon mb0">
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="tc_content">
+                                    <div class="dtls_headr">
+                                        <ul class="tag">
+                                            <li class="list-inline-item"><a href="#">Renta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                        </ul>
+                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                    </div>
+                                    <p class="text-thm">Departamento</p>
+                                    <h4>Departamento de lujo en el norte de mérida</h4>
+                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
+                                    <ul class="prop_details mb0">
+                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
+                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
+                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="feat_property list">
+                            <div class="thumb">
+                                <img class="img-whp" src="images/property/fp16.jpg" alt="fp16.jpg">
+                                <div class="thmb_cntnt">
+                                    <ul class="icon mb0">
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="tc_content">
+                                    <div class="dtls_headr">
+                                        <ul class="tag">
+                                            <li class="list-inline-item"><a href="#">Renta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                        </ul>
+                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                    </div>
+                                    <p class="text-thm">Departamento</p>
+                                    <h4>Departamento de lujo en el norte de mérida</h4>
+                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
+                                    <ul class="prop_details mb0">
+                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
+                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
+                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="feat_property list">
+                            <div class="thumb">
+                                <img class="img-whp" src="images/property/fp17.jpg" alt="fp17.jpg">
+                                <div class="thmb_cntnt">
+                                    <ul class="icon mb0">
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="tc_content">
+                                    <div class="dtls_headr">
+                                        <ul class="tag">
+                                            <li class="list-inline-item"><a href="#">Renta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                        </ul>
+                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                    </div>
+                                    <p class="text-thm">Departamento</p>
+                                    <h4>Departamento de lujo en el norte de mérida</h4>
+                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
+                                    <ul class="prop_details mb0">
+                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
+                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
+                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="feat_property list">
+                            <div class="thumb">
+                                <img class="img-whp" src="images/property/fp18.jpg" alt="fp18.jpg">
+                                <div class="thmb_cntnt">
+                                    <ul class="icon mb0">
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="tc_content">
+                                    <div class="dtls_headr">
+                                        <ul class="tag">
+                                            <li class="list-inline-item"><a href="#">Renta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                        </ul>
+                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                    </div>
+                                    <p class="text-thm">Departamento</p>
+                                    <h4>Departamento de lujo en el norte de mérida</h4>
+                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
+                                    <ul class="prop_details mb0">
+                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
+                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
+                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="feat_property list">
+                            <div class="thumb">
+                                <img class="img-whp" src="images/property/fp19.jpg" alt="fp19.jpg">
+                                <div class="thmb_cntnt">
+                                    <ul class="icon mb0">
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
+                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="tc_content">
+                                    <div class="dtls_headr">
+                                        <ul class="tag">
+                                            <li class="list-inline-item"><a href="#">Renta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                        </ul>
+                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                    </div>
+                                    <p class="text-thm">Departamento</p>
+                                    <h4>Departamento de lujo en el norte de mérida</h4>
+                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
+                                    <ul class="prop_details mb0">
+                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
+                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
+                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 mt20">
+                        <div class="mbp_pagination">
+                            <ul class="page_navigation">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true"> <span class="flaticon-left-arrow"></span> Prev</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">29</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"><span class="flaticon-right-arrow"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 @endsection

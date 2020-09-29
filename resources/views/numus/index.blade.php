@@ -13,14 +13,7 @@
 							<p class="fz18 color-white">Propiedades de todo tipo desde $50,000 mxn</p>
 						</div>
 						<div class="home_adv_srch_opt">
-							<ul class="nav nav-pills" id="pills-tab" role="tablist">
-								<li class="nav-item">
-									<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Compra</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Renta</a>
-								</li>
-							</ul>
+
 							<div class="tab-content home1_adsrchfrm" id="pills-tabContent">
 								<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 									<div class="home1-advnc-search">
@@ -45,24 +38,28 @@
 												</div>
 											</li>
 											<li class="list-inline-item">
-											    <div class="form-group">
-											    	<input type="text" class="form-control" id="exampleInputEmail" placeholder="Ubicación">
-											    	<label for="exampleInputEmail"><span class="flaticon-maps-and-flags"></span></label>
-											    </div>
+											    <div class="search_option_two">
+													<div class="candidate_revew_select">
+														<select class="selectpicker w100 show-tick">
+															<option>Ubicación</option>
+															<option>Conkal</option>
+															<option>Tizimín</option>
+															<option>Caucel</option>
+															<option>Progreso</option>
+
+														</select>
+													</div>
+												</div>
 											</li>
 											<li class="list-inline-item">
-												<div class="small_dropdown2">
-												    <div id="prncgs" class="btn dd_btn">
-												    	<span>Precio</span>
-												    	<label for="exampleInputEmail2"><span class="fa fa-angle-down"></span></label>
-												    </div>
-												  	<div class="dd_content2">
-													    <div class="pricing_acontent">
-															<input type="text" class="amount" placeholder="$250,000">
-															<input type="text" class="amount2" placeholder="$10,000,000">
-															<div class="slider-range"></div>
-													    </div>
-												  	</div>
+												<div class="search_option_two">
+													<div class="candidate_revew_select">
+														<select class="selectpicker w100 show-tick">
+															<option>Tipo de oferta</option>
+															<option>Venta</option>
+															<option>Renta</option>
+														</select>
+													</div>
 												</div>
 											</li>
 
