@@ -2349,7 +2349,7 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   color: #484848;
   line-height: 1.2;
   height: 50px;
-  width: 215px;
+  width: 255px;
 }
 .home1-advnc-search.home2.style2 ul li:first-child .form-control::placeholder,
 .home1-advnc-search.home2.style2 ul li:nth-child(3) .form-group .form-control::placeholder,
@@ -2451,12 +2451,12 @@ header.header-nav.menu_style_home_seven .ace-responsive-menu > li.last{
   -moz-box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   -o-box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
   box-shadow:0px 1px 4px 0px rgba(255, 90, 95, 0.3);
-  font-size: 16px;
+  font-size: 23px;
   color: #ffffff;
   font-weight: bold;
   line-height: 1.2;
   height: 50px;
-  width: 170px;
+  width: 196px;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -4337,6 +4337,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  height: 150px;
 }
 .feat_property:hover{
   cursor: pointer;
@@ -4633,6 +4634,8 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .feat_property .details{
   position: relative;
+  margin: -10px;
+  padding-left: 5px;
 }
 .feat_property .details .tc_content{
   padding: 20px;
@@ -13886,7 +13889,7 @@ a.btn.btn_error{
   padding-top: 35px; }
 
 .pt40 {
-  padding-top: 40px; }
+  padding-top: 20px; }
 
 .pt45 {
   padding-top: 45px; }
@@ -14039,7 +14042,7 @@ a.btn.btn_error{
   padding-bottom: 35px; }
 
 .pb40 {
-  padding-bottom: 40px; }
+  padding-bottom: 0px; }
 
 .pb45 {
   padding-bottom: 45px; }
@@ -14401,7 +14404,9 @@ a.btn.btn_error{
   margin-right: 25px; }
 
 .mb0 {
-  margin-bottom: 0px !important; }
+  margin-bottom: 0px !important;
+  padding-left: 15px;
+ }
 
 .mb5 {
   margin-bottom: 5px; }

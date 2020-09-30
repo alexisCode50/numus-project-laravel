@@ -119,7 +119,7 @@
 		    <nav>
 		        <!-- Menu Toggle btn-->
 		        <div class="menu-toggle">
-		            <img class="nav_logo_img img-fluid" src="{{ asset('cliente/assets/images/header-logo.png')}}" alt="header-logo.png">
+		            <img class="nav_logo_img img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo.png">
 		            <button type="button" id="menu-btn">
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
@@ -127,9 +127,9 @@
 		            </button>
 		        </div>
 		        <a href="#" class="navbar_brand float-left dn-smd">
-		            <img class="logo1 img-fluid" src="{{ asset('cliente/assets/images/header-logo.png')}}" alt="header-logo.png">
-		            <img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/header-logo2.png')}}" alt="header-logo2.png">
-		            <span>Numus Inmobiliaria</span>
+		            <img class="logo1 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo.png">
+		            <img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo2.png">
+		            <span></span>
 		        </a>
 		        <!-- Responsive Menu Structure-->
 		        <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
@@ -192,22 +192,17 @@
 			<div class="row">
 				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 pr0 pl0">
 					<div class="footer_about_widget">
-						<h4>Acerca de nosotros</h4>
+                        <img src="{{ asset('cliente/assets/images/logo_white.png')}}" alt=""> <br><br>
+
 						<p>We’re reimagining how you buy, sell and rent. It’s now easier to get into a place you love. So let’s do this, together.</p>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-					<div class="footer_qlink_widget">
-						<h4>Menú</h4>
-						<ul class="list-unstyled">
-							<li><a href="#">Inicio</a></li>
-							<li><a href="#">Nosotros</a></li>
-							<li><a href="#">Propiedades</a></li>
-							<li><a href="#">How to buy</a></li>
-							<li><a href="#">Contacto</a></li>
-						</ul>
+				<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+					<div class="footer_about_widget">
+
 					</div>
 				</div>
+
 				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
 					<div class="footer_contact_widget">
 						<h4>Contáctanos</h4>
@@ -220,20 +215,6 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-					<div class="footer_social_widget">
-						<h4>Síguenos</h4>
-						<ul class="mb30">
-							<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
-						</ul>
-
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -243,20 +224,19 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-xl-6">
-					<div class="footer_menu_widget">
-						<ul>
-							<li class="list-inline-item"><a href="#"></a></li>
-							<li class="list-inline-item"><a href="#"></a></li>
-							<li class="list-inline-item"><a href="#"></a></li>
-							<li class="list-inline-item"><a href="#"></a></li>
-							<li class="list-inline-item"><a href="#"></a></li>
-							<li class="list-inline-item"><a href="#"></a></li>
-						</ul>
+					<div class="copyright-widget text-left">
+						<p>© 2020 Numus - Desarrollado por Búho Solutions.</p>
 					</div>
 				</div>
 				<div class="col-lg-6 col-xl-6">
 					<div class="copyright-widget text-right">
-						<p>© 2020 Oblicuo - Desarrollado por Búho Solutions.</p>
+						<ul class="mb30">
+
+							<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" style="color: #5277a3"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" style="color: #5277a3"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-whatsapp" style="color: #5277a3"></i></a></li>
+
+						</ul>
 					</div>
 				</div>
 			</div>
