@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
-    protected $fillable = ['route_img'];
+    //protected $fillable = ['route_img'];
     
 }

@@ -21,41 +21,42 @@
     </div>
     <div class="row my-3">
         <div class="col-md-8 m-auto">
-            <form action="{{ route('properties-create') }}" method="POST">
+            <form action="{{ route('properties-update', $property) }}" method="POST">
+                @method('PUT')
                 @csrf
 
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="title">Nombre</label>
-                        <input type="text" class="form-control" id="title" name="title">
+                        <input type="text" class="form-control" id="title" name="title" value="{{ $property->title }}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="direction">Dirección</label>
-                        <input type="text" class="form-control" id="direction" name="direction">
+                        <input type="text" class="form-control" id="direction" name="direction" value="{{ $property->direction }}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="location">Ubicación</label>
-                        <input type="text" class="form-control" id="location" name="location">
+                        <input type="text" class="form-control" id="location" name="location" value="{{ $property->location }}">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <label for="description">Descripción</label>
-                        <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                        <textarea class="form-control" id="description" name="description" rows="3" value="{{ $property->description }}"></textarea>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="type_property">Tipo de Propiedad</label>
-                        <input type="text" class="form-control" id="type_property" name="type_property">
+                        <input type="text" class="form-control" id="type_property" name="type_property" value="{{ $property->type_property }}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="price">Precio</label>
-                        <input type="number" class="form-control" id="price" name="price">
+                        <input type="number" class="form-control" id="price" name="price" value="{{ $property->price }}">
                     </div>
                     <div class="form-group col-md-4">
                         <label for="state_property">Estado de Propiedad</label>
-                        <select class="form-control" id="state_property" name="state_property">
+                        <select class="form-control" id="state_property" name="state_property" value="{{ $property->state_property }}">
                             <option>Venta</option>
                             <option>Renta</option>
                         </select>
@@ -64,35 +65,35 @@
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="size_property">Dimenciones</label>
-                        <input type="text" class="form-control" id="size_property" name="size_property">
+                        <input type="text" class="form-control" id="size_property" name="size_property" value="{{ $property->size_property }}">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="bedroom">Cuartos</label>
-                        <input type="number" class="form-control" id="bedroom" name="bedroom">
+                        <input type="number" class="form-control" id="bedroom" name="bedroom" value="{{ $property->bedroom }}">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="bathroom">Baños</label>
-                        <input type="number" class="form-control" id="bathroom" name="bathroom">
+                        <input type="number" class="form-control" id="bathroom" name="bathroom" value="{{ $property->bathroom }}">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="garage">Garage</label>
-                        <input type="number" class="form-control" id="garage" name="garage">
+                        <input type="number" class="form-control" id="garage" name="garage" value="{{ $property->garage }}">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="type_property">Latitud</label>
-                        <input type="text" class="form-control" id="latitude_map" name="latitude_map">
+                        <input type="text" class="form-control" id="latitude_map" name="latitude_map" value="{{ $property->latitude_map }}">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="longitude_map">Longitud</label>
-                        <input type="text" class="form-control" id="longitude_map" name="longitude_map">
+                        <input type="text" class="form-control" id="longitude_map" name="longitude_map" value="{{ $property->longitude_map }}">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <label for="amenities">Amenidades</label>
-                        <textarea class="form-control" id="amenities" name="amenities" rows="3"></textarea>
+                        <textarea class="form-control" id="amenities" name="amenities" rows="3" value="{{ $property->amenities }}"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-success btn-icon-split my-3">

@@ -43,6 +43,8 @@ class PropertyController extends Controller
         return response()->json($data, 200);
     }
 
+
+
 //     public function create()
 //     {
 //         //

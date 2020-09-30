@@ -56,8 +56,8 @@
 
                     
                     <li class="nav-item">
-                    <a class="nav-link" href="/products">
-                        <i class="fas fa-fw fa-layer-group"></i>
+                    <a class="nav-link" href="{{ route('properties-create-view') }}">
+                        <i class="fas fa-fw fa-layegrr-oup"></i>
                         <span>Propiedades</span></a>
                     </li>
 
