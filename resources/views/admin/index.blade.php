@@ -6,7 +6,16 @@
 
     <div class="row">
         <div class="col-md-12">
-            <a href="admin/properties/create/view" class="btn btn-primary btn-large mb-3">Registrar Propiedad</a>
+            @if(Session::has('message'))
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>{!! Session::get('message') !!}</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            @endif
+
+            <a href="admin/properties/create/view" class="btn btn-primary btn-large my-3">Registrar Propiedad</a>
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>
@@ -48,7 +57,7 @@
                                             <i class="fas fa-image"></i>
                                         </a>
 
-                                        <a href="{{ route('image-add', $item->id) }}"  class="btn btn-warning btn-circle btn-sm mb-1">
+                                        <a href="{{ route('properties-view', $item->id) }}"  class="btn btn-warning btn-circle btn-sm mb-1">
                                             <i class="fas fa-eye"></i>
                                         </a>
                                         
@@ -66,6 +75,10 @@
                 </table>
             </div>
         </div>
+    </div>
+
+    <div class="row my-5 justify-content-center">
+        {{ $data->links() }}
     </div>
 
 @endsection

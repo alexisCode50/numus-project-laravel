@@ -21,7 +21,7 @@
     </div>
     <div class="row my-3">
         <div class="col-md-8 m-auto">
-            <form action="{{ route('properties-update', $property) }}" method="POST">
+            <form action="{{ route('properties-update', $property->id) }}" method="POST">
                 @method('PUT')
                 @csrf
 

@@ -8,9 +8,10 @@ use App\Image;
 
 class AdminController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $data = Property::paginate(10);
+        $variablesurl = $request->all();
+        $data = Property::paginate(5)->appends($variablesurl);
         return view('admin.index', ['data' => $data]);
     }
 
@@ -54,6 +55,8 @@ class AdminController extends Controller
         $property->longitude_map = $request->longitude_map;
         $property->amenities = $request->amenities;
         $property->save();
+
+        \Session::flash('message', 'Registro Guardado');
 
         return redirect()->route('admin');
     }
@@ -100,13 +103,16 @@ class AdminController extends Controller
         $property->amenities = $request->amenities;
         $property->save();
 
+        \Session::flash('message', 'Registro Actualizado');
+
         return redirect()->route('admin');
     }
 
-    public function view($id)
+    public function view(Request $request, $id)
     {
+        $variablesurl = $request->all();
         $property = Property::find($id);
-        $images = Image::where('property_id', $id)->get();
+        $images = Image::where('property_id', $id)->paginate(5)->appends($variablesurl);
         return view('admin.view', ['property' => $property, 'images' => $images]);
     }
 
@@ -137,52 +143,4 @@ class AdminController extends Controller
         return redirect()->route('admin');
     }
 
-    // images methods
-    public function add($id)
-    {
-        return view('admin.add', compact('id'));
-    }
-
-    public function save(Request $request)
-    {
-        $this->validate($request, [
-            'id' => 'required|numeric',
-            'image' => 'required'
-        ]);
-        
-        if($request->has('image')){
-            foreach($request->file('image') as $file){
-                $path = public_path() . '/images';
-                $fileName = uniqid() . $file->getClientOriginalName();
-                $file->move($path, $fileName);
-
-                $data = new Image();
-                $data->route_img = $fileName;
-                $data->property_id = $request->id;
-                $data->save();
-            }
-        }
-        //return redirect()->route('image-add');
-
-        return response()->json('ok', 200);
-    }
-
-    public function deleteImage($id)
-    {
-        try {
-            $image = Image::find($id);
-            $path = public_path() . '/images/' .$image->route_img;
-
-            if (unlink($path)) {
-                $image->delete();
-                \Session::flash('message', 'Registro Eliminado');
-            }
-            
-        } catch (\Exception $e) {
-            \Session::flash('message', 'Imagen Eliminda');
-            $errors = 'No se puede eliminar el imagen';
-        }
-
-        return view('admin.index');
-    }
 }

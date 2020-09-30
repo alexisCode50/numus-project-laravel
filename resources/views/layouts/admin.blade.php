@@ -56,7 +56,7 @@
 
                     
                     <li class="nav-item">
-                    <a class="nav-link" href="{{ route('properties-create-view') }}">
+                    <a class="nav-link" href="{{ route('admin') }}">
                         <i class="fas fa-fw fa-layegrr-oup"></i>
                         <span>Propiedades</span></a>
                     </li>
@@ -112,13 +112,9 @@
         </div>
     </div>
 
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
-        <script src="{{asset('jquery/jquery.min.js')}}"></script>
-        <script src="{{asset('jquery-easing/jquery.easing.min.js')}}"></script>
-        <script src="{{asset('js/sb-admin-2.min.js')}}"></script>
-        <script src="{{asset('vendor/datatables/jquery.dataTables.min.js')}}"></script>
-        <script src="{{asset('vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
-        <script src="{{asset('js/datatables-demo.js')}}"></script>
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{asset('jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('js/sb-admin-2.min.js')}}"></script>
 </body>
 </html>
