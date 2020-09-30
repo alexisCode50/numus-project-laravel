@@ -10,6 +10,7 @@ Auth::routes();
 Route::get('/', 'PropertyController@index')->name('home');
 Route::get('/search', 'PropertyController@search')->name('search');
 Route::get('/details/{id}', 'PropertyController@details');
+Route::get('/detailss', 'PropertyController@details2');
 
 
 // admin routes
@@ -28,6 +29,10 @@ Route::middleware('auth')->group(function () {
 
     // delete property 
     Route::delete('/admin/properties/delete/{id}', 'AdminController@delete')->name('properties-delete');
+
+    // delete property
+    Route::delete('/admin/properties/delete/{id}', 'AdminController@update')->name('properties-delete');
+
 
     // images routes
     Route::get('/admin/properties/images/add/{id}', 'AdminController@add')->name('image-add');

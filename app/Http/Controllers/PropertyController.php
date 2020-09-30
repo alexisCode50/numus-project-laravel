@@ -22,15 +22,16 @@ class PropertyController extends Controller
 
     public function search(Request $request)
     {
-        $data = array();
-        $variablesurl = $request->all(); // url 
+        return view('numus.search');
+        /* $data = array();
+        $variablesurl = $request->all(); // url
 
         if($request->get('title') || $request->get('type_property') || $request->get('location')){
             $title = $request->get('title');
             $type_property = $request->get('type_property');
             $location = $request->get('location');
             $price = $request->get('price');
-            
+
             $data = Property::where('title', 'LIKE', '%'.$title.'%')
                             ->orWhere('type_property', $type_property)
                             ->orWhere('location', 'LIKE', '%'.$location.'%')
@@ -40,7 +41,10 @@ class PropertyController extends Controller
             $data = Property::paginate(10);
         }
 
-        return response()->json($data, 200);
+        return response()->json($data, 200); */
+    }
+    public function details2(){
+        return view('numus.details');
     }
 
 
