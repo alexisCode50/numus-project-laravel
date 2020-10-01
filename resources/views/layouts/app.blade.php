@@ -127,8 +127,8 @@
 		            </button>
 		        </div>
 		        <a href="#" class="navbar_brand float-left dn-smd">
-		            <img class="logo1 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo.png" style="height: 50px;">
-		            <img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo2.png" style="height: 50px;">
+		            <img class="logo1 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo.png" style="height: 40px;padding-left: 20px;">
+		            <img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo2.png" style="height: 40px;padding-left: 20px;">
 		            <span></span>
 		        </a>
 		        <!-- Responsive Menu Structure-->
@@ -151,7 +151,7 @@
 		                <a href="page-contact.html"><span class="title">Contacto</span></a>
                     </li>
 
-                    <li class="list-inline-item add_listing"><a href="page-add-new-property.html"></span><span class="dn-lg">Iniciar sesión</span></a></li>
+                    <a href="#" class="btn flaticon-user" data-toggle="modal" data-target=".bd-example-modal-lg"> <span class="dn-lg"></span></a>
 
 		        </ul>
 		    </nav>
@@ -165,8 +165,8 @@
 		<div class="mobile-menu">
 			<div class="header stylehome1">
 				<div class="main_logo_home2 text-center">
-		            <img class="nav_logo_img img-fluid mt20" src="{{ asset('cliente/assets/images/logo_black.png')}}" style="max-width: 50%;" alt="header-logo2.png">
-		            <span class="mt20">FindHouse</span>
+		            <img class="nav_logo_img img-fluid mt20" src="{{ asset('cliente/assets/images/logo_black.png')}}" style="max-width: 40%;" alt="header-logo2.png">
+
 				</div>
 				<ul class="menu_bar_home2">
 	                <li class="list-inline-item list_s"><a href="page-register.html"><span class="flaticon-user"></span></a></li>

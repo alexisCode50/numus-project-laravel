@@ -97,9 +97,9 @@
         </div>
         <div class="row">
             <div class="col-lg-7 col-xl-8">
-                <div class="dn db-991 mt30 mb0">
+                <div class="dn db-991 mt30 mb0" style="padding-top: 0.1rem;">
                     <div id="main2">
-                        <span id="open2" class="flaticon-filter-results-button filter_open_btn style3"> Show Filter</span>
+                        <span id="open2" class="flaticon-filter-results-button filter_open_btn style3" style="left: 95px;"> Show Filter</span>
                     </div>
                 </div>
                 <div class="single_property_title mt30-767 mb30-767">
