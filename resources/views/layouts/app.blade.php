@@ -127,8 +127,8 @@
 		            </button>
 		        </div>
 		        <a href="#" class="navbar_brand float-left dn-smd">
-		            <img class="logo1 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo.png">
-		            <img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo2.png">
+		            <img class="logo1 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo.png" style="height: 50px;">
+		            <img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo2.png" style="height: 50px;">
 		            <span></span>
 		        </a>
 		        <!-- Responsive Menu Structure-->
@@ -149,7 +149,9 @@
 		            </li>
 		            <li class="last">
 		                <a href="page-contact.html"><span class="title">Contacto</span></a>
-		            </li>
+                    </li>
+
+                    <li class="list-inline-item add_listing"><a href="page-add-new-property.html"></span><span class="dn-lg">Iniciar sesión</span></a></li>
 
 		        </ul>
 		    </nav>
@@ -163,7 +165,7 @@
 		<div class="mobile-menu">
 			<div class="header stylehome1">
 				<div class="main_logo_home2 text-center">
-		            <img class="nav_logo_img img-fluid mt20" src="{{ asset('cliente/assets/images/header-logo2.png')}}" alt="header-logo2.png">
+		            <img class="nav_logo_img img-fluid mt20" src="{{ asset('cliente/assets/images/logo_black.png')}}" style="max-width: 50%;" alt="header-logo2.png">
 		            <span class="mt20">FindHouse</span>
 				</div>
 				<ul class="menu_bar_home2">
