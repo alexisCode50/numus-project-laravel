@@ -33,7 +33,8 @@
             <form action="{{ route('image-save') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="input-group">
-                    <input type="hidden" name="id" value="{{ $id }}">
+                    <input type="hidden" name="property_id" value="{{ $property->id }}">
+                    <input type="hidden" name="unique_key" value="{{ $property->unique_key }}">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" name="image[]" id="image" multiple>
                         <label class="custom-file-label">Elige Una Imagen</label>

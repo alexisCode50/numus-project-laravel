@@ -28,7 +28,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="unique_key">Clave Unica</label>
-                        <input type="text" class="form-control" id="unique_key" name="unique_key" value="{{ $property->unique_key }}">
+                        <input type="text" class="form-control" id="unique_key" name="unique_key" value="{{ $property->unique_key }}" readonly>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="title">Nombre</label>
@@ -39,8 +39,12 @@
                         <input type="text" class="form-control" id="direction" name="direction" value="{{ $property->direction }}">
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="location">Ubicación</label>
-                        <input type="text" class="form-control" id="location" name="location" value="{{ $property->location }}">
+                        <label for="location_id">Ubicación o Colonia</label>
+                        <select class="form-control" id="location_id" name="location_id" value="{{ $property->location_id }}">
+                            @foreach ($locations as $item)
+                            <option value="{{ $item->id }}">{{ $item->name }}</option>
+                            @endforeach
+                        </select>
                     </div>
                 </div>
                 <div class="form-row">
@@ -96,8 +100,17 @@
                         <textarea class="form-control" id="amenities" name="amenities" rows="3">{{ $property->amenities }}</textarea>
                     </div>
                 </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="outstanding">Destacado</label>
+                        <select class="form-control" id="outstanding" name="outstanding" {{ $property->outstanding }}>
+                            <option value="1">Si</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
                 <button type="submit" class="btn btn-success btn-icon-split my-3">
-                    <span class="text">Guardar</span>
+                    <span class="text">Guardar Cambios</span>
                 </button>
             </form>
         </div>

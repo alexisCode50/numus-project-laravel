@@ -23,7 +23,7 @@
                             <th scope="col">Clave Unica</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Direcion</th>
-                            <th scope="col">Localizacion</th>
+                            <th scope="col">Ubicacion o Colonia</th>
                             <th scope="col">Tipo de Propiedad</th>
                             <th scope="col">Precio</th>
                             <th scope="col">Estado</th>
@@ -40,7 +40,7 @@
                                 <th>{{ $item->unique_key }}</th>
                                 <th>{{ $item->title }}</th>
                                 <td>{{ $item->direction }}</td>
-                                <td>{{ $item->location }}</td>
+                                <td>{{ $item->location_id }}</td>
                                 <td>{{ $item->type_property }}</td>
                                 <td>{{ $item->price }}</td>
                                 <td>{{ $item->state_property }}</td>

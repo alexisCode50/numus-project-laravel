@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Property;
 use App\Image;
+use App\Location;
 
 class AdminController extends Controller
 {
@@ -17,7 +18,8 @@ class AdminController extends Controller
 
     public function create()
     {
-        return view('admin.create');
+        $locations = Location::all();
+        return view('admin.create', compact('locations'));
     }
 
     public function store(Request $request)
@@ -26,7 +28,7 @@ class AdminController extends Controller
             'unique_key' => 'required|string|unique:properties,unique_key',
             'title' => 'required|string',
             'direction' => 'required|string',
-            'location' => 'required|string',
+            'location_id' => 'required|numeric',
             'description' => 'required|string',
             'type_property' => 'required|string',
             'price' => 'required|numeric',
@@ -36,14 +38,15 @@ class AdminController extends Controller
             'bathroom' => 'required|numeric',
             'garage' => 'required|numeric',
             'map' => 'required|string',
-            'amenities' => 'required|string'
+            'amenities' => 'required|string',
+            'outstanding' => 'required|numeric'
         ]);
 
         $property = new Property();
         $property->unique_key = $request->unique_key;
         $property->title = $request->title;
         $property->direction = $request->direction;
-        $property->location = $request->location;
+        $property->location_id = $request->location_id;
         $property->description = $request->description;
         $property->type_property = $request->type_property;
         $property->price = $request->price;
@@ -54,6 +57,7 @@ class AdminController extends Controller
         $property->garage = $request->garage;
         $property->map = $request->map;
         $property->amenities = $request->amenities;
+        $property->outstanding = $request->outstanding;
         $property->save();
 
         \Session::flash('message', 'Registro Guardado');
@@ -64,16 +68,16 @@ class AdminController extends Controller
     public function updateView($id)
     {
         $property = Property::find($id);
-        return view('admin.update', compact('property'));
+        $locations = Location::all();
+        return view('admin.update', ['property' => $property, 'locations' => $locations]);
     }
 
     public function updateProperty(Request $request, $id)
     {
         $this->validate($request, [
-            'unique_key' => 'required|string|unique:properties,unique_key',
             'title' => 'required|string',
             'direction' => 'required|string',
-            'location' => 'required|string',
+            'location_id' => 'required|numeric',
             'description' => 'required|string',
             'type_property' => 'required|string',
             'price' => 'required|numeric',
@@ -83,14 +87,14 @@ class AdminController extends Controller
             'bathroom' => 'required|numeric',
             'garage' => 'required|numeric',
             'map' => 'required|string',
-            'amenities' => 'required|string'
+            'amenities' => 'required|string',
+            'outstanding' => 'required|numeric'
         ]);
 
         $property = Property::find($id);
-        $property->unique_key = $request->unique_key;
         $property->title = $request->title;
         $property->direction = $request->direction;
-        $property->location = $request->location;
+        $property->location_id = $request->location_id;
         $property->description = $request->description;
         $property->type_property = $request->type_property;
         $property->price = $request->price;
@@ -101,6 +105,7 @@ class AdminController extends Controller
         $property->garage = $request->garage;
         $property->map = $request->map;
         $property->amenities = $request->amenities;
+        $property->outstanding = $request->outstanding;
         $property->save();
 
         \Session::flash('message', 'Registro Actualizado');

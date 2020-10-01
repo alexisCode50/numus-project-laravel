@@ -30,6 +30,11 @@ Route::middleware('auth')->group(function () {
     Route::put('/admin/properties/update/{id}', 'AdminController@updateProperty')->name('properties-update');
     Route::delete('/admin/properties/delete/{id}', 'AdminController@delete')->name('properties-delete');
 
+    //location routes
+    Route::get('admin/location', 'LocationController@index');
+    Route::post('admin/location/create', 'LocationController@store')->name('location-create');
+    Route::delete('admin/location/{id}', 'LocationController@destroy')->name('location-delete');
+
     // images routes
     Route::get('/admin/properties/images/add/{id}', 'ImageController@add')->name('image-add');
     Route::post('/admin/properties/images/save', 'ImageController@save')->name('image-save');

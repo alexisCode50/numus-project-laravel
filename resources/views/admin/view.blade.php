@@ -41,8 +41,8 @@
                             <td>{{ $property->direction}}</td>
                         </tr>
                         <tr>
-                            <th>Ubicacion</th>
-                            <td>{{ $property->location}}</td>
+                            <th>Ubicacion o Colonia</th>
+                            <td>{{ $property->location_id }}</td>
                         </tr>
                         <tr>
                             <th>Tipo de Propiedad</th>
@@ -91,6 +91,16 @@
                                     No se ha selecionado una foto de perfil
                                 @else
                                 <img src="{{ asset('images/'.$property->profile_picture) }}" width="100" height="100" class="img-fluid" alt="">
+                                @endif
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Propiedad destacada</th>
+                            <td>
+                                @if($property->outstanding == 1)
+                                    Si
+                                @else
+                                    No
                                 @endif
                             </td>
                         </tr>
@@ -157,8 +167,6 @@
                 echo html_entity_decode($map);
             @endphp
         </div>
-
-        {{ $images->links() }}
     </div>
     <div class="row my-5 justify-content-center">
         {{ $images->links() }}

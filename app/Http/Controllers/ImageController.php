@@ -11,13 +11,15 @@ class ImageController extends Controller
 
     public function add($id)
     {
-        return view('admin.add', compact('id'));
+        $property = Property::find($id);
+        return view('admin.add', compact('property'));
     }
 
     public function save(Request $request)
     {
         $this->validate($request, [
-            'id' => 'required|numeric',
+            'property_id' => 'required|numeric',
+            'unique_key' => 'required|string',
             'image' => 'required'
         ]);
         
@@ -28,8 +30,9 @@ class ImageController extends Controller
                 $file->move($path, $fileName);
 
                 $data = new Image();
+                $data->property_id = $request->property_id;
                 $data->route_img = $fileName;
-                $data->property_id = $request->id;
+                $data->unique_key = $request->unique_key;
                 $data->save();
             }
 

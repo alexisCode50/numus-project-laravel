@@ -18,7 +18,7 @@ class CreatePropertiesTable extends Migration
             $table->string('unique_key')->unique();
             $table->string('title');
             $table->string('direction');
-            $table->string('location');
+            $table->integer('location_id');
             $table->text('description');
             $table->string('type_property');
             $table->integer('price');
@@ -30,6 +30,7 @@ class CreatePropertiesTable extends Migration
             $table->text('map'); // iframe
             $table->text('amenities'); //descripcion 2
             $table->string('profile_picture')->default('');
+            $table->integer('outstanding')->default(0);
             $table->timestamps();
         });
     }
