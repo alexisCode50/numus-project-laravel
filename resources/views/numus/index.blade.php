@@ -116,10 +116,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -128,11 +125,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Casa en Colonia México</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 500</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -146,10 +139,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$3,700,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -158,11 +148,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Casa en Mirova, Dzitya</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 2 x 10 y 12, Dzitya</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 512</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -176,10 +162,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$6,500,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -188,11 +171,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Lujosa casa en Montecristo</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 24 x 4 y 6, Montecristo</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -205,10 +184,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -217,11 +193,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Casa en Colonia México</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 500</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -233,10 +205,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -245,11 +214,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Casa en Colonia México</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 500</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -261,10 +226,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -273,11 +235,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Casa en Colonia México</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 500</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -289,10 +247,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -301,11 +256,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Casa en Colonia México</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 500</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -317,10 +268,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -329,11 +277,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Casa en Colonia México</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 500</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -345,10 +289,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -357,11 +298,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Casa en Colonia México</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 500</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -373,10 +310,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -385,11 +319,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Casa en Colonia México</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 500</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -401,10 +331,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -413,11 +340,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Casa en Colonia México</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 500</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -429,10 +352,7 @@
 										<ul class="tag mb0">
 											<li class="list-inline-item"><a href="#">Venta</a></li>
 										</ul>
-										<ul class="icon mb0">
-											<li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-											<li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-										</ul>
+
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
 								</div>
@@ -441,11 +361,7 @@
 										<p class="text-thm">Casa</p>
 										<h4>Casa en Colonia México</h4>
 										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-										<ul class="prop_details mb0">
-											<li class="list-inline-item"><a href="#">Cuartos: 4</a></li>
-											<li class="list-inline-item"><a href="#">Baños: 2</a></li>
-											<li class="list-inline-item"><a href="#">Mts2: 500</a></li>
-										</ul>
+
 									</div>
 
 								</div>
@@ -565,129 +481,7 @@
 		</div>
 	</section>
 
-	<!-- Our Testimonials -->
-	<section id="our-testimonials" class="our-testimonial">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3">
-					<div class="main-title text-center">
-						<h2 class="color-white">Testimonios</h2>
-						<p class="color-white">Here could be a nice sub title</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3">
-					<div class="testimonial_grid_slider">
-						<div class="item">
-							<div class="testimonial_grid">
-								<div class="thumb">
-									<img src="{{ asset('cliente/assets/images/testimonial/1.jpg')}}" alt="1.jpg">
-								</div>
-								<div class="details">
-									<h4>Augusto Silva</h4>
-									<p>Cliente personal</p>
-									<p class="mt25">Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimonial_grid">
-								<div class="thumb">
-									<img src="{{ asset('cliente/assets/images/testimonial/1.jpg')}}" alt="1.jpg">
-								</div>
-								<div class="details">
-									<h4>Carlos López</h4>
-									<p>Cliente personal</p>
-									<p class="mt25">Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimonial_grid">
-								<div class="thumb">
-									<img src="{{ asset('cliente/assets/images/testimonial/1.jpg')}}" alt="1.jpg">
-								</div>
-								<div class="details">
-									<h4>Augusta Silva</h4>
-									<p>Sales Manager</p>
-									<p class="mt25">Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimonial_grid">
-								<div class="thumb">
-									<img src="{{ asset('cliente/assets/images/testimonial/1.jpg')}}" alt="1.jpg">
-								</div>
-								<div class="details">
-									<h4>Augusta Silva</h4>
-									<p>Sales Manager</p>
-									<p class="mt25">Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimonial_grid">
-								<div class="thumb">
-									<img src="{{ asset('cliente/assets/images/testimonial/1.jpg')}}" alt="1.jpg">
-								</div>
-								<div class="details">
-									<h4>Augusta Silva</h4>
-									<p>Sales Manager</p>
-									<p class="mt25">Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<!-- Our Blog -->
-
-
-	<!-- Our Partners -->
-	<section id="our-partners" class="our-partners">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 offset-lg-3">
-					<div class="main-title text-center">
-						<h2>Nuestras Alianzas</h2>
-						<p>Trabajamos con las mejores inmobiliarias del sureste</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-4 col-lg">
-					<div class="our_partner">
-						<img class="img-fluid" src="{{ asset('cliente/assets/images/partners/1.png')}}" alt="1.png">
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg">
-					<div class="our_partner">
-						<img class="img-fluid" src="{{ asset('cliente/assets/images/partners/2.png')}}" alt="2.png">
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg">
-					<div class="our_partner">
-						<img class="img-fluid" src="{{ asset('cliente/assets/images/partners/3.png')}}" alt="3.png">
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg">
-					<div class="our_partner">
-						<img class="img-fluid" src="{{ asset('cliente/assets/images/partners/4.png')}}" alt="4.png">
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg">
-					<div class="our_partner">
-						<img class="img-fluid" src="{{ asset('cliente/assets/images/partners/5.png')}}" alt="5.png">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<!-- Start Partners -->
 	<section class="start-partners bgc-thm pt50 pb50">

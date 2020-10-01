@@ -11,6 +11,8 @@ Route::get('/', 'PropertyController@index')->name('home');
 Route::get('/search', 'PropertyController@search')->name('search');
 Route::get('/details/{id}', 'PropertyController@details');
 Route::get('/detailss', 'PropertyController@details2');
+Route::get('/contact', 'PropertyController@contact');
+Route::get('/about', 'PropertyController@about');
 
 
 // admin routes

@@ -184,61 +184,6 @@
                                 </li>
 
                                 <li>
-                                    <div class="search_option_two">
-                                        <div class="candidate_revew_select">
-                                            <select class="selectpicker w100 show-tick">
-                                                <option>Baños</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                                <option>6</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="search_option_two">
-                                        <div class="candidate_revew_select">
-                                            <select class="selectpicker w100 show-tick">
-                                                <option>Recamaras</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                                <option>6</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="search_option_two">
-                                        <div class="candidate_revew_select">
-                                            <select class="selectpicker w100 show-tick">
-                                                <option>Garage</option>
-                                                <option>Si</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="search_option_two">
-                                        <div class="candidate_revew_select">
-                                            <select class="selectpicker w100 show-tick">
-                                                <option>Alberca</option>
-                                                <option>Si</option>
-                                                <option>No</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-
-                                </li>
-                                <li>
                                     <div class="search_option_button">
                                         <button type="submit" class="btn btn-block btn-thm">Buscar</button>
                                     </div>
@@ -326,18 +271,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="terms_condition_widget">
-                        <h4 class="title">Categorias Propiedades</h4>
-                        <div class="widget_list">
-                            <ul class="list_details">
-                                <li><a href="#"><i class="fa fa-caret-right mr10"></i>Departamentos <span class="float-right">6 propiedades</span></a></li>
-                                <li><a href="#"><i class="fa fa-caret-right mr10"></i>Casas <span class="float-right">12 propiedades</span></a></li>
-                                <li><a href="#"><i class="fa fa-caret-right mr10"></i>Townhouses <span class="float-right">8 propiedades</span></a></li>
-                                <li><a href="#"><i class="fa fa-caret-right mr10"></i>Terrenos <span class="float-right">26 propiedades</span></a></li>
 
-                            </ul>
-                        </div>
-                    </div>
 
                 </div>
             </div>
@@ -360,12 +294,7 @@
                         <div class="feat_property list">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
-                                <div class="thmb_cntnt">
-                                    <ul class="icon mb0">
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-                                    </ul>
-                                </div>
+
                             </div>
                             <div class="details">
                                 <div class="tc_content">
@@ -379,11 +308,7 @@
                                     <p class="text-thm">Departamento</p>
                                     <h4>Departamento de lujo en el norte de mérida</h4>
                                     <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-                                    <ul class="prop_details mb0">
-                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
-                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
-                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
-                                    </ul>
+
                                 </div>
 
                             </div>
@@ -393,12 +318,7 @@
                         <div class="feat_property list">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp3.jpg" alt="fp3.jpg">
-                                <div class="thmb_cntnt">
-                                    <ul class="icon mb0">
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-                                    </ul>
-                                </div>
+
                             </div>
                             <div class="details">
                                 <div class="tc_content">
@@ -412,11 +332,6 @@
                                     <p class="text-thm">Casa</p>
                                     <h4>Casa Familiar de lujo </h4>
                                     <p><span class="flaticon-placeholder"></span> Ubicación </p>
-                                    <ul class="prop_details mb0">
-                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
-                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
-                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -425,12 +340,7 @@
                         <div class="feat_property list">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp2.jpg" alt="fp2.jpg">
-                                <div class="thmb_cntnt">
-                                    <ul class="icon mb0">
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-                                    </ul>
-                                </div>
+
                             </div>
                             <div class="details">
                                 <div class="tc_content">
@@ -444,11 +354,7 @@
                                     <p class="text-thm">Departamento</p>
                                     <h4>Departamento de lujo en el norte de mérida</h4>
                                     <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-                                    <ul class="prop_details mb0">
-                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
-                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
-                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
-                                    </ul>
+
                                 </div>
 
                             </div>
@@ -458,12 +364,7 @@
                         <div class="feat_property list">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp15.jpg" alt="fp15.jpg">
-                                <div class="thmb_cntnt">
-                                    <ul class="icon mb0">
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-                                    </ul>
-                                </div>
+
                             </div>
                             <div class="details">
                                 <div class="tc_content">
@@ -477,11 +378,7 @@
                                     <p class="text-thm">Departamento</p>
                                     <h4>Departamento de lujo en el norte de mérida</h4>
                                     <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-                                    <ul class="prop_details mb0">
-                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
-                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
-                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
-                                    </ul>
+
                                 </div>
 
                             </div>
@@ -491,12 +388,7 @@
                         <div class="feat_property list">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp16.jpg" alt="fp16.jpg">
-                                <div class="thmb_cntnt">
-                                    <ul class="icon mb0">
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-                                    </ul>
-                                </div>
+
                             </div>
                             <div class="details">
                                 <div class="tc_content">
@@ -510,11 +402,7 @@
                                     <p class="text-thm">Departamento</p>
                                     <h4>Departamento de lujo en el norte de mérida</h4>
                                     <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-                                    <ul class="prop_details mb0">
-                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
-                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
-                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
-                                    </ul>
+
                                 </div>
 
                             </div>
@@ -524,12 +412,7 @@
                         <div class="feat_property list">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp17.jpg" alt="fp17.jpg">
-                                <div class="thmb_cntnt">
-                                    <ul class="icon mb0">
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-                                    </ul>
-                                </div>
+
                             </div>
                             <div class="details">
                                 <div class="tc_content">
@@ -543,11 +426,7 @@
                                     <p class="text-thm">Departamento</p>
                                     <h4>Departamento de lujo en el norte de mérida</h4>
                                     <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-                                    <ul class="prop_details mb0">
-                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
-                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
-                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
-                                    </ul>
+
                                 </div>
 
                             </div>
@@ -557,12 +436,7 @@
                         <div class="feat_property list">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp18.jpg" alt="fp18.jpg">
-                                <div class="thmb_cntnt">
-                                    <ul class="icon mb0">
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-                                    </ul>
-                                </div>
+
                             </div>
                             <div class="details">
                                 <div class="tc_content">
@@ -576,11 +450,7 @@
                                     <p class="text-thm">Departamento</p>
                                     <h4>Departamento de lujo en el norte de mérida</h4>
                                     <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-                                    <ul class="prop_details mb0">
-                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
-                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
-                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
-                                    </ul>
+
                                 </div>
 
                             </div>
@@ -590,12 +460,7 @@
                         <div class="feat_property list">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp19.jpg" alt="fp19.jpg">
-                                <div class="thmb_cntnt">
-                                    <ul class="icon mb0">
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
-                                        <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
-                                    </ul>
-                                </div>
+
                             </div>
                             <div class="details">
                                 <div class="tc_content">
@@ -609,11 +474,7 @@
                                     <p class="text-thm">Departamento</p>
                                     <h4>Departamento de lujo en el norte de mérida</h4>
                                     <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-                                    <ul class="prop_details mb0">
-                                        <li class="list-inline-item"><a href="#">Recamaras: 4</a></li>
-                                        <li class="list-inline-item"><a href="#">Baños: 2</a></li>
-                                        <li class="list-inline-item"><a href="#">Mts2: 5280</a></li>
-                                    </ul>
+
                                 </div>
 
                             </div>

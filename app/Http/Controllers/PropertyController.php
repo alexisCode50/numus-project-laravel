@@ -47,7 +47,13 @@ class PropertyController extends Controller
         return view('numus.details');
     }
 
+    public function contact(){
+        return view('numus.contact');
+    }
 
+    public function about(){
+        return view('numus.about');
+    }
 
 //     public function create()
 //     {
