@@ -11,7 +11,7 @@ class AdminController extends Controller
     public function index(Request $request)
     {
         $variablesurl = $request->all();
-        $data = Property::paginate(5)->appends($variablesurl);
+        $data = Property::all();
         return view('admin.index', ['data' => $data]);
     }
 
@@ -23,6 +23,7 @@ class AdminController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
+            'unique_key' => 'required|string|unique:properties,unique_key',
             'title' => 'required|string',
             'direction' => 'required|string',
             'location' => 'required|string',
@@ -34,12 +35,12 @@ class AdminController extends Controller
             'bedroom' => 'required|numeric',
             'bathroom' => 'required|numeric',
             'garage' => 'required|numeric',
-            'latitude_map' => 'required|string',
-            'longitude_map' => 'required|string',
+            'map' => 'required|string',
             'amenities' => 'required|string'
         ]);
 
         $property = new Property();
+        $property->unique_key = $request->unique_key;
         $property->title = $request->title;
         $property->direction = $request->direction;
         $property->location = $request->location;
@@ -51,8 +52,7 @@ class AdminController extends Controller
         $property->bedroom = $request->bedroom;
         $property->bathroom = $request->bathroom;
         $property->garage = $request->garage;
-        $property->latitude_map = $request->latitude_map;
-        $property->longitude_map = $request->longitude_map;
+        $property->map = $request->map;
         $property->amenities = $request->amenities;
         $property->save();
 
@@ -70,6 +70,7 @@ class AdminController extends Controller
     public function updateProperty(Request $request, $id)
     {
         $this->validate($request, [
+            'unique_key' => 'required|string|unique:properties,unique_key',
             'title' => 'required|string',
             'direction' => 'required|string',
             'location' => 'required|string',
@@ -81,12 +82,12 @@ class AdminController extends Controller
             'bedroom' => 'required|numeric',
             'bathroom' => 'required|numeric',
             'garage' => 'required|numeric',
-            'latitude_map' => 'required|string',
-            'longitude_map' => 'required|string',
+            'map' => 'required|string',
             'amenities' => 'required|string'
         ]);
 
         $property = Property::find($id);
+        $property->unique_key = $request->unique_key;
         $property->title = $request->title;
         $property->direction = $request->direction;
         $property->location = $request->location;
@@ -98,8 +99,7 @@ class AdminController extends Controller
         $property->bedroom = $request->bedroom;
         $property->bathroom = $request->bathroom;
         $property->garage = $request->garage;
-        $property->latitude_map = $request->latitude_map;
-        $property->longitude_map = $request->longitude_map;
+        $property->map = $request->map;
         $property->amenities = $request->amenities;
         $property->save();
 

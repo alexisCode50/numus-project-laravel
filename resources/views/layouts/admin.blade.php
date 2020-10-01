@@ -113,8 +113,10 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{asset('jquery/jquery.min.js')}}"></script>
     <script src="{{asset('js/sb-admin-2.min.js')}}"></script>
+    <script src="{{asset('datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('datatables/dataTables.bootstrap4.min.js')}}"></script>
+    <script src="{{asset('js/datatables-demo.js')}}"></script>
 </body>
 </html>

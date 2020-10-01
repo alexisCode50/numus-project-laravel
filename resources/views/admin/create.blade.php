@@ -20,20 +20,24 @@
         </div>
     </div>
     <div class="row my-3">
-        <div class="col-md-8 m-auto">
+        <div class="col-md-10 m-auto">
             <form action="{{ route('properties-create') }}" method="POST">
                 @csrf
 
                 <div class="form-row">
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
+                        <label for="unique_key">Clave Unica</label>
+                        <input type="text" class="form-control" id="unique_key" name="unique_key">
+                    </div>
+                    <div class="form-group col-md-3">
                         <label for="title">Nombre</label>
                         <input type="text" class="form-control" id="title" name="title">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
                         <label for="direction">Dirección</label>
                         <input type="text" class="form-control" id="direction" name="direction">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
                         <label for="location">Ubicación</label>
                         <input type="text" class="form-control" id="location" name="location">
                     </div>
@@ -80,13 +84,9 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="type_property">Latitud</label>
-                        <input type="text" class="form-control" id="latitude_map" name="latitude_map">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="longitude_map">Longitud</label>
-                        <input type="text" class="form-control" id="longitude_map" name="longitude_map">
+                    <div class="form-group col-md-12">
+                        <label for="map">Mapa</label>
+                        <textarea class="form-control" id="map" name="map" rows="3"></textarea>
                     </div>
                 </div>
                 <div class="form-row">

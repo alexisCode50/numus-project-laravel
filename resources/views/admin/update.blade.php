@@ -20,21 +20,25 @@
         </div>
     </div>
     <div class="row my-3">
-        <div class="col-md-8 m-auto">
+        <div class="col-md-10 m-auto">
             <form action="{{ route('properties-update', $property->id) }}" method="POST">
                 @method('PUT')
                 @csrf
 
                 <div class="form-row">
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
+                        <label for="unique_key">Clave Unica</label>
+                        <input type="text" class="form-control" id="unique_key" name="unique_key" value="{{ $property->unique_key }}">
+                    </div>
+                    <div class="form-group col-md-3">
                         <label for="title">Nombre</label>
                         <input type="text" class="form-control" id="title" name="title" value="{{ $property->title }}">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
                         <label for="direction">Dirección</label>
                         <input type="text" class="form-control" id="direction" name="direction" value="{{ $property->direction }}">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
                         <label for="location">Ubicación</label>
                         <input type="text" class="form-control" id="location" name="location" value="{{ $property->location }}">
                     </div>
@@ -42,7 +46,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <label for="description">Descripción</label>
-                        <textarea class="form-control" id="description" name="description" rows="3" value="{{ $property->description }}"></textarea>
+                        <textarea class="form-control" id="description" name="description" rows="3">{{ $property->description }}</textarea>
                     </div>
                 </div>
                 <div class="form-row">
@@ -81,19 +85,15 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="type_property">Latitud</label>
-                        <input type="text" class="form-control" id="latitude_map" name="latitude_map" value="{{ $property->latitude_map }}">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="longitude_map">Longitud</label>
-                        <input type="text" class="form-control" id="longitude_map" name="longitude_map" value="{{ $property->longitude_map }}">
+                    <div class="form-group col-md-12">
+                        <label for="map">Mapa</label>
+                        <textarea class="form-control" id="map" name="map" rows="3">{{ $property->map }}</textarea>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <label for="amenities">Amenidades</label>
-                        <textarea class="form-control" id="amenities" name="amenities" rows="3" value="{{ $property->amenities }}"></textarea>
+                        <textarea class="form-control" id="amenities" name="amenities" rows="3">{{ $property->amenities }}</textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-success btn-icon-split my-3">

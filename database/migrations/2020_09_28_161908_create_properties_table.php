@@ -15,6 +15,7 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
+            $table->string('unique_key')->unique();
             $table->string('title');
             $table->string('direction');
             $table->string('location');
@@ -26,8 +27,7 @@ class CreatePropertiesTable extends Migration
             $table->decimal('bedroom', 4, 2);
             $table->decimal('bathroom', 4, 2);
             $table->decimal('garage', 4, 2);
-            $table->string('latitude_map'); // latitud
-            $table->string('longitude_map'); // longitud
+            $table->text('map'); // iframe
             $table->text('amenities'); //descripcion 2
             $table->string('profile_picture')->default('');
             $table->timestamps();

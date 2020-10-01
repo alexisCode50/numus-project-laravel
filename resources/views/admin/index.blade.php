@@ -16,10 +16,11 @@
             @endif
 
             <a href="admin/properties/create/view" class="btn btn-primary btn-large my-3">Registrar Propiedad</a>
-            <div class="table-responsive">
-                <table class="table table-bordered">
+            <div class="table-responsive my-5">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
+                            <th scope="col">Clave Unica</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Direcion</th>
                             <th scope="col">Localizacion</th>
@@ -36,6 +37,7 @@
                     <tbody>
                         @foreach ($data as $item)
                             <tr>
+                                <th>{{ $item->unique_key }}</th>
                                 <th>{{ $item->title }}</th>
                                 <td>{{ $item->direction }}</td>
                                 <td>{{ $item->location }}</td>
@@ -75,10 +77,6 @@
                 </table>
             </div>
         </div>
-    </div>
-
-    <div class="row my-5 justify-content-center">
-        {{ $data->links() }}
     </div>
 
 @endsection

@@ -28,7 +28,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        
+                        <tr>
+                            <th>Clave Unica</th>
+                            <td>{{ $property->unique_key }}</td>
+                        </tr>
                         <tr>
                             <th>Nombre</th>
                             <td>{{ $property->title }}</td>
@@ -70,12 +73,8 @@
                             <td>{{ $property->garage }}</td>
                         </tr>
                         <tr>
-                            <th>Latitud</th>
-                            <td>{{ $property->latitude_map}}</td>
-                        </tr>
-                        <tr>
-                            <th>Longitud</th>
-                            <td>{{ $property->longitude_map}}</td>
+                            <th>Mapa</th>
+                            <td>{{ $property->map}}</td>
                         </tr>
                         <tr>
                             <th>Amenidades</th>
@@ -151,11 +150,19 @@
             @endif
         </div>
     </div>
+    <div class="row my-5 justify-content-center">
+        <div class="col-md-4 mx-auto" >
+            @php
+                $map =  htmlentities($property->description);
+                echo html_entity_decode($map);
+            @endphp
+        </div>
 
+        {{ $images->links() }}
+    </div>
     <div class="row my-5 justify-content-center">
         {{ $images->links() }}
     </div>
     
-
 @endsection
 
