@@ -5,12 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Property;
 use App\Image;
+use App\Location;
 
 class PropertyController extends Controller
 {
     public function index()
     {
-        return view('numus.index');
+        $property = Property::all();
+        $location = Location::all();
+        return view('numus.index', ['property' => $property, 'location' => $location]);
     }
 
     public function details($id)
@@ -22,26 +25,26 @@ class PropertyController extends Controller
 
     public function search(Request $request)
     {
-        return view('numus.search');
-        /* $data = array();
+        $data = array();
         $variablesurl = $request->all(); // url
 
-        if($request->get('title') || $request->get('type_property') || $request->get('location')){
+        if($request->get('title') && $request->get('type_property') && $request->get('location')){
             $title = $request->get('title');
             $type_property = $request->get('type_property');
             $location = $request->get('location');
-            $price = $request->get('price');
 
             $data = Property::where('title', 'LIKE', '%'.$title.'%')
                             ->orWhere('type_property', $type_property)
-                            ->orWhere('location', 'LIKE', '%'.$location.'%')
+                            ->orWhere('location', $location_id)
                             ->paginate(10)
                             ->appends($variablesurl); // evita que se pierda la paginacion
-        } else {
-            $data = Property::paginate(10);
-        }
-
-        return response()->json($data, 200); */
+        } 
+        // else {
+        //     $data = Property::paginate(10);
+        // }
+        // return response()->json($data, 200);
+        
+        return view('numus.search', compact('data'));
     }
     public function details2(){
         return view('numus.details');
@@ -55,36 +58,4 @@ class PropertyController extends Controller
         return view('numus.about');
     }
 
-//     public function create()
-//     {
-//         //
-//     }
-
-//     public function store(Request $request)
-//     {
-//         //
-//     }
-
-
-//     public function show($id)
-//     {
-//         //
-//     }
-
-
-//     public function edit($id)
-//     {
-//         //
-//     }
-
-
-//     public function update(Request $request, $id)
-//     {
-//         //
-//     }
-
-//     public function destroy($id)
-//     {
-//         //
-//     }
 }
