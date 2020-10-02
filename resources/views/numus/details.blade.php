@@ -112,7 +112,7 @@
             <div class="col-lg-5 col-xl-4">
                 <div class="single_property_social_share">
                     <div class="price float-right fn-400">
-                        <h2>$ {{ $property->price }} <small>/mo</small></h2>
+                        <h2>$ {{ $property->price }} </h2>
                     </div>
 
                 </div>

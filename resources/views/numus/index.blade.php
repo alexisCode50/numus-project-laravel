@@ -63,7 +63,7 @@
 
 												<li class="list-inline-item">
 													<div class="search_option_button">
-														<button type="submit" class="btn btn-thm">Buscar</button>
+														<button type="submit" class="btn btn-thm" style="font-size: 16px;">Buscar</button>
 													</div>
 												</li>
 											</ul>
@@ -110,8 +110,8 @@
 						@foreach($property as $item)
 							<div class="item">
 								<div class="feat_property">
-									<div class="thumb">
-										<img class="img-whp" src="{{ asset('images/'.$item->profile_picture) }}" alt="{{ $item->title }}">
+									<div class="thumb" style="height: 220px;">
+										<img class="img-whp" src="{{ asset('images/'.$item->profile_picture) }}" alt="{{ $item->title }}" >
 										<div class="thmb_cntnt">
 											<ul class="tag mb0">
 												<li class="list-inline-item"><a href="#">{{ $item->state_property }}</a></li>
@@ -121,7 +121,7 @@
 											</ul>
 
 
-											<a class="fp_price" href="#">$ {{ $item->price }} <small>MXN</small></a>
+											<a class="fp_price" href="#">$ {{ $item->price }} </a>
 										</div>
 									</div>
 									<div class="details">
@@ -136,9 +136,9 @@
 								</div>
 							</div>
 						@endforeach
-							
 
-						{{-- 
+
+						{{--
 						<div class="feat_property">
 								<div class="thumb">
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
@@ -315,7 +315,7 @@
 
 								</div>
 							</div>
-						
+
 						<div class="feat_property">
 							<div class="thumb">
 								<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">

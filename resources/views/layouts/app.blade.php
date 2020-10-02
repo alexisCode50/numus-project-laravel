@@ -89,12 +89,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="">
+<meta name="robots" content="index"/>
 <meta name="description" content="Somos una inmobiliaria ubicada al norte de Mérida, Yucatán">
 <!-- css file -->
 <link rel="stylesheet" href="{{ asset('cliente/assets/css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{ asset('cliente/assets/css/style.css') }}">
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="{{ asset('cliente/assets/css/responsive.css')}}">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 <!-- Title -->
 <title>Numus | Inicio</title>
 <!-- Favicon -->
