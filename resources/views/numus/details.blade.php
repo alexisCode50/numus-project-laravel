@@ -114,7 +114,6 @@
                     <div class="price float-right fn-400">
                         <h2>$ {{ number_format($property->price) }}</h2>
                     </div>
-
                 </div>
             </div>
             <div class="col-md-12 col-lg-8 mt50">

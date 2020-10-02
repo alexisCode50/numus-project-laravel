@@ -147,7 +147,7 @@
                                                 <li class="list-inline-item"><a href="#">Renta</a></li>
                                                 <li class="list-inline-item"><a href="#">Destacada</a></li>
                                             </ul>
-                                            <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                                            <a class="fp_price" href="#">$13,000</a>
                                             <h4 class="posr color-white">Departamento de lujo </h4>
                                         </div>
                                     </div>
@@ -241,7 +241,7 @@
                                 <div class="feat_property list" style="height: 150px;">
                                     <div class="thumb">
                                         <img class="img-whp" src="{{ asset('images/'.$item->profile_picture) }}" alt="{{ $item->title }}">
-                                        
+
                                     </div>
                                     <div class="details">
                                         <div class="tc_content">
@@ -271,7 +271,7 @@
                     @else
                         <p>No hay resultados de busqueda</p>
                     @endif
-                    
+
                     {{--
                     <div class="col-lg-12">
                         <div class="feat_property list" style="height: 150px;">

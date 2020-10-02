@@ -30,9 +30,14 @@
         <div class="row">
             <div class="col-lg-8 col-xl-7">
                 <div class="about_content">
-                    <p class="large">Mauris ac consectetur ante, dapibus gravida tellus. Nullam aliquet eleifend dapibus. Cras sagittis, ex euismod lacinia tempor.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ligula eu lectus vulputate porttitor sed feugiat nunc. Mauris ac consectetur ante, dapibus gravida tellus. Nullam aliquet eleifend dapibus. Cras sagittis, ex euismod lacinia tempor, lectus orci elementum augue, eget auctor metus ante sit amet velit.</p>
-                    <p>Maecenas quis viverra metus, et efficitur ligula. Nam congue augue et ex congue, sed luctus lectus congue. Integer convallis condimentum sem. Duis elementum tortor eget condimentum tempor. Praesent sollicitudin lectus ut pharetra pulvinar. Donec et libero ligula. Vivamus semper at orci at placerat.Placeat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod libero amet, laborum qui nulla quae alias tempora.</p>
+                    <p class="large">Numus Inmobiliaria y su equipo saben y entienden que no se trata de casas.</p>
+                    <p> Se trata de la comunidad, las personas y las relaciones que importan dentro de la casa  y la zona escogida para vivir. Se trata de comprender los matices de su estilo de vida, ya sea que esté en el mercado para vender o comprar. Permítanos ayudarlo a encontrar y definir lo que el lujo significa para usted.
+                    </p>
+                    <p>Somos un equipo de asesores inmobiliarios residiendo en Merida, Yucatán, la ciudad con mejor calidad de vida para vivir en mexico y Latinoamérica, estamos aquí dispuestos a ayudarlos a encontrar la mejor opción para vivir o invertir en el sureste de mexico.
+                    </p>
+                    <p>
+                        Nuestro objetivo es brindar lo último en servicios profesionales de bienes raíces tanto residenciales y comerciales, como al igual oportunidades de inversión. Enfocándonos en propiedades en el mercado premium que satisfagan las necesidades de nuestros clientes.
+                    </p>
                     <ul class="ab_counting">
                         <li class="list-inline-item">
                             <div class="about_counting">
