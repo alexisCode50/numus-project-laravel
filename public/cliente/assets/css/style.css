@@ -4330,7 +4330,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-radius: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   overflow: hidden;
   position: relative;
   -webkit-transition: all 0.3s ease;
@@ -11336,7 +11336,7 @@ a.btn.btn_error{
   display: -o-flex;
   display: flex;
   height: 62px;
-  margin: 0 auto 30px;
+  margin: 0 auto 10px;
   padding: 0 15px;
   position: relative;
   width: 96%;
@@ -15325,7 +15325,7 @@ canvas {
 #open.flaticon-close:before,
 #open2.flaticon-filter-results-button:before,
 #open2.flaticon-close:before{
-  background-color: #f53c41;
+  background-color: #5a6481;
   left: 0;
   position: absolute;
   width: 48px;

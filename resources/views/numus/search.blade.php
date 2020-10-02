@@ -48,63 +48,7 @@
                                         </div>
                                     </li>
 
-                                    <li>
-                                        <div class="search_option_two">
-                                            <div class="candidate_revew_select">
-                                                <select class="selectpicker w100 show-tick">
-                                                    <option>Baños</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="search_option_two">
-                                            <div class="candidate_revew_select">
-                                                <select class="selectpicker w100 show-tick">
-                                                    <option>Recamaras</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                    <option>6</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="search_option_two">
-                                            <div class="candidate_revew_select">
-                                                <select class="selectpicker w100 show-tick">
-                                                    <option>Garage</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="search_option_two">
-                                            <div class="candidate_revew_select">
-                                                <select class="selectpicker w100 show-tick">
-                                                    <option>Alberca</option>
-                                                    <option>Si</option>
-                                                    <option>No</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                          <div id="accordion" class="panel-group">
 
-                                        </div>
-                                    </li>
                                     <li>
                                         <div class="search_option_button">
                                             <button type="submit" class="btn btn-block btn-thm">Buscar</button>
@@ -117,8 +61,8 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="row" style="margin-top: -30px;">
+            <div class="col-lg-6" >
                 <div class="breadcrumb_content style2 mb0-991">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Numus</a></li>
@@ -129,8 +73,8 @@
             </div>
             <div class="col-lg-6">
                 <div class="dn db-991 mt25 mb15">
-                    <div id="main2">
-                        <span id="open2" class="flaticon-filter-results-button filter_open_btn style2">Buscador</span>
+                    <div id="main2" style="padding-top: 25px;">
+                        <span id="open2" class="flaticon-filter-results-button filter_open_btn style2" style="left: 90px;top: 1px;">Buscador</span>
                     </div>
                 </div>
             </div>
@@ -291,7 +235,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="feat_property list">
+                        <div class="feat_property list" style="height: 150px;">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
 
@@ -315,7 +259,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="feat_property list">
+                        <div class="feat_property list" style="height: 150px;">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp3.jpg" alt="fp3.jpg">
 
@@ -337,7 +281,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="feat_property list">
+                        <div class="feat_property list" style="height: 150px;">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp2.jpg" alt="fp2.jpg">
 
@@ -361,7 +305,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="feat_property list">
+                        <div class="feat_property list" style="height: 150px;">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp15.jpg" alt="fp15.jpg">
 
@@ -385,7 +329,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="feat_property list">
+                        <div class="feat_property list" style="height: 150px;">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp16.jpg" alt="fp16.jpg">
 
@@ -409,7 +353,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="feat_property list">
+                        <div class="feat_property list" style="height: 150px;">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp17.jpg" alt="fp17.jpg">
 
@@ -433,7 +377,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="feat_property list">
+                        <div class="feat_property list" style="height: 150px;">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp18.jpg" alt="fp18.jpg">
 
@@ -457,7 +401,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="feat_property list">
+                        <div class="feat_property list" style="height: 150px;">
                             <div class="thumb">
                                 <img class="img-whp" src="images/property/fp19.jpg" alt="fp19.jpg">
 

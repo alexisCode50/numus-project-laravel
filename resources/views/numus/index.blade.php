@@ -114,8 +114,10 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
-										</ul>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+                                        </ul>
+
 
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
@@ -137,7 +139,8 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp2.jpg')}}" alt="fp2.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
 										</ul>
 
 										<a class="fp_price" href="#">$3,700,000<small>MXN</small></a>
@@ -160,7 +163,8 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp3.jpg')}}" alt="fp3.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
 										</ul>
 
 										<a class="fp_price" href="#">$6,500,000<small>MXN</small></a>
@@ -182,7 +186,8 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
 										</ul>
 
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
@@ -203,7 +208,8 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
 										</ul>
 
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
@@ -224,7 +230,8 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
 										</ul>
 
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
@@ -245,7 +252,8 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
 										</ul>
 
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
@@ -266,7 +274,8 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
 										</ul>
 
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
@@ -287,7 +296,8 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
 										</ul>
 
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
@@ -308,7 +318,8 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
 										</ul>
 
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
@@ -329,7 +340,8 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
 										</ul>
 
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
@@ -350,7 +362,8 @@
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
-											<li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
 										</ul>
 
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
