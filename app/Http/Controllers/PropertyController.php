@@ -28,14 +28,14 @@ class PropertyController extends Controller
         $data = array();
         $variablesurl = $request->all(); // url
 
-        if($request->get('title') && $request->get('type_property') && $request->get('location')){
+        if($request->get('title') || $request->get('type_property') || $request->get('location')){
             $title = $request->get('title');
             $type_property = $request->get('type_property');
-            $location = $request->get('location');
+            $location_id = $request->get('location');
 
             $data = Property::where('title', 'LIKE', '%'.$title.'%')
                             ->orWhere('type_property', $type_property)
-                            ->orWhere('location', $location_id)
+                            ->orWhere('location_id', $location_id)
                             ->paginate(10)
                             ->appends($variablesurl); // evita que se pierda la paginacion
         } 

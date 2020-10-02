@@ -224,7 +224,7 @@
                     <div class="grid_list_search_result">
                         <div class="col-sm-12 col-md-4 col-lg-4 col-xl-5">
                             <div class="left_area tac-xsd">
-                                <p>9 Resultados de la búsqueda</p>
+                                <p>{{ count($data) }} Resultados de la búsqueda</p>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-8 col-lg-8 col-xl-7">
@@ -234,30 +234,45 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="feat_property list" style="height: 150px;">
-                            <div class="thumb">
-                                <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
+                    @if (count($data) > 0)
+                        @foreach($data as $item)
 
-                            </div>
-                            <div class="details">
-                                <div class="tc_content">
-                                    <div class="dtls_headr">
-                                        <ul class="tag">
-                                            <li class="list-inline-item"><a href="#">Renta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
+                            <div class="col-lg-12">
+                                <div class="feat_property list" style="height: 150px;">
+                                    <div class="thumb">
+                                        <img class="img-whp" src="{{ asset('images/'.$item->profile_picture) }}" alt="{{ $item->title }}">
+                                        
                                     </div>
-                                    <p class="text-thm">Departamento</p>
-                                    <h4>Departamento de lujo en el norte de mérida</h4>
-                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
+                                    <div class="details">
+                                        <div class="tc_content">
+                                            <div class="dtls_headr">
+                                                <ul class="tag">
+                                                    <li class="list-inline-item"><a href="#">{{ $item->state_property }}</a></li>
+                                                    @if($item->outstanding == 1)
+                                                        <li class="list-inline-item">
+                                                            <a href="#">
+                                                                Destacado
+                                                            </a>
+                                                        </li>
+                                                    @endif
+                                                </ul>
+                                                <a class="fp_price" href="#">$ {{ $item->price }} <small>mxn</small></a>
+                                            </div>
+                                            <p class="text-thm">{{ $item->type_property }}</p>
+                                            <h4>{{ $item->title }}</h4>
+                                            <p><span class="flaticon-placeholder"></span>{{ $item->direction }}</p>
 
+                                        </div>
+
+                                    </div>
                                 </div>
-
                             </div>
-                        </div>
-                    </div>
+                            @endforeach
+                    @else
+                        <p>No hay resultados de busqueda</p>
+                    @endif
+                    
+                    {{--
                     <div class="col-lg-12">
                         <div class="feat_property list" style="height: 150px;">
                             <div class="thumb">
@@ -424,7 +439,7 @@
                             </div>
                         </div>
                     </div>
-
+                    --}}
                     <div class="col-lg-12 mt20">
                         <div class="mbp_pagination">
                             <ul class="page_navigation">

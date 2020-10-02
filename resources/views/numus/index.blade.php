@@ -17,58 +17,57 @@
 							<div class="tab-content home1_adsrchfrm" id="pills-tabContent">
 								<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 									<div class="home1-advnc-search">
-										<ul class="h1ads_1st_list mb0">
-											<li class="list-inline-item">
-											    <div class="form-group">
-											    	<input type="text" class="form-control" id="exampleInputName1" placeholder="Ingresar palabra clave...">
-											    </div>
-											</li>
-											<li class="list-inline-item">
-												<div class="search_option_two">
-													<div class="candidate_revew_select">
-														<select class="selectpicker w100 show-tick">
-															<option>Tipo de propiedad</option>
-															<option>Departamento</option>
-															<option>Townhouse</option>
-															<option>Casa</option>
-															<option>Terreno</option>
-
-														</select>
+										<form action="{{ route('search') }}" method="GET">
+											<ul class="h1ads_1st_list mb0">
+												<li class="list-inline-item">
+													<div class="form-group">
+														<input type="text" class="form-control" name="title" id="exampleInputName1" placeholder="Ingresar palabra clave...">
 													</div>
-												</div>
-											</li>
-											<li class="list-inline-item">
-											    <div class="search_option_two">
-													<div class="candidate_revew_select">
-														<select class="selectpicker w100 show-tick">
-															<option>Ubicación</option>
-															<option>Conkal</option>
-															<option>Tizimín</option>
-															<option>Caucel</option>
-															<option>Progreso</option>
-
-														</select>
+												</li>
+												<li class="list-inline-item">
+													<div class="search_option_two">
+														<div class="candidate_revew_select">
+															<select class="selectpicker w100 show-tick" name="type_property">
+																<option value="">Tipo de propiedad</option>
+																<option>Departamento</option>
+																<option>Townhouse</option>
+																<option>Casa</option>
+																<option>Terreno</option>
+															</select>
+														</div>
 													</div>
-												</div>
-											</li>
-											<li class="list-inline-item">
-												<div class="search_option_two">
-													<div class="candidate_revew_select">
-														<select class="selectpicker w100 show-tick">
-															<option>Tipo de oferta</option>
-															<option>Venta</option>
-															<option>Renta</option>
-														</select>
+												</li>
+												<li class="list-inline-item">
+													<div class="search_option_two">
+														<div class="candidate_revew_select">
+															<select class="selectpicker w100 show-tick" name="location">
+																<option value="">Ubicación</option>
+																@foreach($location as $item)
+																	<option value="{{ $item->id }}">{{ $item->name }}</option>
+																@endforeach
+															</select>
+														</div>
 													</div>
-												</div>
-											</li>
+												</li>
+												<li class="list-inline-item">
+													<div class="search_option_two">
+														<div class="candidate_revew_select">
+															<select class="selectpicker w100 show-tick" name="">
+																<option value="">Tipo de oferta</option>
+																<option>Venta</option>
+																<option>Renta</option>
+															</select>
+														</div>
+													</div>
+												</li>
 
-											<li class="list-inline-item">
-												<div class="search_option_button">
-												    <button type="submit" class="btn btn-thm">Buscar</button>
-												</div>
-											</li>
-										</ul>
+												<li class="list-inline-item">
+													<div class="search_option_button">
+														<button type="submit" class="btn btn-thm">Buscar</button>
+													</div>
+												</li>
+											</ul>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -108,16 +107,46 @@
 				</div>
 				<div class="col-lg-12">
 					<div class="feature_property_slider">
-						<div class="item">
-							<div class="feat_property">
+						@foreach($property as $item)
+							<div class="item">
+								<div class="feat_property">
+									<div class="thumb">
+										<img class="img-whp" src="{{ asset('images/'.$item->profile_picture) }}" alt="{{ $item->title }}">
+										<div class="thmb_cntnt">
+											<ul class="tag mb0">
+												<li class="list-inline-item"><a href="#">{{ $item->state_property }}</a></li>
+												@if($item->outstanding == 1)
+													<li class="list-inline-item"><a href="#">Destacada</a></li>
+												@endif
+											</ul>
+
+
+											<a class="fp_price" href="#">$ {{ $item->price }} <small>MXN</small></a>
+										</div>
+									</div>
+									<div class="details">
+										<div class="tc_content">
+											<p class="text-thm">{{ $item->type_property }}</p>
+											<h4>{{ $item->title }}</h4>
+											<p><span class="flaticon-placeholder"></span>{{ $item->direction }}</p>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+						@endforeach
+							
+
+						{{-- 
+						<div class="feat_property">
 								<div class="thumb">
 									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
 									<div class="thmb_cntnt">
 										<ul class="tag mb0">
                                             <li class="list-inline-item"><a href="#">Venta</a></li>
                                             <li class="list-inline-item"><a href="#">Destacada</a></li>
-                                        </ul>
-
+										</ul>
 
 										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
 									</div>
@@ -131,254 +160,185 @@
 									</div>
 
 								</div>
+							</div>
+						<div class="feat_property">
+								<div class="thumb">
+									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
+									<div class="thmb_cntnt">
+										<ul class="tag mb0">
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+										</ul>
+
+										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
+									</div>
+								</div>
+								<div class="details">
+									<div class="tc_content">
+										<p class="text-thm">Casa</p>
+										<h4>Casa en Colonia México</h4>
+										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
+
+									</div>
+
+								</div>
+							</div>
+						<div class="feat_property">
+								<div class="thumb">
+									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
+									<div class="thmb_cntnt">
+										<ul class="tag mb0">
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+										</ul>
+
+										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
+									</div>
+								</div>
+								<div class="details">
+									<div class="tc_content">
+										<p class="text-thm">Casa</p>
+										<h4>Casa en Colonia México</h4>
+										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
+
+									</div>
+
+								</div>
+							</div>
+						<div class="feat_property">
+								<div class="thumb">
+									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
+									<div class="thmb_cntnt">
+										<ul class="tag mb0">
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+										</ul>
+
+										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
+									</div>
+								</div>
+								<div class="details">
+									<div class="tc_content">
+										<p class="text-thm">Casa</p>
+										<h4>Casa en Colonia México</h4>
+										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
+
+									</div>
+
+								</div>
+							</div>
+						<div class="feat_property">
+								<div class="thumb">
+									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
+									<div class="thmb_cntnt">
+										<ul class="tag mb0">
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+										</ul>
+
+										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
+									</div>
+								</div>
+								<div class="details">
+									<div class="tc_content">
+										<p class="text-thm">Casa</p>
+										<h4>Casa en Colonia México</h4>
+										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
+
+									</div>
+
+								</div>
+							</div>
+						<div class="feat_property">
+								<div class="thumb">
+									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
+									<div class="thmb_cntnt">
+										<ul class="tag mb0">
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+										</ul>
+
+										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
+									</div>
+								</div>
+								<div class="details">
+									<div class="tc_content">
+										<p class="text-thm">Casa</p>
+										<h4>Casa en Colonia México</h4>
+										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
+
+									</div>
+
+								</div>
+							</div>
+						<div class="feat_property">
+								<div class="thumb">
+									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
+									<div class="thmb_cntnt">
+										<ul class="tag mb0">
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+										</ul>
+
+										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
+									</div>
+								</div>
+								<div class="details">
+									<div class="tc_content">
+										<p class="text-thm">Casa</p>
+										<h4>Casa en Colonia México</h4>
+										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
+
+									</div>
+
+								</div>
+							</div>
+						<div class="feat_property">
+								<div class="thumb">
+									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
+									<div class="thmb_cntnt">
+										<ul class="tag mb0">
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
+										</ul>
+
+										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
+									</div>
+								</div>
+								<div class="details">
+									<div class="tc_content">
+										<p class="text-thm">Casa</p>
+										<h4>Casa en Colonia México</h4>
+										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
+
+									</div>
+
+								</div>
+							</div>
+						
+						<div class="feat_property">
+							<div class="thumb">
+								<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
+								<div class="thmb_cntnt">
+									<ul class="tag mb0">
+										<li class="list-inline-item"><a href="#">Venta</a></li>
+										<li class="list-inline-item"><a href="#">Destacada</a></li>
+									</ul>
+
+									<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
+								</div>
+							</div>
+							<div class="details">
+								<div class="tc_content">
+									<p class="text-thm">Casa</p>
+									<h4>Casa en Colonia México</h4>
+									<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
+
+								</div>
+
 							</div>
 						</div>
-						<div class="item">
-							<div class="feat_property">
-								<div class="thumb">
-									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp2.jpg')}}" alt="fp2.jpg">
-									<div class="thmb_cntnt">
-										<ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-										</ul>
-
-										<a class="fp_price" href="#">$3,700,000<small>MXN</small></a>
-									</div>
-								</div>
-								<div class="details">
-									<div class="tc_content">
-										<p class="text-thm">Casa</p>
-										<h4>Casa en Mirova, Dzitya</h4>
-										<p><span class="flaticon-placeholder"></span> Calle 2 x 10 y 12, Dzitya</p>
-
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="feat_property">
-								<div class="thumb">
-									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp3.jpg')}}" alt="fp3.jpg">
-									<div class="thmb_cntnt">
-										<ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-										</ul>
-
-										<a class="fp_price" href="#">$6,500,000<small>MXN</small></a>
-									</div>
-								</div>
-								<div class="details">
-									<div class="tc_content">
-										<p class="text-thm">Casa</p>
-										<h4>Lujosa casa en Montecristo</h4>
-										<p><span class="flaticon-placeholder"></span> Calle 24 x 4 y 6, Montecristo</p>
-
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="feat_property">
-								<div class="thumb">
-									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
-									<div class="thmb_cntnt">
-										<ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-										</ul>
-
-										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
-									</div>
-								</div>
-								<div class="details">
-									<div class="tc_content">
-										<p class="text-thm">Casa</p>
-										<h4>Casa en Colonia México</h4>
-										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-
-									</div>
-
-								</div>
-							</div>
-						<div class="feat_property">
-								<div class="thumb">
-									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
-									<div class="thmb_cntnt">
-										<ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-										</ul>
-
-										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
-									</div>
-								</div>
-								<div class="details">
-									<div class="tc_content">
-										<p class="text-thm">Casa</p>
-										<h4>Casa en Colonia México</h4>
-										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-
-									</div>
-
-								</div>
-							</div>
-						<div class="feat_property">
-								<div class="thumb">
-									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
-									<div class="thmb_cntnt">
-										<ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-										</ul>
-
-										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
-									</div>
-								</div>
-								<div class="details">
-									<div class="tc_content">
-										<p class="text-thm">Casa</p>
-										<h4>Casa en Colonia México</h4>
-										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-
-									</div>
-
-								</div>
-							</div>
-						<div class="feat_property">
-								<div class="thumb">
-									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
-									<div class="thmb_cntnt">
-										<ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-										</ul>
-
-										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
-									</div>
-								</div>
-								<div class="details">
-									<div class="tc_content">
-										<p class="text-thm">Casa</p>
-										<h4>Casa en Colonia México</h4>
-										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-
-									</div>
-
-								</div>
-							</div>
-						<div class="feat_property">
-								<div class="thumb">
-									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
-									<div class="thmb_cntnt">
-										<ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-										</ul>
-
-										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
-									</div>
-								</div>
-								<div class="details">
-									<div class="tc_content">
-										<p class="text-thm">Casa</p>
-										<h4>Casa en Colonia México</h4>
-										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-
-									</div>
-
-								</div>
-							</div>
-						<div class="feat_property">
-								<div class="thumb">
-									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
-									<div class="thmb_cntnt">
-										<ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-										</ul>
-
-										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
-									</div>
-								</div>
-								<div class="details">
-									<div class="tc_content">
-										<p class="text-thm">Casa</p>
-										<h4>Casa en Colonia México</h4>
-										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-
-									</div>
-
-								</div>
-							</div>
-						<div class="feat_property">
-								<div class="thumb">
-									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
-									<div class="thmb_cntnt">
-										<ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-										</ul>
-
-										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
-									</div>
-								</div>
-								<div class="details">
-									<div class="tc_content">
-										<p class="text-thm">Casa</p>
-										<h4>Casa en Colonia México</h4>
-										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-
-									</div>
-
-								</div>
-							</div>
-						<div class="feat_property">
-								<div class="thumb">
-									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
-									<div class="thmb_cntnt">
-										<ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-										</ul>
-
-										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
-									</div>
-								</div>
-								<div class="details">
-									<div class="tc_content">
-										<p class="text-thm">Casa</p>
-										<h4>Casa en Colonia México</h4>
-										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-
-									</div>
-
-								</div>
-							</div>
-						<div class="feat_property">
-								<div class="thumb">
-									<img class="img-whp" src="{{ asset('cliente/assets/images/property/fp1.jpg')}}" alt="fp1.jpg">
-									<div class="thmb_cntnt">
-										<ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-										</ul>
-
-										<a class="fp_price" href="#">$3,850,000<small>MXN</small></a>
-									</div>
-								</div>
-								<div class="details">
-									<div class="tc_content">
-										<p class="text-thm">Casa</p>
-										<h4>Casa en Colonia México</h4>
-										<p><span class="flaticon-placeholder"></span> Calle 25 entre 2 y 14 Colonia México</p>
-
-									</div>
-
-								</div>
-							</div>
+						--}}
 					</div>
 				</div>
 			</div>
