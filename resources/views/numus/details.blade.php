@@ -18,9 +18,11 @@
                         <div class="col-lg-12">
                             <div class="main-banner-wrapper home10">
                                 <div class="banner-style-one owl-theme owl-carousel">
-                                    <div class="slide slide-one" style="background-image: url(images/home/1.jpg);height: 600px;"></div>
-                                    <div class="slide slide-one" style="background-image: url(images/home/2.jpg);height: 600px;"></div>
-                                    <div class="slide slide-one" style="background-image: url(images/home/1.jpg);height: 600px;"></div>
+                                    @foreach($images as $item)
+                                        <div class="slide slide-one">
+                                            <img src="{{ asset('images/' . $item->route_img) }}" height="600">
+                                        </div>
+                                    @endforeach
                                 </div>
                                 <div class="carousel-btn-block banner-carousel-btn">
                                     <span class="carousel-btn left-btn"><i class="flaticon-left-arrow-1 left"></i></span>
@@ -103,14 +105,14 @@
                     </div>
                 </div>
                 <div class="single_property_title mt30-767 mb30-767">
-                    <h2>Luxury Family Home</h2>
-                    <p>1421 San Pedro St, Los Angeles, CA 90015</p>
+                    <h2>{{ $property->title }}</h2>
+                    <p>{{ $property->direction }}</p>
                 </div>
             </div>
             <div class="col-lg-5 col-xl-4">
                 <div class="single_property_social_share">
                     <div class="price float-right fn-400">
-                        <h2>$13,000<small>/mo</small></h2>
+                        <h2>$ {{ $property->price }} <small>/mo</small></h2>
                     </div>
 
                 </div>
@@ -120,7 +122,7 @@
                     <div class="col-lg-12">
                         <div class="listing_single_description">
                             <h4 class="mb30">Description</h4>
-                            <p class="mb25">Evans Tower very high demand corner junior one bedroom plus a large balcony boasting full open NYC views. You need to see the views to believe them. Mint condition with new hardwood floors. Lots of closets plus washer and dryer.</p>
+                            <p class="mb25">{{ $property->description }}</p>
                             <p class="gpara second_para white_goverlay mt10 mb10">Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and features incredible walk-in closet and storage space.</p>
                             <div class="collapse" id="collapseExample">
                                   <div class="card card-body">
@@ -143,16 +145,16 @@
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
                                     <ul class="list-inline-item">
-                                        <li><p>Property ID :</p></a></li>
-                                        <li><p>Price :</p></a></li>
-                                        <li><p>Property Size :</p></a></li>
+                                        <li><p>Property ID : </p></a></li>
+                                        <li><p>Price : </p></a></li>
+                                        <li><p>Property Size : </p></a></li>
                                         <li><p>Year Built :</p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
-                                        <li><p><span>HZ27</span></p></a></li>
-                                        <li><p><span>$130,000</span></p></a></li>
-                                        <li><p><span>1560 Sq Ft</span></p></a></li>
-                                        <li><p><span>2016-01-09</span></p></a></li>
+                                        <li><p><span>{{ $property->unique_key }}</span></p></a></li>
+                                        <li><p><span>$ {{ $property->price }}</span></p></a></li>
+                                        <li><p><span>{{ $property->size_property }}</span></p></a></li>
+                                        <li><p><span>2020-10-2</span></p></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
@@ -163,9 +165,9 @@
                                         <li><p>Garage Size :</p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
-                                        <li><p><span>8</span></p></a></li>
-                                        <li><p><span>4</span></p></a></li>
-                                        <li><p><span>2</span></p></a></li>
+                                        <li><p><span>{{ $property->bedroom }}</span></p></a></li>
+                                        <li><p><span>{{ $property->bathroom }}</span></p></a></li>
+                                        <li><p><span>{{ $property->garage }}</span></p></a></li>
                                         <li><p><span>200 SqFt</span></p></a></li>
                                     </ul>
                                 </div>
@@ -175,8 +177,8 @@
                                         <li><p>Property Status :</p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
-                                        <li><p><span>Apartment</span></p></a></li>
-                                        <li><p><span>For Sale</span></p></a></li>
+                                        <li><p><span>{{ $property->type_property }}</span></p></a></li>
+                                        <li><p><span>{{ $property->state_property }}</span></p></a></li>
                                     </ul>
                                 </div>
                             </div>

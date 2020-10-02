@@ -19,8 +19,9 @@ class PropertyController extends Controller
     public function details($id)
     {
         $property = Property::find($id);
-        return response()->json($property, 200);
-        //return view('numus.details');
+        $images = Image::where('property_id', $id)->get(); 
+        // return response()->json($property, 200);
+        return view('numus.details', ['property' => $property, 'images' => $images]);
     }
 
     public function search(Request $request)
