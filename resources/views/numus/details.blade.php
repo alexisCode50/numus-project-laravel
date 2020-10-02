@@ -112,7 +112,7 @@
             <div class="col-lg-5 col-xl-4">
                 <div class="single_property_social_share">
                     <div class="price float-right fn-400">
-                        <h2>$ {{ $property->price }} <small>/mo</small></h2>
+                        <h2>$ {{ number_format($property->price) }}</h2>
                     </div>
 
                 </div>
@@ -148,13 +148,13 @@
                                         <li><p>Property ID : </p></a></li>
                                         <li><p>Price : </p></a></li>
                                         <li><p>Property Size : </p></a></li>
-                                        <li><p>Year Built :</p></a></li>
+                                        <li><p>Mts Built : </p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
                                         <li><p><span>{{ $property->unique_key }}</span></p></a></li>
-                                        <li><p><span>$ {{ $property->price }}</span></p></a></li>
+                                        <li><p><span>$ {{ number_format($property->price) }}</span></p></a></li>
                                         <li><p><span>{{ $property->size_property }}</span></p></a></li>
-                                        <li><p><span>2020-10-2</span></p></a></li>
+                                        <li><p><span>{{ $property->size_land }}</span></p></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
@@ -162,13 +162,12 @@
                                         <li><p>Bedrooms :</p></a></li>
                                         <li><p>Bathrooms :</p></a></li>
                                         <li><p>Garage :</p></a></li>
-                                        <li><p>Garage Size :</p></a></li>
+                                        <li><p>Pool :</p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
                                         <li><p><span>{{ $property->bedroom }}</span></p></a></li>
                                         <li><p><span>{{ $property->bathroom }}</span></p></a></li>
-                                        <li><p><span>{{ $property->garage }}</span></p></a></li>
-                                        <li><p><span>200 SqFt</span></p></a></li>
+                                        <li><p><span>@if($property->pool == 1) Si @else No @endif </span></p></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
@@ -259,10 +258,10 @@
                             <h4 class="mb30">Location <small class="float-right">1421 San Pedro St, Los Angeles, CA 90015</small></h4>
                             <div class="property_video p0">
                                 <div class="thumb">
-                                    <div class="h400" id="map-canvas2"></div>
-                                    <div class="overlay_icon">
-                                        <a href="#"><img class="map_img_icon" src="images/header-logo.png" alt="header-logo.png"></a>
-                                    </div>
+                                    @php
+                                        $map =  htmlentities($property->map);
+                                        echo html_entity_decode($map);
+                                    @endphp
                                 </div>
                             </div>
                         </div>

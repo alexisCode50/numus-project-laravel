@@ -10,7 +10,7 @@
 					<div class="home_content">
 						<div class="home-text text-center">
 							<h2 class="fz55">Encuentra tu próxima propiedad</h2>
-							<p class="fz18 color-white">Propiedades de todo tipo desde $50,000 mxn</p>
+							<p class="fz18 color-white">Propiedades de todo tipo desde $50,000</p>
 						</div>
 						<div class="home_adv_srch_opt">
 
@@ -121,7 +121,7 @@
 											</ul>
 
 
-											<a class="fp_price" href="#">$ {{ $item->price }} <small>MXN</small></a>
+											<a class="fp_price" href="#">$ {{ number_format($item->price) }}</a>
 										</div>
 									</div>
 									<div class="details">
@@ -358,48 +358,53 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-xl-4">
-					<div class="properti_city">
-						<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/property/pc1.jpg')}}" alt="pc1.jpg"></div>
-						<div class="overlay">
-							<div class="details">
-								<h4>Montecristo</h4>
-								<p>24 Properties</p>
+					<a href="http://127.0.0.1:8000/search?title=&type_property=&location=5">
+						<div class="properti_city">
+							<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/home/p2.jpg')}}" alt="pc1.jpg"></div>
+							<div class="overlay">
+								<div class="details">
+									<h4>Montecristo</h4>
+								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="col-lg-8 col-xl-8">
-					<div class="properti_city">
-						<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/property/pc2.jpg')}}" alt="pc2.jpg"></div>
-						<div class="overlay">
-							<div class="details">
-								<h4>Country Club</h4>
-								<p>18 Properties</p>
+					<a href="http://127.0.0.1:8000/search?title=&type_property=&location=6">
+						<div class="properti_city">
+							<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/home/p1.jpg')}}" alt="p2.jpg"></div>
+							<div class="overlay">
+								<div class="details">
+									<h4>Country Club</h4>
+								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="col-lg-8 col-xl-8">
-					<div class="properti_city">
-						<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/property/pc3.jpg')}}" alt="pc3.jpg"></div>
-						<div class="overlay">
-							<div class="details">
-								<h4>Temozón</h4>
-								<p>89 Properties</p>
+					<a href="http://127.0.0.1:8000/search?title=&type_property=&location=7">
+						<div class="properti_city">
+							<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/home/p4.jpg')}}" alt="pc3.jpg"></div>
+							<div class="overlay">
+								<div class="details">
+									<h4>Temozón</h4>
+								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="col-lg-4 col-xl-4">
-					<div class="properti_city">
-						<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/property/pc4.jpg')}}" alt="pc4.jpg"></div>
-						<div class="overlay">
-							<div class="details">
-								<h4>Dzitya</h4>
-								<p>47 Properties</p>
+					<a href="http://127.0.0.1:8000/search?title=&type_property=&location=1">
+						<div class="properti_city">
+							<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/home/p3.jpg')}}" alt="pc4.jpg"></div>
+							<div class="overlay">
+								<div class="details">
+									<h4>Dzitya</h4>
+									{{-- <p>47 Properties</p> --}}
+								</div>
 							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>

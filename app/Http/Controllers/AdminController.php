@@ -34,12 +34,14 @@ class AdminController extends Controller
             'price' => 'required|numeric',
             'state_property' => 'required|string',
             'size_property' => 'required|string',
+            'size_land' => 'required|string',
             'bedroom' => 'required|numeric',
             'bathroom' => 'required|numeric',
             'garage' => 'required|numeric',
             'map' => 'required|string',
             'amenities' => 'required|string',
-            'outstanding' => 'required|numeric'
+            'outstanding' => 'required|numeric',
+            'pool' => 'required|numeric'
         ]);
 
         $property = new Property();
@@ -52,12 +54,14 @@ class AdminController extends Controller
         $property->price = $request->price;
         $property->state_property = $request->state_property;
         $property->size_property = $request->size_property;
+        $property->size_land = $request->size_land;
         $property->bedroom = $request->bedroom;
         $property->bathroom = $request->bathroom;
         $property->garage = $request->garage;
         $property->map = $request->map;
         $property->amenities = $request->amenities;
         $property->outstanding = $request->outstanding;
+        $property->pool = $request->pool;
         $property->save();
 
         \Session::flash('message', 'Registro Guardado');
@@ -83,12 +87,14 @@ class AdminController extends Controller
             'price' => 'required|numeric',
             'state_property' => 'required|string',
             'size_property' => 'required|string',
+            'size_land' => 'required|string',
             'bedroom' => 'required|numeric',
             'bathroom' => 'required|numeric',
             'garage' => 'required|numeric',
             'map' => 'required|string',
             'amenities' => 'required|string',
-            'outstanding' => 'required|numeric'
+            'outstanding' => 'required|numeric',
+            'pool' => 'required|numeric'
         ]);
 
         $property = Property::find($id);
@@ -100,12 +106,14 @@ class AdminController extends Controller
         $property->price = $request->price;
         $property->state_property = $request->state_property;
         $property->size_property = $request->size_property;
+        $property->size_land = $request->size_land;
         $property->bedroom = $request->bedroom;
         $property->bathroom = $request->bathroom;
         $property->garage = $request->garage;
         $property->map = $request->map;
         $property->amenities = $request->amenities;
         $property->outstanding = $request->outstanding;
+        $property->pool = $request->pool;
         $property->save();
 
         \Session::flash('message', 'Registro Actualizado');

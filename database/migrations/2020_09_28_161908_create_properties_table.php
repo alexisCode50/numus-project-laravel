@@ -23,14 +23,16 @@ class CreatePropertiesTable extends Migration
             $table->string('type_property');
             $table->integer('price');
             $table->string('state_property'); // veneder o rentar
-            $table->string('size_property'); // dimeciones de la propiedad
-            $table->decimal('bedroom', 4, 2);
-            $table->decimal('bathroom', 4, 2);
-            $table->decimal('garage', 4, 2);
+            $table->string('size_property'); // tamaño de la propiedad (metros construidos)
+            $table->string('size_land'); // tamaño de terreno
+            $table->string('bedroom');
+            $table->string('bathroom');
+            $table->string('garage');
             $table->text('map'); // iframe
             $table->text('amenities'); //descripcion 2
             $table->string('profile_picture')->default('');
             $table->integer('outstanding')->default(0);
+            $table->integer('pool')->default(0);
             $table->timestamps();
         });
     }
