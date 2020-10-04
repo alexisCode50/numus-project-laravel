@@ -13,13 +13,13 @@ class AdminController extends Controller
     {
         $variablesurl = $request->all();
         $data = Property::all();
-        return view('admin.index', ['data' => $data]);
+        return view('admin.property.index', ['data' => $data]);
     }
 
     public function create()
     {
-        $locations = Location::all();
-        return view('admin.create', compact('locations'));
+        $locations = Location::all(); // ubicaciones
+        return view('admin.property.create', compact('locations'));
     }
 
     public function store(Request $request)
@@ -73,7 +73,7 @@ class AdminController extends Controller
     {
         $property = Property::find($id);
         $locations = Location::all();
-        return view('admin.update', ['property' => $property, 'locations' => $locations]);
+        return view('admin.property.update', ['property' => $property, 'locations' => $locations]);
     }
 
     public function updateProperty(Request $request, $id)
@@ -126,7 +126,7 @@ class AdminController extends Controller
         $variablesurl = $request->all();
         $property = Property::find($id);
         $images = Image::where('property_id', $id)->paginate(5)->appends($variablesurl);
-        return view('admin.view', ['property' => $property, 'images' => $images]);
+        return view('admin.property.view', ['property' => $property, 'images' => $images]);
     }
 
     public function delete($id)

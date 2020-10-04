@@ -12,7 +12,7 @@ class ImageController extends Controller
     public function add($id)
     {
         $property = Property::find($id);
-        return view('admin.add', compact('property'));
+        return view('admin.image.add', compact('property'));
     }
 
     public function save(Request $request)

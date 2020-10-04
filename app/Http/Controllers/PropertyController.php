@@ -36,7 +36,7 @@ class PropertyController extends Controller
             $data = Property::where('title', 'LIKE', '%'.$title.'%')
                             ->orWhere('type_property', $type_property)
                             ->orWhere('location_id', $location_id)
-                            ->paginate(8)
+                            ->paginate(3) // modificar a
                             ->appends($variablesurl); // evita que se pierda la paginacion
         } 
         // else {
