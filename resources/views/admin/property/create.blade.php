@@ -4,7 +4,7 @@
     <!-- Page Heading -->
     <h1 class="h1 mb-2 text-gray-800">Registar Propiedad</h1>
 
-    <a href="/admin" class="btn btn-warning btn-icon-split my-3">
+    <a href="{{ route('properties-en') }}" class="btn btn-warning btn-icon-split my-3">
         <span class="text">Regresar</span>
     </a>
 
@@ -21,7 +21,7 @@
     </div>
     <div class="row my-3">
         <div class="col-md-10 m-auto">
-            <form action="{{ route('properties-create') }}" method="POST">
+            <form action="{{ route('properties-create-en') }}" method="POST">
                 @csrf
 
                 <div class="form-row">
@@ -62,39 +62,11 @@
                         <input type="number" class="form-control" id="price" name="price">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="state_property">Estado de Propiedad</label>
+                        <label for="state_property">Tipo de Oferta</label>
                         <select class="form-control" id="state_property" name="state_property">
-                            <option>Venta</option>
-                            <option>Renta</option>
+                            <option>For Sale</option>
+                            <option>For Rent</option>
                         </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="size_property">Metros Construidos</label>
-                        <input type="text" class="form-control" id="size_property" name="size_property">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="size_land">Tamaño del Inmueble</label>
-                        <input type="text" class="form-control" id="size_land" name="size_land">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="bedroom">Cuartos</label>
-                        <input type="number" class="form-control" id="bedroom" name="bedroom">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="bathroom">Baños</label>
-                        <input type="number" class="form-control" id="bathroom" name="bathroom">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="garage">Garage</label>
-                        <input type="number" class="form-control" id="garage" name="garage">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-12">
-                        <label for="map">Mapa</label>
-                        <textarea class="form-control" id="map" name="map" rows="3"></textarea>
                     </div>
                 </div>
                 <div class="form-row">
@@ -107,15 +79,6 @@
                     <div class="form-group col-md-3">
                         <label for="outstanding">Destacado</label>
                         <select class="form-control" id="outstanding" name="outstanding">
-                            <option value="1">Si</option>
-                            <option value="0">No</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-3">
-                        <label for="pool">Picina</label>
-                        <select class="form-control" id="pool" name="pool">
                             <option value="1">Si</option>
                             <option value="0">No</option>
                         </select>

@@ -49,48 +49,57 @@
                         <div class="sidebar_listing_list style2 mobile_sytle_sidebar mb0">
                             <div class="sidebar_advanced_search_widget">
                                 <h4 class="mb25">Búsqueda Avanzada<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
-                                <ul class="sasw_list style2 mb0">
-                                    <li class="search_area">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Palabra clave">
-                                            <label for="exampleInputEmail"><span class="flaticon-magnifying-glass"></span></label>
-                                        </div>
-                                    </li>
-                                    <li class="search_area">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="exampleInputEmail" placeholder="Ubicación">
-                                            <label for="exampleInputEmail"><span class="flaticon-maps-and-flags"></span></label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="search_option_two">
-                                            <div class="candidate_revew_select">
-                                                <select class="selectpicker w100 show-tick">
-                                                    <option>Renta</option>
-                                                    <option>Venta</option>
-                                                </select>
+                                <form action="{{ route('search') }}" method="GET">
+                                    <ul class="sasw_list style2 mb0">
+                                        <li class="search_area">
+                                            <div class="form-group">
+                                                <input type="text" name="title" class="form-control" id="title" placeholder="Palabra clave">
+                                                <label for="title"><span class="flaticon-magnifying-glass"></span></label>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="search_option_two">
-                                            <div class="candidate_revew_select">
-                                                <select class="selectpicker w100 show-tick">
-                                                    <option>Tipo de propiedad</option>
-                                                    <option>Departamento</option>
-                                                    <option>Casa</option>
-                                                    <option>Townhouse</option>
-                                                    <option>Terreno</option>
-                                                </select>
+                                        </li>
+                                        <li>
+                                            <div class="search_option_two">
+                                                <div class="candidate_revew_select">
+                                                    <select class="selectpicker w100 show-tick" name="type_property">
+                                                        <option>Tipo de propiedad</option>
+                                                        <option>Departamento</option>
+                                                        <option>Casa</option>
+                                                        <option>Townhouse</option>
+                                                        <option>Terreno</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="search_option_button">
-                                            <button type="submit" class="btn btn-block btn-thm">Buscar</button>
-                                        </div>
-                                    </li>
-                                </ul>
+                                        </li>
+                                        <li>
+                                            <div class="search_option_two">
+                                                <div class="candidate_revew_select">
+                                                    <select class="selectpicker w100 show-tick" name="location">
+                                                        <option>Ubicación</option>
+                                                        <option>Colonia Mexico</option>
+                                                        <option>Montes de Ame</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="search_option_two">
+                                                <div class="candidate_revew_select">
+                                                    <select class="selectpicker w100 show-tick">
+                                                        <option>Tipo de Oferta</option>
+                                                        <option>Renta</option>
+                                                        <option>Venta</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="search_option_button">
+                                                <button type="submit" class="btn btn-block btn-thm">Buscar</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -152,8 +161,8 @@
                                     <ul class="list-inline-item">
                                         <li><p><span>{{ $property->unique_key }}</span></p></a></li>
                                         <li><p><span>$ {{ number_format($property->price) }}</span></p></a></li>
-                                        <li><p><span>{{ $property->size_property }}</span></p></a></li>
-                                        <li><p><span>{{ $property->size_land }}</span></p></a></li>
+                                        <li><p><span>{{ $detail->size_property }}</span></p></a></li>
+                                        <li><p><span>{{ $detail->size_land }}</span></p></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
@@ -164,9 +173,10 @@
                                         <li><p>Pool :</p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
-                                        <li><p><span>{{ $property->bedroom }}</span></p></a></li>
-                                        <li><p><span>{{ $property->bathroom }}</span></p></a></li>
-                                        <li><p><span>@if($property->pool == 1) Si @else No @endif </span></p></a></li>
+                                        <li><p><span>{{ $detail->bedroom }}</span></p></a></li>
+                                        <li><p><span>{{ $detail->bathroom }}</span></p></a></li>
+                                        <li><p><span>{{ $detail->garage }}</span></p></a></li>
+                                        <li><p><span>@if($detail->pool == 1) Si @else No @endif </span></p></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
@@ -254,11 +264,11 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="application_statics mt30">
-                            <h4 class="mb30">Location <small class="float-right">1421 San Pedro St, Los Angeles, CA 90015</small></h4>
+                            <h4 class="mb30">Location <small class="float-right">{{ $property->direction }}</small></h4>
                             <div class="property_video p0">
                                 <div class="thumb">
                                     @php
-                                        $map =  htmlentities($property->map);
+                                        $map =  htmlentities($detail->map);
                                         echo html_entity_decode($map);
                                     @endphp
                                 </div>
@@ -279,7 +289,7 @@
                                 <div class="media-body">
 
                                     <p class="mb0">Nombre de la propiedad</p>
-                                    <p class="mb0">ID: 00000000</p>
+                                    <p class="mb0">ID: {{ $property->unique_key}}</p>
 
                                   </div>
                             </div>
@@ -316,50 +326,57 @@
                 <div class="sidebar_listing_list style2 mobile_sytle_sidebar mb0">
                     <div class="sidebar_advanced_search_widget">
                         <h4 class="mb25">Búsqueda Avanzada<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
-                        <ul class="sasw_list style2 mb0">
-                            <li class="search_area">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Palabra clave">
-                                    <label for="exampleInputEmail"><span class="flaticon-magnifying-glass"></span></label>
-                                </div>
-                            </li>
-                            <li class="search_area">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="exampleInputEmail" placeholder="Ubicación">
-                                    <label for="exampleInputEmail"><span class="flaticon-maps-and-flags"></span></label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="search_option_two">
-                                    <div class="candidate_revew_select">
-                                        <select class="selectpicker w100 show-tick">
-                                            <option>Renta</option>
-                                            <option>Venta</option>
-                                        </select>
+                        <form action="{{ route('search') }}" method="GET">
+                            <ul class="sasw_list style2 mb0">
+                                <li class="search_area">
+                                    <div class="form-group">
+                                        <input type="text" name="title" class="form-control" id="title" placeholder="Palabra clave">
+                                        <label for="title"><span class="flaticon-magnifying-glass"></span></label>
                                     </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="search_option_two">
-                                    <div class="candidate_revew_select">
-                                        <select class="selectpicker w100 show-tick">
-                                            <option>Tipo de propiedad</option>
-                                            <option>Departamento</option>
-                                            <option>Casa</option>
-                                            <option>Townhouse</option>
-                                            <option>Terreno</option>
-                                        </select>
+                                </li>
+                                <li>
+                                    <div class="search_option_two">
+                                        <div class="candidate_revew_select">
+                                            <select class="selectpicker w100 show-tick" name="type_property">
+                                                <option>Tipo de propiedad</option>
+                                                <option>Departamento</option>
+                                                <option>Casa</option>
+                                                <option>Townhouse</option>
+                                                <option>Terreno</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-
-
-                            <li>
-                                <div class="search_option_button">
-                                    <button type="submit" class="btn btn-block btn-thm">Buscar</button>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                                <li>
+                                    <div class="search_option_two">
+                                        <div class="candidate_revew_select">
+                                            <select class="selectpicker w100 show-tick" name="location">
+                                                <option>Ubicación</option>
+                                                <option>Colonia Mexico</option>
+                                                <option>Montes de Ame</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="search_option_two">
+                                        <div class="candidate_revew_select">
+                                            <select class="selectpicker w100 show-tick">
+                                                <option>Tipo de Oferta</option>
+                                                <option>Renta</option>
+                                                <option>Venta</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div class="search_option_button">
+                                        <button type="submit" class="btn btn-block btn-thm">Buscar</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
                     </div>
                 </div>
                 <div class="terms_condition_widget">

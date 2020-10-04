@@ -4,7 +4,7 @@
     <!-- Page Heading -->
     <h1 class="h1 mb-2 text-gray-800">Editar Propiedad</h1>
 
-    <a href="{{ route('properties-en') }}" class="btn btn-warning btn-icon-split my-3">
+    <a href="{{ route('properties-es') }}" class="btn btn-warning btn-icon-split my-3">
         <span class="text">Regresar</span>
     </a>
 
@@ -21,7 +21,7 @@
     </div>
     <div class="row my-3">
         <div class="col-md-10 m-auto">
-            <form action="{{ route('properties-update-en', $property->id) }}" method="POST">
+            <form action="{{ route('properties-update', $property->id) }}" method="POST">
                 @method('PUT')
                 @csrf
 

@@ -11,50 +11,57 @@
                         <div class="sidebar_listing_list style2 mobile_sytle_sidebar mb0">
                             <div class="sidebar_advanced_search_widget">
                                 <h4 class="mb25">Búsqueda Avanzada<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
-                                <ul class="sasw_list style2 mb0">
-                                    <li class="search_area">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="exampleInputName1" placeholder="Palabra clave">
-                                            <label for="exampleInputEmail"><span class="flaticon-magnifying-glass"></span></label>
-                                        </div>
-                                    </li>
-                                    <li class="search_area">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="exampleInputEmail" placeholder="Ubicación">
-                                            <label for="exampleInputEmail"><span class="flaticon-maps-and-flags"></span></label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="search_option_two">
-                                            <div class="candidate_revew_select">
-                                                <select class="selectpicker w100 show-tick">
-                                                    <option>Renta</option>
-                                                    <option>Venta</option>
-                                                </select>
+                                <form action="{{ route('search') }}" method="GET">
+                                    <ul class="sasw_list style2 mb0">
+                                        <li class="search_area">
+                                            <div class="form-group">
+                                                <input type="text" name="title" class="form-control" id="title" placeholder="Palabra clave">
+                                                <label for="title"><span class="flaticon-magnifying-glass"></span></label>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="search_option_two">
-                                            <div class="candidate_revew_select">
-                                                <select class="selectpicker w100 show-tick">
-                                                    <option>Tipo de propiedad</option>
-                                                    <option>Departamento</option>
-                                                    <option>Casa</option>
-                                                    <option>Townhouse</option>
-                                                    <option>Terreno</option>
-                                                </select>
+                                        </li>
+                                        <li>
+                                            <div class="search_option_two">
+                                                <div class="candidate_revew_select">
+                                                    <select class="selectpicker w100 show-tick" name="type_property">
+                                                        <option>Tipo de propiedad</option>
+                                                        <option>Departamento</option>
+                                                        <option>Casa</option>
+                                                        <option>Townhouse</option>
+                                                        <option>Terreno</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-
-
-                                    <li>
-                                        <div class="search_option_button">
-                                            <button type="submit" class="btn btn-block btn-thm">Buscar</button>
-                                        </div>
-                                    </li>
-                                </ul>
+                                        </li>
+                                        <li>
+                                            <div class="search_option_two">
+                                                <div class="candidate_revew_select">
+                                                    <select class="selectpicker w100 show-tick" name="location">
+                                                        <option>Ubicación</option>
+                                                        <option>Colonia Mexico</option>
+                                                        <option>Montes de Ame</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="search_option_two">
+                                                <div class="candidate_revew_select">
+                                                    <select class="selectpicker w100 show-tick">
+                                                        <option>Tipo de Oferta</option>
+                                                        <option>Renta</option>
+                                                        <option>Venta</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="search_option_button">
+                                                <button type="submit" class="btn btn-block btn-thm">Buscar</button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -241,25 +248,24 @@
                                 <div class="feat_property list" style="height: 150px;">
                                     <div class="thumb">
                                         <img class="img-whp" src="{{ asset('images/'.$item->profile_picture) }}" alt="{{ $item->title }}">
-
                                     </div>
                                     <div class="details">
                                         <div class="tc_content">
                                             <div class="dtls_headr">
                                                 <ul class="tag">
-                                                    <li class="list-inline-item"><a href="#">{{ $item->state_property }}</a></li>
+                                                    <li class="list-inline-item"><a>{{ $item->state_property }}</a></li>
                                                     @if($item->outstanding == 1)
                                                         <li class="list-inline-item">
-                                                            <a href="#">
+                                                            <a>
                                                                 Destacado
                                                             </a>
                                                         </li>
                                                     @endif
                                                 </ul>
-                                                <a class="fp_price" href="#">$ {{ number_format($item->price) }}</a>
+                                                <a class="fp_price" href="{{ route('detail-pro', $item->id) }}">$ {{ number_format($item->price) }}</a>
                                             </div>
                                             <p class="text-thm">{{ $item->type_property }}</p>
-                                            <h4>{{ $item->title }}</h4>
+                                            <h4><a href="{{ route('detail-pro', $item->id) }}">{{ $item->title }}</a></h4>
                                             <p><span class="flaticon-placeholder"></span>{{ $item->direction }}</p>
 
                                         </div>
@@ -272,174 +278,6 @@
                         <p>No hay resultados de busqueda</p>
                     @endif
 
-                    {{--
-                    <div class="col-lg-12">
-                        <div class="feat_property list" style="height: 150px;">
-                            <div class="thumb">
-                                <img class="img-whp" src="images/property/fp3.jpg" alt="fp3.jpg">
-
-                            </div>
-                            <div class="details">
-                                <div class="tc_content">
-                                    <div class="dtls_headr">
-                                        <ul class="tag">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$3,500,000<small>mxn</small></a>
-                                    </div>
-                                    <p class="text-thm">Casa</p>
-                                    <h4>Casa Familiar de lujo </h4>
-                                    <p><span class="flaticon-placeholder"></span> Ubicación </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="feat_property list" style="height: 150px;">
-                            <div class="thumb">
-                                <img class="img-whp" src="images/property/fp2.jpg" alt="fp2.jpg">
-
-                            </div>
-                            <div class="details">
-                                <div class="tc_content">
-                                    <div class="dtls_headr">
-                                        <ul class="tag">
-                                            <li class="list-inline-item"><a href="#">Renta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
-                                    </div>
-                                    <p class="text-thm">Departamento</p>
-                                    <h4>Departamento de lujo en el norte de mérida</h4>
-                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="feat_property list" style="height: 150px;">
-                            <div class="thumb">
-                                <img class="img-whp" src="images/property/fp15.jpg" alt="fp15.jpg">
-
-                            </div>
-                            <div class="details">
-                                <div class="tc_content">
-                                    <div class="dtls_headr">
-                                        <ul class="tag">
-                                            <li class="list-inline-item"><a href="#">Renta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
-                                    </div>
-                                    <p class="text-thm">Departamento</p>
-                                    <h4>Departamento de lujo en el norte de mérida</h4>
-                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="feat_property list" style="height: 150px;">
-                            <div class="thumb">
-                                <img class="img-whp" src="images/property/fp16.jpg" alt="fp16.jpg">
-
-                            </div>
-                            <div class="details">
-                                <div class="tc_content">
-                                    <div class="dtls_headr">
-                                        <ul class="tag">
-                                            <li class="list-inline-item"><a href="#">Renta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
-                                    </div>
-                                    <p class="text-thm">Departamento</p>
-                                    <h4>Departamento de lujo en el norte de mérida</h4>
-                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="feat_property list" style="height: 150px;">
-                            <div class="thumb">
-                                <img class="img-whp" src="images/property/fp17.jpg" alt="fp17.jpg">
-
-                            </div>
-                            <div class="details">
-                                <div class="tc_content">
-                                    <div class="dtls_headr">
-                                        <ul class="tag">
-                                            <li class="list-inline-item"><a href="#">Renta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
-                                    </div>
-                                    <p class="text-thm">Departamento</p>
-                                    <h4>Departamento de lujo en el norte de mérida</h4>
-                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="feat_property list" style="height: 150px;">
-                            <div class="thumb">
-                                <img class="img-whp" src="images/property/fp18.jpg" alt="fp18.jpg">
-
-                            </div>
-                            <div class="details">
-                                <div class="tc_content">
-                                    <div class="dtls_headr">
-                                        <ul class="tag">
-                                            <li class="list-inline-item"><a href="#">Renta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
-                                    </div>
-                                    <p class="text-thm">Departamento</p>
-                                    <h4>Departamento de lujo en el norte de mérida</h4>
-                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="feat_property list" style="height: 150px;">
-                            <div class="thumb">
-                                <img class="img-whp" src="images/property/fp19.jpg" alt="fp19.jpg">
-
-                            </div>
-                            <div class="details">
-                                <div class="tc_content">
-                                    <div class="dtls_headr">
-                                        <ul class="tag">
-                                            <li class="list-inline-item"><a href="#">Renta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>mxn</small></a>
-                                    </div>
-                                    <p class="text-thm">Departamento</p>
-                                    <h4>Departamento de lujo en el norte de mérida</h4>
-                                    <p><span class="flaticon-placeholder"></span> Country Towers, Altabrisa</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    --}}
                     {{ $data->links() }}
 
                     

@@ -2,7 +2,7 @@
 
 @section('admin')
 
-    <h1>Propiedades En Ingles</h1>
+    <h1>Propiedades En Español</h1>
 
     <div class="row">
         <div class="col-md-12">
@@ -15,7 +15,7 @@
                 </div>
             @endif
 
-            <a href="{{ route('properties-create-view-en') }}"  class="btn btn-primary btn-large my-3">Registrar Propiedad</a>
+            <a href="{{ route('properties-create-view') }}" class="btn btn-primary btn-large my-3">Registrar Propiedad</a>
             <div class="table-responsive my-5">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
@@ -41,13 +41,17 @@
                                 <td>{{ $item->price }}</td>
                                 <td>{{ $item->state_property }}</td>
                                 <td>
-                                    <form action="{{ route('properties-delete-en', $item->id) }}" method="POST">
+                                    <form action="{{ route('properties-delete', $item->id) }}" method="POST">
                             
-                                        <a href="{{ route('properties-update-view-en', $item->id) }}" class="btn btn-primary btn-circle btn-sm mb-1">
+                                        <a href="{{ route('properties-update-view', $item->id) }}" class="btn btn-primary btn-circle btn-sm mb-1">
                                             <i class="fas fa-pen"></i>
                                         </a>
 
-                                        <a href="{{ route('properties-view-en', $item->id) }}"  class="btn btn-warning btn-circle btn-sm mb-1">
+                                        <a href="{{ route('properties-view', $item->id) }}"  class="btn btn-success btn-circle btn-sm mb-1">
+                                            <i class="fas fa-image"></i>
+                                        </a>
+
+                                        <a href="{{ route('properties-view', $item->id) }}"  class="btn btn-warning btn-circle btn-sm mb-1">
                                             <i class="fas fa-eye"></i>
                                         </a>
                                         

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Property;
+use App\Propiedad;
 use App\Image;
 
 class ImageController extends Controller
@@ -46,7 +47,19 @@ class ImageController extends Controller
         return redirect()->back();
     }
 
-    public function profileImage($id)
+    public function profileImageEs($id)
+    {
+        $image = Image::find($id);
+        $property = Propiedad::find($image->property_id);
+        $property->profile_picture = $image->route_img;
+        $property->save();
+
+        \Session::flash('message', 'Imagen Establecida');
+
+        return redirect()->back();
+    }
+
+    public function profileImageEn($id)
     {
         $image = Image::find($id);
         $property = Property::find($image->property_id);

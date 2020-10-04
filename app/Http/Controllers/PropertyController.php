@@ -3,24 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Propiedad;
 use App\Property;
 use App\Image;
 use App\Location;
+use App\Detail;
 
 class PropertyController extends Controller
 {
     public function index()
     {
-        $property = Property::all();
+        $property = Propiedad::all();
         $location = Location::all();
         return view('numus.index', ['property' => $property, 'location' => $location]);
     }
 
     public function details($id)
     {
-        $property = Property::find($id);
-        $images = Image::where('property_id', $id)->get(); 
-        return view('numus.details', ['property' => $property, 'images' => $images]);
+        $property = Propiedad::find($id);
+        $detail = Detail::where('unique_key_property', $property->unique_key)->first();
+        $images = Image::where('unique_key', $property->unique_key)->get(); 
+        return view('numus.details', ['property' => $property, 'detail' => $detail, 'images' => $images]);
     }
 
     public function search(Request $request)
@@ -33,7 +36,7 @@ class PropertyController extends Controller
             $type_property = $request->get('type_property');
             $location_id = $request->get('location');
 
-            $data = Property::where('title', 'LIKE', '%'.$title.'%')
+            $data = Propiedad::where('title', 'LIKE', '%'.$title.'%')
                             ->orWhere('type_property', $type_property)
                             ->orWhere('location_id', $location_id)
                             ->paginate(3) // modificar a

@@ -4,7 +4,7 @@
     <!-- Page Heading -->
     <h1 class="h1 mb-2 text-gray-800">Informacion, Detalles e Imagenes de la Propiedad</h1>
 
-    <a href="{{ route('properties-en') }}" class="btn btn-warning btn-icon-split my-3">
+    <a href="{{ route('properties-es') }}" class="btn btn-warning btn-icon-split my-3">
         <span class="text">Regresar</span>
     </a>
 
@@ -52,44 +52,46 @@
                             <th>Precio</th>
                             <td>{{ $property->price}}</td>
                         </tr>
-
-                        @if($detail != null)
-                            <tr>
-                                <th>Estado</th>
-                                <td>{{ $property->state_property }}</td>
-                            </tr>
-                            <tr>
-                                <th>Mts construidos</th>
-                                <td>{{ $detail->size_property }}</td>
-                            </tr>
-                            <tr>
-                                <th>Mts Terreno</th>
-                                <td>{{ $detail->size_land }}</td>
-                            </tr>
-                            <tr>
-                                <th>Cuartos</th>
-                                <td>{{ $detail->bedroom}}</td>
-                            </tr>
-                            <tr>
-                                <th>Baños</th>
-                                <td>{{ $detail->bathroom}}</td>
-                            </tr>
-                            <tr>
-                                <th>Garage</th>
-                                <td>{{ $detail->garage }}</td>
-                            </tr>
-                            <tr>
-                                <th>Mapa</th>
-                                <td>
-                                    @if($detail->map != '')
-                                        Si
-                                    @else
-                                        No
-                                    @endif
-                                </td>
-                            </tr>
-                        @endif
-                        
+                        <tr>
+                            <th>Estado</th>
+                            <td>{{ $property->state_property }}</td>
+                        </tr>
+                            @if($detail != null)
+                                <tr>
+                                    <th>Estado</th>
+                                    <td>{{ $property->state_property }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Mts construidos</th>
+                                    <td>{{ $detail->size_property }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Mts Terreno</th>
+                                    <td>{{ $detail->size_land }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Cuartos</th>
+                                    <td>{{ $detail->bedroom}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Baños</th>
+                                    <td>{{ $detail->bathroom}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Garage</th>
+                                    <td>{{ $detail->garage }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Mapa</th>
+                                    <td>
+                                        @if($detail->map != '')
+                                            Si
+                                        @else
+                                            No
+                                        @endif
+                                    </td>
+                                </tr>
+                            @endif
                         <tr>
                             <th>Amenidades</th>
                             <td>{{ $property->amenities }}</td>
@@ -139,6 +141,9 @@
     
     <div class="row my-5 justify-content-center">
         <div class="col-md-8">
+            <a href="{{ route('image-add', $property->id) }}"  class="btn btn-success mb-2">
+                Agregar Imagenes  <i class="fas fa-image"></i>
+            </a>
             @if (count($images) > 0)
                 <div class="row my-5 justify-content-center">
                     <div class="col-md-8">
@@ -156,9 +161,19 @@
                                             <img src="{{ asset('images/'.$img->route_img) }}" width="200" height="200" class="img-fluid" alt="">
                                         </td>
                                         <td>
-                                            <a href="{{ route('image-profile-en', $img->id) }}" class="btn btn-primary mb-2">
-                                                Establecer como foto de perfil
-                                            </a>
+                                            <form action="{{ route('image-delete', $img->id) }}" method="POST">
+                            
+                                                <a href="{{ route('image-profile-es', $img->id) }}" class="btn btn-primary mb-2">
+                                                    Establecer como foto de perfil
+                                                </a>
+                                                
+                                                @csrf
+                                                @method('DELETE')
+                                
+                                                <button type="submit" class="btn btn-danger">
+                                                    Eliminar
+                                                </button>
+                                            </form>
                                         </td>
                                     </tbody>
                                 @endforeach
@@ -169,7 +184,6 @@
             @else
                 <div class="mx-auto">
                     <h3>No hay imagenes</h3>
-                    <p>Agregar Imagenes en propiedades en español</p>
                 </div>
             @endif
         </div>

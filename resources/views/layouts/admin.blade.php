@@ -29,7 +29,7 @@
                 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                     <!-- Sidebar - Brand -->
-                    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
+                    <a class="sidebar-brand d-flex align-items-center justify-content-center" hhref="{{ route('admin') }}">
                     <div class="sidebar-brand-icon">
                         <i class="fas fa-user"></i>
                     </div>
@@ -41,7 +41,7 @@
 
                     <!-- Nav Item - Dashboard -->
                     <li class="nav-item active">
-                    <a class="nav-link" href="/admin">
+                    <a class="nav-link" href="{{ route('admin') }}">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Dashboard</span></a>
                     </li>
@@ -56,13 +56,25 @@
 
                     
                     <li class="nav-item">
-                    <a class="nav-link" href="{{ route('admin') }}">
+                    <a class="nav-link" href="{{ route('properties-es') }}">
                         <i class="fas fa-fw fa-layegrr-oup"></i>
-                        <span>Propiedades</span></a>
+                        <span>Propiedades Es</span></a>
                     </li>
 
                     <li class="nav-item">
-                    <a class="nav-link" href="/admin/location">
+                    <a class="nav-link" href="{{ route('properties-en') }}">
+                        <i class="fas fa-fw fa-layegrr-oup"></i>
+                        <span>Propiedades En</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="{{ route('details') }}">
+                        <i class="fas fa-fw fa-layegrr-oup"></i>
+                        <span>Detalles</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="{{ route('location') }}">
                         <i class="fas fa-fw fa-layegrr-oup"></i>
                         <span>Localizaciones</span></a>
                     </li>
