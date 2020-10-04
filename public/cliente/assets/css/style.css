@@ -3357,7 +3357,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   margin-top: 0;
 }
 .home-three:before{
-  background-color: rgba(29, 41, 62, .702);
+  background-color: rgba(29, 41, 62, 0.1);
   bottom: 0;
   border-radius: 8px;
   content:"";
@@ -3505,7 +3505,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 .home1-overlay:before {
   content: "";
-  background-color: rgb(29, 41, 62);
+  background-color: rgb(29, 41, 62, 0.1);
   opacity: 0.9;
   position: absolute;
   bottom: 0;
@@ -3572,7 +3572,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   height: 600px;
 }
 .listing-home-bg:before {
-  background-color: rgba(29, 41, 62, 0.6);
+  background-color: rgba(29, 41, 62, 0.1);
   bottom: 0;
   content: "";
   left: 0;
@@ -3595,7 +3595,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   position: relative;
 }
 .home-listing-slider .banner-style-one .slide:before{
-  background-color: rgba(29, 41, 62, 0.6);
+  background-color: rgba(29, 41, 62, 0.1);
   left: 0;
   position: absolute;
   right: 0;
