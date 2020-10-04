@@ -10,8 +10,8 @@ Auth::routes();
 Route::get('/', 'PropertyController@index')->name('home');
 Route::get('/search', 'PropertyController@search')->name('search');
 Route::get('/details/{id}', 'PropertyController@details');
-Route::get('/contact', 'PropertyController@contact');
-Route::get('/about', 'PropertyController@about');
+Route::get('/contact', 'PropertyController@contact')->name('contact');
+Route::get('/about', 'PropertyController@about')->name('about');
 
 
 // admin routes

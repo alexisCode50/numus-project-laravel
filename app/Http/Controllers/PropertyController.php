@@ -20,7 +20,6 @@ class PropertyController extends Controller
     {
         $property = Property::find($id);
         $images = Image::where('property_id', $id)->get(); 
-        // return response()->json($property, 200);
         return view('numus.details', ['property' => $property, 'images' => $images]);
     }
 
@@ -37,7 +36,7 @@ class PropertyController extends Controller
             $data = Property::where('title', 'LIKE', '%'.$title.'%')
                             ->orWhere('type_property', $type_property)
                             ->orWhere('location_id', $location_id)
-                            ->paginate(10)
+                            ->paginate(8)
                             ->appends($variablesurl); // evita que se pierda la paginacion
         } 
         // else {
@@ -46,9 +45,6 @@ class PropertyController extends Controller
         // return response()->json($data, 200);
         
         return view('numus.search', compact('data'));
-    }
-    public function details2(){
-        return view('numus.details');
     }
 
     public function contact(){

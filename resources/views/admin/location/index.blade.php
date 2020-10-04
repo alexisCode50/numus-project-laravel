@@ -31,6 +31,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
+                            <th scope="col">ID</th>
                             <th scope="col">Nombre</th>
                             <th></th>
                         </tr>
@@ -38,6 +39,7 @@
                     <tbody>
                         @foreach ($locations as $item)
                             <tr>
+                                <th>{{ $item->id }}</th>
                                 <th>{{ $item->name }}</th>
                                 <td>
                                     <form action="{{ route('location-delete', $item->id) }}" method="POST">

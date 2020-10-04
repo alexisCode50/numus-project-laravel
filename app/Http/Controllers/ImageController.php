@@ -22,23 +22,27 @@ class ImageController extends Controller
             'unique_key' => 'required|string',
             'image' => 'required'
         ]);
-        
-        if($request->has('image')){
-            foreach($request->file('image') as $file){
-                $path = public_path() . '/images';
-                $fileName = uniqid() . $file->getClientOriginalName();
-                $file->move($path, $fileName);
 
-                $data = new Image();
-                $data->property_id = $request->property_id;
-                $data->route_img = $fileName;
-                $data->unique_key = $request->unique_key;
-                $data->save();
+        try {
+            if($request->has('image')){
+                foreach($request->file('image') as $file){
+                    $path = public_path() . '/images';
+                    $fileName = uniqid() . $file->getClientOriginalName();
+                    $file->move($path, $fileName);
+    
+                    $data = new Image();
+                    $data->property_id = $request->property_id;
+                    $data->route_img = $fileName;
+                    $data->unique_key = $request->unique_key;
+                    $data->save();
+                }
+    
+                \Session::flash('message', 'Registro Exitoso');
             }
-
-            \Session::flash('message', 'Registro Exitoso');
+        } catch (\Throwable $th) {
+            \Session::flash('message', 'Ocurrio un error');
         }
-
+        
         return redirect()->back();
     }
 

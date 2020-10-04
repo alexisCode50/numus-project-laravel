@@ -163,7 +163,7 @@
     <div class="row my-5 justify-content-center">
         <div class="col-md-4 mx-auto" >
             @php
-                $map =  htmlentities($property->description);
+                $map =  htmlentities($property->map);
                 echo html_entity_decode($map);
             @endphp
         </div>

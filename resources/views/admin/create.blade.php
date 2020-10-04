@@ -71,8 +71,12 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-3">
-                        <label for="size_property">Dimenciones</label>
+                        <label for="size_property">Metros Construidos</label>
                         <input type="text" class="form-control" id="size_property" name="size_property">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="size_land">Tamaño del Inmueble</label>
+                        <input type="text" class="form-control" id="size_land" name="size_land">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="bedroom">Cuartos</label>
@@ -100,9 +104,18 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
                         <label for="outstanding">Destacado</label>
                         <select class="form-control" id="outstanding" name="outstanding">
+                            <option value="1">Si</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="pool">Picina</label>
+                        <select class="form-control" id="pool" name="pool">
                             <option value="1">Si</option>
                             <option value="0">No</option>
                         </select>

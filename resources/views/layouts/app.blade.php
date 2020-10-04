@@ -98,7 +98,7 @@
 <link rel="stylesheet" href="{{ asset('cliente/assets/css/responsive.css')}}">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 <!-- Title -->
-<title>Numus | Inicio</title>
+<title>Numus</title>
 <!-- Favicon -->
 <link href="{{ asset('cliente/assets/images/icon_black.svg')}}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="{{ asset('cliente/assets/images/icon_black.svg')}}" sizes="128x128" rel="shortcut icon" />
@@ -138,19 +138,19 @@
 		        <ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
 
 		           <li class="last">
-		                <a href="page-contact.html"><span class="title">Inicio</span></a>
+		                <a href="{{ route('home') }}"><span class="title">Inicio</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="page-contact.html"><span class="title">Nosotros</span></a>
+		                <a href="{{ route('about') }}"><span class="title">Nosotros</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="page-contact.html"><span class="title">Propiedades</span></a>
+		                <a href="{{ route('home') }}"><span class="title">Propiedades</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="page-contact.html"><span class="title">How to buy</span></a>
+		                <a href="{{ route('home') }}"><span class="title">How to buy</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="page-contact.html"><span class="title">Contacto</span></a>
+		                <a href="{{ route('contact') }}"><span class="title">Contacto</span></a>
                     </li>
 
                     <a href="#" class="btn flaticon-user" data-toggle="modal" data-target=".bd-example-modal-lg"> <span class="dn-lg"></span></a>
