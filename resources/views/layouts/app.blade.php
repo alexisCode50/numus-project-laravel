@@ -153,13 +153,11 @@
 		                <a href="{{ route('contact') }}"><span class="title">Contacto</span></a>
                     </li>
 
-                    <a href="#" class="btn flaticon-user" data-toggle="modal" data-target=".bd-example-modal-lg"> <span class="dn-lg"></span></a>
-
                     <li class="last" style="margin-right: -25px">
-		                <a href=""><span class="title">Es /</span></a>
+		                <a href=""><span class="title"><img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/mexico_25px.png')}}"> </span></a>
                     </li>
                     <li class="last">
-		                <a href=""><span class="title">En</span></a>
+		                <a href=""><span class="title"><img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/usa_25px.png')}}"></span></a>
                     </li>
 
 		        </ul>
@@ -245,7 +243,8 @@
 
 							<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" style="color: #5277a3"></i></a></li>
 							<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" style="color: #5277a3"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fa fa-whatsapp" style="color: #5277a3"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fa fa-whatsapp" style="color: #5277a3"></i></a></li>
+                            <li class="list-inline-item"><a href="#"> </a><i class="btn flaticon-user" style="color: #5277a3"></i> </li>
 
 						</ul>
 					</div>

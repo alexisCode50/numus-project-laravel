@@ -220,7 +220,15 @@
                 <div class="sidebar_listing_list">
                     <div class="sidebar_advanced_search_widget">
                         <div class="sl_creator">
+                            <div class="media">
 
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb0">Samul Williams</h5>
+                                    <p class="mb0">(123)456-7890</p>
+                                    <p class="mb0">info@findhouse.com</p>
+                                  </div>
+                            </div>
+                            <hr>
                             <div class="media">
 
                                 <div class="media-body">
