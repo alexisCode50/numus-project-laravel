@@ -23,8 +23,9 @@
                             <th scope="col">Clave de Propiedad</th>
                             <th scope="col">Mts Construidos</th>
                             <th scope="col">Mts Terreno</th>
-                            <th scope="col">Cuartos</th>
-                            <th scope="col">Baños</th>
+                            <th scope="col">Recamaras</th>
+                            <th scope="col">Baños Completos</th>
+                            <th scope="col">Medios Baños</th>
                             <th scope="col">Garage</th>
                             <th scope="col">Mapa</th>
                             <th scope="col">Picina</th>
@@ -38,7 +39,8 @@
                                 <th>{{ $item->size_property }}</th>
                                 <td>{{ $item->size_land }}</td>
                                 <td>{{ $item->bedroom }}</td>
-                                <td>{{ $item->bathroom }}</td>
+                                <td>{{ $item->complete_bathroom }}</td>
+                                <td>{{ $item->half_baths }}</td>
                                 <td>{{ $item->garage }}</td>
                                 <td>
                                     @if($item->map != '')

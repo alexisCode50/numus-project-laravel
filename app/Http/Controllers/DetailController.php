@@ -31,7 +31,8 @@ class DetailController extends Controller
             'size_property' => 'required|string',
             'size_land' => 'required|string',
             'bedroom' => 'required|numeric',
-            'bathroom' => 'required|numeric',
+            'complete_bathroom' => 'required|numeric',
+            'half_baths' => 'required|numeric',
             'garage' => 'required|numeric',
             'map' => 'required|string',
             'pool' => 'required|numeric'
@@ -42,7 +43,8 @@ class DetailController extends Controller
         $detail->size_property = $request->size_property;
         $detail->size_land = $request->size_land;
         $detail->bedroom = $request->bedroom;
-        $detail->bathroom = $request->bathroom;
+        $detail->complete_bathroom = $request->complete_bathroom;
+        $detail->half_baths = $request->half_baths;
         $detail->garage = $request->garage;
         $detail->map = $request->map;
         $detail->pool = $request->pool;
@@ -65,7 +67,8 @@ class DetailController extends Controller
             'size_property' => 'required|string',
             'size_land' => 'required|string',
             'bedroom' => 'required|numeric',
-            'bathroom' => 'required|numeric',
+            'complete_bathroom' => 'required|numeric',
+            'half_baths' => 'required|numeric',
             'garage' => 'required|numeric',
             'map' => 'required|string',
             'pool' => 'required|numeric'
@@ -75,7 +78,8 @@ class DetailController extends Controller
         $detail->size_property = $request->size_property;
         $detail->size_land = $request->size_land;
         $detail->bedroom = $request->bedroom;
-        $detail->bathroom = $request->bathroom;
+        $detail->complete_bathroom = $request->complete_bathroom;
+        $detail->half_baths = $request->half_baths;
         $detail->garage = $request->garage;
         $detail->map = $request->map;
         $detail->pool = $request->pool;

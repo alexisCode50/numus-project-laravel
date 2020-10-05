@@ -39,7 +39,7 @@
                         <input type="text" class="form-control" id="direction" name="direction" value="{{ $property->direction }}">
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="location_id">Ubicación o Colonia</label>
+                        <label for="location_id">Ubicación</label>
                         <select class="form-control" id="location_id" name="location_id" value="{{ $property->location_id }}">
                             @foreach ($locations as $item)
                             <option value="{{ $item->id }}">{{ $item->name }}</option>

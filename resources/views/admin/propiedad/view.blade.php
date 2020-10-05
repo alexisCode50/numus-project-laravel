@@ -41,7 +41,7 @@
                             <td>{{ $property->direction}}</td>
                         </tr>
                         <tr>
-                            <th>Ubicacion o Colonia</th>
+                            <th>Ubicacion</th>
                             <td>{{ $property->location_id }}</td>
                         </tr>
                         <tr>
@@ -66,16 +66,20 @@
                                     <td>{{ $detail->size_property }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Mts Terreno</th>
+                                    <th>Mts del Terreno</th>
                                     <td>{{ $detail->size_land }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Cuartos</th>
+                                    <th>Recamaras</th>
                                     <td>{{ $detail->bedroom}}</td>
                                 </tr>
                                 <tr>
-                                    <th>Baños</th>
-                                    <td>{{ $detail->bathroom}}</td>
+                                    <th>Baños Completos</th>
+                                    <td>{{ $detail->complete_bathroom }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Medios Baños</th>
+                                    <td>{{ $detail->half_baths }}</td>
                                 </tr>
                                 <tr>
                                     <th>Garage</th>

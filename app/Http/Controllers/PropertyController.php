@@ -39,12 +39,11 @@ class PropertyController extends Controller
             $data = Propiedad::where('title', 'LIKE', '%'.$title.'%')
                             ->orWhere('type_property', $type_property)
                             ->orWhere('location_id', $location_id)
-                            ->paginate(3) // modificar a
+                            ->paginate(10) // modificar a
                             ->appends($variablesurl); // evita que se pierda la paginacion
-        } 
-        // else {
-        //     $data = Property::paginate(10);
-        // }
+        } else {
+            $data = Property::paginate(10);
+        }
         // return response()->json($data, 200);
         
         return view('numus.search', compact('data'));

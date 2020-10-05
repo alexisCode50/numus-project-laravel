@@ -38,12 +38,16 @@
                             <td>{{ $detail->size_land }}</td>
                         </tr>
                         <tr>
-                            <th>Cuartos</th>
+                            <th>Recamaras</th>
                             <td>{{ $detail->bedroom}}</td>
                         </tr>
                         <tr>
-                            <th>Baños</th>
-                            <td>{{ $detail->bathroom}}</td>
+                            <th>Baños Completos</th>
+                            <td>{{ $detail->complete_bathroom}}</td>
+                        </tr>
+                        <tr>
+                            <th>Medios Baños</th>
+                            <td>{{ $detail->half_baths}}</td>
                         </tr>
                         <tr>
                             <th>Garage</th>

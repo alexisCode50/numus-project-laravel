@@ -41,17 +41,21 @@
                 </div>
 
                 <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="bedroom">Cuartos</label>
+                    <div class="form-group col-md-3">
+                        <label for="bedroom">Recamaras</label>
                         <input type="number" class="form-control" id="bedroom" name="bedroom" value="{{ $detail->bedroom }}">
                     </div>
-                    <div class="form-group col-md-4">
-                        <label for="bathroom">Baños</label>
-                        <input type="number" class="form-control" id="bathroom" name="bathroom" value="{{ $detail->bathroom }}">
+                    <div class="form-group col-md-3">
+                        <label for="complete_bathroom">Baños Completos</label>
+                        <input type="number" class="form-control" id="complete_bathroom" name="complete_bathroom" value="{{ $detail->complete_bathroom }}">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
+                        <label for="half_baths">Medios Baños</label>
+                        <input type="number" class="form-control" id="half_baths" name="half_baths" value="{{ $detail->half_baths }}">
+                    </div>
+                    <div class="form-group col-md-3">
                         <label for="garage">Garage</label>
-                        <input type="number" class="form-control" id="garage" name="garage" value="{{ $detail->garage }}">
+                        <input type="number" class="form-control" id="garage" name="garage" value="{{ $detail->garage }}" >
                     </div>
                 </div>
 

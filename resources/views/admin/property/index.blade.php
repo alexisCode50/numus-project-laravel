@@ -23,7 +23,7 @@
                             <th scope="col">Clave Unica</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Direcion</th>
-                            <th scope="col">Ubicacion o Colonia</th>
+                            <th scope="col">Ubicacion</th>
                             <th scope="col">Tipo de Propiedad</th>
                             <th scope="col">Precio</th>
                             <th scope="col">Tipo de Oferta</th>

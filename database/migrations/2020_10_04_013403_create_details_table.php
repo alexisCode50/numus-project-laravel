@@ -19,7 +19,8 @@ class CreateDetailsTable extends Migration
             $table->string('size_property'); // tamaño de la propiedad (metros construidos)
             $table->string('size_land'); // tamaño de terreno
             $table->string('bedroom');
-            $table->string('bathroom');
+            $table->string('complete_bathroom');
+            $table->string('half_baths');
             $table->string('garage');
             $table->text('map'); // iframe
             $table->integer('pool')->default(0);

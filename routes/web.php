@@ -10,6 +10,7 @@ Route::get('/search', 'PropertyController@search')->name('search');
 Route::get('/detail-pro/{id}', 'PropertyController@details')->name('detail-pro');
 Route::get('/contact', 'PropertyController@contact')->name('contact');
 Route::get('/about', 'PropertyController@about')->name('about');
+Route::post('/send-email', 'EmailController@sendEmail')->name('send-email');
 
 
 // admin routes
@@ -56,6 +57,13 @@ Route::middleware('auth')->group(function () {
     Route::put('/admin/details/update/{id}', 'DetailController@update')->name('details-update');
     Route::delete('/admin/details/delete/{id}', 'DetailController@destroy')->name('details-delete');
 
+    // Adviser routes
+    Route::get('/admin/advisers', 'AdviserController@index')->name('advisers');
+    Route::get('/admin/advisers/create/view', 'AdviserController@create')->name('advisers-create-view');
+    Route::get('/admin/advisers/update/view/{id}', 'AdviserController@edit')->name('advisers-update-view');
+    Route::post('/admin/advisers/create', 'AdviserController@store')->name('advisers-create');
+    Route::put('/admin/advisers/update/{id}', 'AdviserController@update')->name('advisers-update');
+    Route::delete('/admin/advisers/delete/{id}', 'AdviserController@destroy')->name('advisers-delete');
 
 });
 

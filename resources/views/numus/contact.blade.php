@@ -25,34 +25,35 @@
                 <div class="form_grid">
                     <h4 class="mb5">Mándanos un mensaje</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida quis libero eleifend ornare. Maecenas mattis enim at arcu feugiat, sit amet blandit nisl iaculis. Donec lacus odio, malesuada eu libero sit amet, congue aliquam leo. In hac habitasse platea dictumst.</p>
-                    <form class="contact_form" id="contact_form" name="contact_form" action="#" method="post" novalidate="novalidate">
+                    <form class="contact_form" action="{{ route('send-email') }}" method="POST">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input id="form_name" name="form_name" class="form-control" required="required" type="text" placeholder="Nombre">
+                                    <input name="name" class="form-control" required="required" type="text" placeholder="Nombre">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input id="form_email" name="form_email" class="form-control required email" required="required" type="Email" placeholder="Email">
+                                    <input name="email" class="form-control required email" required="required" type="Email" placeholder="Email">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input id="form_phone" name="form_phone" class="form-control required phone" required="required" type="Telefono" placeholder="Phone">
+                                    <input name="phone" class="form-control required phone" required="required" type="Telefono" placeholder="Phone">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input id="form_subject" name="form_subject" class="form-control required" required="required" type="text" placeholder="Tema">
+                                    <input name="subject" class="form-control required" required="required" type="text" placeholder="Tema">
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <textarea id="form_message" name="form_message" class="form-control required" rows="8" required="required" placeholder="Mensaje"></textarea>
+                                    <textarea name="message" class="form-control required" rows="8" required="required" placeholder="Mensaje"></textarea>
                                 </div>
                                 <div class="form-group mb0">
-                                    <button type="button" class="btn btn-lg btn-thm">¡Enviar!</button>
+                                    <button type="submit" class="btn btn-lg btn-thm">¡Enviar!</button>
                                 </div>
                             </div>
                         </div>

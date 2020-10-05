@@ -1,93 +1,11 @@
-{{-- <!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
-
-</body>
-</html>
- --}}
-
-
- <!DOCTYPE html>
-<html dir="ltr" >
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSRF Token -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <meta name="keywords" content="">
 <meta name="robots" content="index"/>
 <meta name="description" content="Somos una inmobiliaria ubicada al norte de Mérida, Yucatán">
@@ -138,19 +56,19 @@
 		        <ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
 
 		           <li class="last">
-		                <a href="{{ route('home') }}"><span class="title">Inicio</span></a>
+		                <a href="{{ route('home') }}"><span class="title">@lang('message.nav_home')</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('about') }}"><span class="title">Nosotros</span></a>
+		                <a href="{{ route('about') }}"><span class="title">@lang('message.nav_company')</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('home') }}"><span class="title">Propiedades</span></a>
+		                <a href="{{ route('search') }}"><span class="title">@lang('message.nav_properties')</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('home') }}"><span class="title">How to buy</span></a>
+		                <a href="{{ route('home') }}"><span class="title">@lang('message.nav_buy')</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('contact') }}"><span class="title">Contacto</span></a>
+		                <a href="{{ route('contact') }}"><span class="title">@lang('message.nav_contact')</span></a>
                     </li>
 
                     <a href="#" class="btn flaticon-user" data-toggle="modal" data-target=".bd-example-modal-lg"> <span class="dn-lg"></span></a>
@@ -178,11 +96,11 @@
 		</div><!-- /.mobile-menu -->
 		<nav id="menu" class="stylehome1">
 			<ul>
-				<li><span>Inicio</span></li>
-				<li><span>Nosotros</span></li>
-				<li><span>Propiedades</span></li>
-				<li><span>How to buy</span></li>
-				<li><a href="page-contact.html">Contact</a></li>
+				<li><span><a href="{{ route('home') }}">@lang('message.nav_home')</a></span></li>
+				<li><span><a href="{{ route('about') }}">@lang('message.nav_company')</a></span></li>
+				<li><span><a href="{{ route('search') }}">@lang('message.nav_properties')</a></span></li>
+				<li><span><a href="{{ route('home') }}">@lang('message.nav_buy')</a></span></li>
+				<li><span><a href="{{ route('contact') }}">@lang('message.nav_contact')</a></span></li>
 
 			</ul>
 		</nav>
@@ -198,7 +116,7 @@
 					<div class="footer_about_widget">
                         <img src="{{ asset('cliente/assets/images/logo_white.png')}}" alt=""> <br><br>
 
-						<p>We’re reimagining how you buy, sell and rent. It’s now easier to get into a place you love. So let’s do this, together.</p>
+						<p>@lang('message.footer_text')</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
@@ -209,7 +127,7 @@
 
 				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
 					<div class="footer_contact_widget">
-						<h4>Contáctanos</h4>
+						<h4>@lang('message.footer_contact_us')</h4>
 						<ul class="list-unstyled">
 							<li><a href="#">numus-inmobiliaria@hotmail.com</a></li>
 							<li><a href="#">Colonia Itzimna</a></li>
@@ -229,7 +147,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-xl-6">
 					<div class="copyright-widget text-left">
-						<p>© 2020 Numus - Desarrollado por Búho Solutions.</p>
+						<p>© 2020 Numus - @lang('message.footer_developer') Búho Solutions.</p>
 					</div>
 				</div>
 				<div class="col-lg-6 col-xl-6">
