@@ -22,7 +22,7 @@ class PropertyController extends Controller
     {
         $property = Propiedad::find($id);
         $detail = Detail::where('unique_key_property', $property->unique_key)->first();
-        $images = Image::where('unique_key', $property->unique_key)->get(); 
+        $images = Image::where('unique_key', $property->unique_key)->get();
         return view('numus.details', ['property' => $property, 'detail' => $detail, 'images' => $images]);
     }
 
@@ -41,11 +41,18 @@ class PropertyController extends Controller
                             ->orWhere('location_id', $location_id)
                             ->paginate(10) // modificar a
                             ->appends($variablesurl); // evita que se pierda la paginacion
+<<<<<<< HEAD
         } else {
             $data = Property::paginate(10);
         }
+=======
+        }
+        // else {
+        //     $data = Property::paginate(10);
+        // }
+>>>>>>> b293b41dd774bcce6e84d8916d2f9a600ac9cca1
         // return response()->json($data, 200);
-        
+
         return view('numus.search', compact('data'));
     }
 
@@ -57,4 +64,7 @@ class PropertyController extends Controller
         return view('numus.about');
     }
 
+    public function howtobuy(){
+        return view('numus.howtobuy');
+    }
 }

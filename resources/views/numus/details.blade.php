@@ -92,7 +92,7 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        
+
                                         <li>
                                             <div class="search_option_button">
                                                 <button type="submit" class="btn btn-block btn-thm">Buscar</button>
@@ -129,43 +129,34 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="listing_single_description">
-                            <h4 class="mb30">Description</h4>
+                            <h4 class="mb30">Descripción</h4>
                             <p class="mb25">{{ $property->description }}</p>
-                            <p class="gpara second_para white_goverlay mt10 mb10">Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and features incredible walk-in closet and storage space.</p>
-                            <div class="collapse" id="collapseExample">
-                                  <div class="card card-body">
-                                    <p class="mt10 mb10">Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and features incredible walk-in closet and storage space.</p>
-                                    <p class="mt10 mb10">Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and features incredible walk-in closet and storage space.</p>
-                                  </div>
-                            </div>
-                            <p class="overlay_close">
-                                <a class="text-thm fz14" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    Show More <span class="flaticon-download-1 fz12"></span>
-                                  </a>
-                            </p>
+
+
+
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="additional_details">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h4 class="mb15">Property Details</h4>
+                                    <h4 class="mb15">Detalles de la propiedad</h4>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
                                     <ul class="list-inline-item">
-                                        <li><p>Property ID : </p></a></li>
-                                        <li><p>Price : </p></a></li>
-                                        <li><p>Property Size : </p></a></li>
-                                        <li><p>Mts Built : </p></a></li>
+                                        <li><p>ID : </p></a></li>
+                                        <li><p>Precio : </p></a></li>
+                                      {{--   <li><p>Property Size : </p></a></li>
+                                        <li><p>Mts Built : </p></a></li> --}}
                                     </ul>
                                     <ul class="list-inline-item">
                                         <li><p><span>{{ $property->unique_key }}</span></p></a></li>
                                         <li><p><span>$ {{ number_format($property->price) }}</span></p></a></li>
-                                        <li><p><span>{{ $detail->size_property }}</span></p></a></li>
-                                        <li><p><span>{{ $detail->size_land }}</span></p></a></li>
+                                        {{-- <li><p><span>{{ $detail->size_property }}</span></p></a></li> --}}
+                                       {{--  <li><p><span>{{ $detail->size_land }}</span></p></a></li> --}}
                                     </ul>
                                 </div>
-                                <div class="col-md-6 col-lg-6 col-xl-4">
+                               {{--  <div class="col-md-6 col-lg-6 col-xl-4">
                                     <ul class="list-inline-item">
                                         <li><p>Bedrooms :</p></a></li>
                                         <li><p>Bathrooms :</p></a></li>
@@ -178,11 +169,11 @@
                                         <li><p><span>{{ $detail->garage }}</span></p></a></li>
                                         <li><p><span>@if($detail->pool == 1) Si @else No @endif </span></p></a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
                                 <div class="col-md-6 col-lg-6 col-xl-4">
                                     <ul class="list-inline-item">
-                                        <li><p>Property Type :</p></a></li>
-                                        <li><p>Property Status :</p></a></li>
+                                        <li><p>Tipo de la propiedad :</p></a></li>
+                                        <li><p>Estatus de la propiedad :</p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
                                         <li><p><span>{{ $property->type_property }}</span></p></a></li>
@@ -192,84 +183,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="additional_details">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <h4 class="mb15">Additional details</h4>
-                                </div>
-                                <div class="col-md-6 col-lg-6">
-                                    <ul class="list-inline-item">
-                                        <li><p>Deposit :</p></a></li>
-                                        <li><p>Pool Size :</p></a></li>
-                                        <li><p>Additional Rooms :</p></a></li>
-                                    </ul>
-                                    <ul class="list-inline-item">
-                                        <li><p><span>20%</span></p></a></li>
-                                        <li><p><span>300 Sqft</span></p></a></li>
-                                        <li><p><span>Guest Bath</span></p></a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 col-lg-6">
-                                    <ul class="list-inline-item">
-                                        <li><p>Last remodel year :</p></a></li>
-                                        <li><p>Amenities :</p></a></li>
-                                        <li><p>Equipment :</p></a></li>
-                                    </ul>
-                                    <ul class="list-inline-item">
-                                        <li><p><span>1987</span></p></a></li>
-                                        <li><p><span>Clubhouse</span></p></a></li>
-                                        <li><p><span>Grill - Gas</span></p></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <div class="col-lg-12">
                         <div class="application_statics mt30">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h4 class="mb10">Features</h4>
+                                    <h4 class="mb10">Amenidades</h4>
                                 </div>
-                                <div class="col-sm-6 col-md-6 col-lg-4">
-                                    <ul class="order_list list-inline-item">
-                                        <li><a href="#"><span class="flaticon-tick"></span>Air Conditioning</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>Barbeque</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>Dryer</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>Gym</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>Laundry</a></li>
-                                    </ul>
+
+                                <div class="col-lg-12">
+                                    <p class="mb10">Tiene alberca, 3 habitaciones, 2 baños, sala y comedor</p>
                                 </div>
-                                <div class="col-sm-6 col-md-6 col-lg-4">
-                                    <ul class="order_list list-inline-item">
-                                        <li><a href="#"><span class="flaticon-tick"></span>Lawn</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>Microwave</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>Outdoor Shower</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>Refrigerator</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>Sauna</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-4">
-                                    <ul class="order_list list-inline-item">
-                                        <li><a href="#"><span class="flaticon-tick"></span>Swimming Pool</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>TV Cable</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>Washer</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>WiFi</a></li>
-                                        <li><a href="#"><span class="flaticon-tick"></span>Window Coverings</a></li>
-                                    </ul>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="application_statics mt30">
-                            <h4 class="mb30">Location <small class="float-right">{{ $property->direction }}</small></h4>
+                            <h4 class="mb30">Ubicación <small class="float-right">{{ $property->direction }}</small></h4>
                             <div class="property_video p0">
                                 <div class="thumb">
                                     @php
-                                        $map =  htmlentities($detail->map);
-                                        echo html_entity_decode($map);
+                                       /*  $map =  htmlentities($detail->map);
+                                        echo html_entity_decode($map); */
                                     @endphp
                                 </div>
                             </div>
@@ -283,7 +220,15 @@
                 <div class="sidebar_listing_list">
                     <div class="sidebar_advanced_search_widget">
                         <div class="sl_creator">
+                            <div class="media">
 
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb0">Samul Williams</h5>
+                                    <p class="mb0">(123)456-7890</p>
+                                    <p class="mb0">info@findhouse.com</p>
+                                  </div>
+                            </div>
+                            <hr>
                             <div class="media">
 
                                 <div class="media-body">
@@ -317,7 +262,7 @@
                             </li>
                             <li>
                                 <div class="search_option_button">
-                                    <button type="submit" class="btn btn-block btn-thm">Search</button>
+                                    <button type="submit" class="btn btn-block btn-thm">Buscar</button>
                                 </div>
                             </li>
                         </ul>
@@ -369,7 +314,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                
+
                                 <li>
                                     <div class="search_option_button">
                                         <button type="submit" class="btn btn-block btn-thm">Buscar</button>
@@ -380,7 +325,7 @@
                     </div>
                 </div>
                 <div class="terms_condition_widget">
-                    <h4 class="title">Featured Properties</h4>
+                    <h4 class="title">Propiedades destacadas</h4>
                     <div class="sidebar_feature_property_slider">
                         <div class="item">
                             <div class="feat_property home7 agent">
@@ -388,8 +333,8 @@
                                     <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
                                     <div class="thmb_cntnt">
                                         <ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">For Rent</a></li>
-                                            <li class="list-inline-item"><a href="#">Featured</a></li>
+                                            <li class="list-inline-item"><a href="#">Venta</a></li>
+                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
                                         </ul>
                                         <a class="fp_price" href="#">$13,000<small>/mo</small></a>
                                         <h4 class="posr color-white">Renovated Apartment</h4>
