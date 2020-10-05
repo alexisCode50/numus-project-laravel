@@ -19,7 +19,7 @@
 									<div class="home1-advnc-search">
 										<form action="{{ route('search') }}" method="GET">
 											<ul class="h1ads_1st_list mb0">
-												<li class="list-inline-item">
+												<li class="list-inline-item" >
 													<div class="form-group">
 														<input type="text" class="form-control" name="title" id="exampleInputName1" placeholder="Ingresar palabra clave...">
 													</div>
@@ -115,7 +115,7 @@
 											<img class="img-whp" src="{{ asset('images/'.$item->profile_picture) }}" alt="{{ $item->title }}" >
 											<div class="thmb_cntnt">
 												<ul class="tag mb0">
-													<li class="list-inline-item"><a>{{ $item->state_property }}</a></li>
+													<li class="list-inline-item" style="background-color: rgb(62, 76, 102);"><a>{{ $item->state_property }}</a></li>
 													@if($item->outstanding == 1)
 														<li class="list-inline-item"><a>Destacada</a></li>
 													@endif

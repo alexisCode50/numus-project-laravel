@@ -10,6 +10,7 @@ Route::get('/search', 'PropertyController@search')->name('search');
 Route::get('/detail-pro/{id}', 'PropertyController@details')->name('detail-pro');
 Route::get('/contact', 'PropertyController@contact')->name('contact');
 Route::get('/about', 'PropertyController@about')->name('about');
+Route::get('/howtobuy', 'PropertyController@howtobuy')->name('howtobuy');
 
 
 // admin routes

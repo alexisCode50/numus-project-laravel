@@ -155,6 +155,13 @@
 
                     <a href="#" class="btn flaticon-user" data-toggle="modal" data-target=".bd-example-modal-lg"> <span class="dn-lg"></span></a>
 
+                    <li class="last" style="margin-right: -25px">
+		                <a href=""><span class="title">Es /</span></a>
+                    </li>
+                    <li class="last">
+		                <a href=""><span class="title">En</span></a>
+                    </li>
+
 		        </ul>
 		    </nav>
 		</div>
