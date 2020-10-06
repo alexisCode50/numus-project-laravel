@@ -17,7 +17,7 @@
 							<div class="tab-content home1_adsrchfrm" id="pills-tabContent">
 								<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 									<div class="home1-advnc-search">
-										<form action="{{ route('search') }}" method="GET">
+										<form action="{{ route('search', App::getLocale()) }}" method="GET">
 											<ul class="h1ads_1st_list mb0">
 												<li class="list-inline-item" >
 													<div class="form-group">
@@ -108,7 +108,7 @@
 				<div class="col-lg-12">
 					<div class="feature_property_slider">
 						@foreach($property as $item)
-							<a href="{{ route('detail-pro', $item->id) }}">
+							<a href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">
 								<div class="item">
 									<div class="feat_property">
 										<div class="thumb" style="height: 220px;">
@@ -117,16 +117,16 @@
 												<ul class="tag mb0">
 													<li class="list-inline-item" style="background-color: rgb(62, 76, 102);"><a>{{ $item->state_property }}</a></li>
 													@if($item->outstanding == 1)
-														<li class="list-inline-item"><a>Destacada</a></li>
+														<li class="list-inline-item"><a>@lang('home.outstanding')</a></li>
 													@endif
 												</ul>
-												<a class="fp_price" href="{{ route('detail-pro', $item->id) }}">$ {{ number_format($item->price) }}</a>
+												<a class="fp_price" href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">$ {{ number_format($item->price) }}</a>
 											</div>
 										</div>
 										<div class="details">
 											<div class="tc_content">
 												<p class="text-thm">{{ $item->type_property }}</p>
-												<h4><a href="{{ route('detail-pro', $item->id) }}">{{ $item->title }}</a></h4>
+												<h4><a href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">{{ $item->title }}</a></h4>
 												<p><span class="flaticon-placeholder"></span>{{ $item->direction }}</p>
 											</div>
 										</div>

@@ -11,7 +11,7 @@
                         <div class="sidebar_listing_list style2 mobile_sytle_sidebar mb0">
                             <div class="sidebar_advanced_search_widget">
                                 <h4 class="mb25">@lang('home.detail_advanced_search')<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
-                                <form action="{{ route('search') }}" method="GET">
+                                <form action="{{ route('search', App::getLocale()) }}" method="GET">
                                     <ul class="sasw_list style2 mb0">
                                         <li class="search_area">
                                             <div class="form-group">
@@ -89,7 +89,7 @@
                 <div class="sidebar_listing_grid1 dn-991">
                     <div class="sidebar_listing_list">
                         <div class="sidebar_advanced_search_widget">
-                            <form action="{{ route('search') }}" method="GET">
+                            <form action="{{ route('search', App::getLocale()) }}" method="GET">
                                 <ul class="sasw_list mb0">
                                     <li class="search_area">
                                         <div class="form-group">
@@ -260,10 +260,10 @@
                                                         </li>
                                                     @endif
                                                 </ul>
-                                                <a class="fp_price" href="{{ route('detail-pro', $item->id) }}">$ {{ number_format($item->price) }}</a>
+                                                <a class="fp_price" href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">$ {{ number_format($item->price) }}</a>
                                             </div>
                                             <p class="text-thm">{{ $item->type_property }}</p>
-                                            <h4><a href="{{ route('detail-pro', $item->id) }}">{{ $item->title }}</a></h4>
+                                            <h4><a href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">{{ $item->title }}</a></h4>
                                             <p><span class="flaticon-placeholder"></span>{{ $item->direction }}</p>
 
                                         </div>

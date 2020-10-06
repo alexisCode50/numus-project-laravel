@@ -49,7 +49,7 @@
                         <div class="sidebar_listing_list style2 mobile_sytle_sidebar mb0">
                             <div class="sidebar_advanced_search_widget">
                                 <h4 class="mb25">@lang('home.detail_advanced_search')<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
-                                <form action="{{ route('search') }}" method="GET">
+                                <form action="{{ route('search', App::getLocale()) }}" method="GET">
                                     <ul class="sasw_list style2 mb0">
                                         <li class="search_area">
                                             <div class="form-group">
@@ -277,7 +277,7 @@
                 <div class="sidebar_listing_list style2 mobile_sytle_sidebar mb0">
                     <div class="sidebar_advanced_search_widget">
                         <h4 class="mb25">@lang('home.detail_advanced_search')<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
-                        <form action="{{ route('search') }}" method="GET">
+                        <form action="{{ route('search', App::getLocale()) }}" method="GET">
                             <ul class="sasw_list style2 mb0">
                                 <li class="search_area">
                                     <div class="form-group">

@@ -21,12 +21,6 @@
 <link href="{{ asset('cliente/assets/images/icon_black.svg')}}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="{{ asset('cliente/assets/images/icon_black.svg')}}" sizes="128x128" rel="shortcut icon" />
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
 <div class="wrapper">
@@ -56,26 +50,25 @@
 		        <ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
 
 		           <li class="last">
-		                <a href="{{ route('home') }}"><span class="title">@lang('home.nav_home')</span></a>
+		                <a href="{{ route('home', App::getLocale()) }}"><span class="title">@lang('home.nav_home')</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('about') }}"><span class="title">@lang('home.nav_company')</span></a>
+		                <a href="{{ route('about', App::getLocale()) }}"><span class="title">@lang('home.nav_company')</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('search') }}"><span class="title">@lang('home.nav_properties')</span></a>
+		                <a href="{{ route('search', App::getLocale()) }}"><span class="title">@lang('home.nav_properties')</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('howtobuy') }}"><span class="title">How to buy</span></a>
+		                <a href="{{ route('howtobuy', App::getLocale()) }}"><span class="title">How to buy</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('contact') }}"><span class="title">@lang('home.nav_contact')</span></a>
+		                <a href="{{ route('contact', App::getLocale()) }}"><span class="title">@lang('home.nav_contact')</span></a>
                     </li>
-
                     <li class="last" style="margin-right: -25px">
-		                <a href=""><span class="title"><img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/mexico_25px.png')}}"> </span></a>
+		                <a href="/es"><span class="title"><img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/mexico_25px.png')}}"> </span></a>
                     </li>
                     <li class="last">
-		                <a href=""><span class="title"><img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/usa_25px.png')}}"></span></a>
+		                <a href="/en"><span class="title"><img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/usa_25px.png')}}"></span></a>
                     </li>
 
 		        </ul>
@@ -101,11 +94,11 @@
 		</div><!-- /.mobile-menu -->
 		<nav id="menu" class="stylehome1">
 			<ul>
-				<li><span><a href="{{ route('home') }}">@lang('home.nav_home')</a></span></li>
-				<li><span><a href="{{ route('about') }}">@lang('home.nav_company')</a></span></li>
-				<li><span><a href="{{ route('search') }}">@lang('home.nav_properties')</a></span></li>
-				<li><span><a href="{{ route('howtobuy') }}">How to buy</a></span></li>
-				<li><span><a href="{{ route('contact') }}">@lang('home.nav_contact')</a></span></li>
+				<li><span><a href="{{ route('home', App::getLocale()) }}">@lang('home.nav_home')</a></span></li>
+				<li><span><a href="{{ route('about', App::getLocale()) }}">@lang('home.nav_company')</a></span></li>
+				<li><span><a href="{{ route('search', App::getLocale()) }}">@lang('home.nav_properties')</a></span></li>
+				<li><span><a href="{{ route('howtobuy', App::getLocale()) }}">How to buy</a></span></li>
+				<li><span><a href="{{ route('contact', App::getLocale()) }}">@lang('home.nav_contact')</a></span></li>
 
 			</ul>
 		</nav>

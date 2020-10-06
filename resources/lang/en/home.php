@@ -52,7 +52,7 @@ return [
     // Page Search
     'results_search' => 'Search results',
     'no_results_search' => 'No search results',
-    'outstanding' => 'outstanding',
+    'outstanding' => 'Outstanding',
     'advanced_search' => 'Advanced search',
 
 

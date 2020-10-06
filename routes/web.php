@@ -4,17 +4,23 @@ use Illuminate\Support\Facades\Route;
 
 
 Auth::routes();
+Route::redirect('/', '/es');
 
-Route::get('/', 'PropertyController@index')->name('home');
-Route::get('/search', 'PropertyController@search')->name('search');
-Route::get('/detail-pro/{id}', 'PropertyController@details')->name('detail-pro');
-Route::get('/contact', 'PropertyController@contact')->name('contact');
-Route::get('/about', 'PropertyController@about')->name('about');
+Route::group([
+    'prefix'     => '/{lang}',
+], function () {
+
+    Route::get('/', 'PropertyController@index')->name('home');
+    Route::get('/search', 'PropertyController@search')->name('search');
+    Route::get('/detail-pro/{id}', 'PropertyController@details')->name('detail-pro');
+    Route::get('/contact', 'PropertyController@contact')->name('contact');
+    Route::get('/about', 'PropertyController@about')->name('about');
+    Route::get('/howtobuy', 'PropertyController@howtobuy')->name('howtobuy');
+    
+});
+
 
 Route::post('/send-email', 'EmailController@sendEmail')->name('send-email');
-
-Route::get('/howtobuy', 'PropertyController@howtobuy')->name('howtobuy');
-
 
 
 // admin routes

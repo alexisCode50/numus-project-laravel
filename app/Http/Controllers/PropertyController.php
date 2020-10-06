@@ -13,41 +13,78 @@ class PropertyController extends Controller
 {
     public function index()
     {
-        $property = Propiedad::all();
+        $lang = request()->route()->parameter("lang");
+        \App::setLocale($lang);
+
+        if($lang == 'es'){
+            $property = Propiedad::all();
+        } else if($lang == 'en'){
+            $property = Property::all();
+        }
+
         $location = Location::all();
+
         return view('numus.index', ['property' => $property, 'location' => $location]);
     }
 
-    public function details($id)
+    public function details()
     {
-        $property = Propiedad::find($id);
-        $detail = Detail::where('unique_key_property', $property->unique_key)->first();
+        $lang = request()->route()->parameter("lang");
+        $id = request()->route()->parameter("id");
+        \App::setLocale($lang);
+
+        if($lang == 'es'){
+            $property = Propiedad::find($id);
+            $detail = Detail::where('unique_key_property', $property->unique_key)->first();
+            $images = Image::where('unique_key', $property->unique_key)->get();
+        } else if($lang == 'en'){
+            $property = Property::find($id);
+            $detail = Detail::where('unique_key_property', $property->unique_key)->first();
+            $images = Image::where('unique_key', $property->unique_key)->get();
+        }
+        
         $location = Location::all();
-        $images = Image::where('unique_key', $property->unique_key)->get();
+
         return view('numus.details', ['property' => $property, 'detail' => $detail, 'location' => $location, 'images' => $images]);
     }
 
     public function search(Request $request)
     {
-        $data = array();
         $variablesurl = $request->all(); // url
+        $lang = request()->route()->parameter("lang");
+        \App::setLocale($lang);
 
-        if($request->get('title') || $request->get('type_property') || $request->get('location')){
-            $title = $request->get('title');
-            $type_property = $request->get('type_property');
-            $location_id = $request->get('location');
-
-            $data = Propiedad::where('title', 'LIKE', '%'.$title.'%')
-                            ->orWhere('type_property', $type_property)
-                            ->orWhere('location_id', $location_id)
-                            ->paginate(10) // modificar a
-                            ->appends($variablesurl); // evita que se pierda la paginacion
-
-        } else {
-            $data = Propiedad::paginate(10);
+        if($lang == 'es'){
+            if($request->get('title') || $request->get('type_property') || $request->get('location')){
+                $title = $request->get('title');
+                $type_property = $request->get('type_property');
+                $location_id = $request->get('location');
+    
+                $data = Propiedad::where('title', 'LIKE', '%'.$title.'%')
+                                ->orWhere('type_property', $type_property)
+                                ->orWhere('location_id', $location_id)
+                                ->paginate(10) // modificar a
+                                ->appends($variablesurl); // evita que se pierda la paginacion
+    
+            } else {
+                $data = Propiedad::paginate(10);
+            }
+        } else if($lang == 'en'){
+            if($request->get('title') || $request->get('type_property') || $request->get('location')){
+                $title = $request->get('title');
+                $type_property = $request->get('type_property');
+                $location_id = $request->get('location');
+    
+                $data = Property::where('title', 'LIKE', '%'.$title.'%')
+                                ->orWhere('type_property', $type_property)
+                                ->orWhere('location_id', $location_id)
+                                ->paginate(10) // modificar a
+                                ->appends($variablesurl); // evita que se pierda la paginacion
+    
+            } else {
+                $data = Property::paginate(10);
+            }
         }
-
-        // return response()->json($data, 200);
 
         $location = Location::all();
 
@@ -55,14 +92,20 @@ class PropertyController extends Controller
     }
 
     public function contact(){
+        $lang = request()->route()->parameter("lang");
+        \App::setLocale($lang);
         return view('numus.contact');
     }
 
     public function about(){
+        $lang = request()->route()->parameter("lang");
+        \App::setLocale($lang);
         return view('numus.about');
     }
 
     public function howtobuy(){
+        $lang = request()->route()->parameter("lang");
+        \App::setLocale($lang);
         return view('numus.howtobuy');
     }
 }
