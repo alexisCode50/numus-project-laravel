@@ -10,11 +10,11 @@ Route::get('/search', 'PropertyController@search')->name('search');
 Route::get('/detail-pro/{id}', 'PropertyController@details')->name('detail-pro');
 Route::get('/contact', 'PropertyController@contact')->name('contact');
 Route::get('/about', 'PropertyController@about')->name('about');
-<<<<<<< HEAD
+
 Route::post('/send-email', 'EmailController@sendEmail')->name('send-email');
-=======
+
 Route::get('/howtobuy', 'PropertyController@howtobuy')->name('howtobuy');
->>>>>>> b293b41dd774bcce6e84d8916d2f9a600ac9cca1
+
 
 
 // admin routes

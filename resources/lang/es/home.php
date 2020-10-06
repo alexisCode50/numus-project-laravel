@@ -17,7 +17,7 @@ return [
     //home text
     'home_title' => 'Encuentra tu próxima propiedad',
     'home_subtitle' => 'Propiedades de todo tipo desde $ 50,000',
-    'home_recomend' => 'Propiedades Recomendadas',
+    'home_recomend' => 'Propiedades Destacadas',
     'home_subtitle_recomend' => 'Recomendadas por nuestros asesores expertos.',
     'home_title_find' => 'Encuentra propiedades en esta zona',
     'home_subtitle_find' => 'Propiedades en las zonas más prestigiosas',
@@ -46,4 +46,10 @@ return [
     'offer_type_sale' => 'Venta',
     'offer_type_rent' => 'Renta',
     'btn_seach' => 'Buscar',
+
+    // Page Search
+    'results_search' => 'Resultados de la búsqueda',
+    'no_results_search' => 'No hay resultados de busqueda',
+    'outstanding' => 'Destacado',
+    'advanced_search' => 'Búsqueda Avanzada',
 ];

@@ -146,17 +146,17 @@
                                     <ul class="list-inline-item">
                                         <li><p>ID : </p></a></li>
                                         <li><p>Precio : </p></a></li>
-                                      {{--   <li><p>Property Size : </p></a></li>
-                                        <li><p>Mts Built : </p></a></li> --}}
+                                        <li><p>Property Size : </p></a></li>
+                                        <li><p>Mts Built : </p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
                                         <li><p><span>{{ $property->unique_key }}</span></p></a></li>
                                         <li><p><span>$ {{ number_format($property->price) }}</span></p></a></li>
-                                        {{-- <li><p><span>{{ $detail->size_property }}</span></p></a></li> --}}
-                                       {{--  <li><p><span>{{ $detail->size_land }}</span></p></a></li> --}}
+                                        <li><p><span>{{ $detail->size_property }}</span></p></a></li>
+                                       <li><p><span>{{ $detail->size_land }}</span></p></a></li>
                                     </ul>
                                 </div>
-                               {{--  <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="col-md-6 col-lg-6 col-xl-4">
                                     <ul class="list-inline-item">
                                         <li><p>Bedrooms :</p></a></li>
                                         <li><p>Bathrooms :</p></a></li>
@@ -169,7 +169,7 @@
                                         <li><p><span>{{ $detail->garage }}</span></p></a></li>
                                         <li><p><span>@if($detail->pool == 1) Si @else No @endif </span></p></a></li>
                                     </ul>
-                                </div> --}}
+                                </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
                                     <ul class="list-inline-item">
                                         <li><p>Tipo de la propiedad :</p></a></li>
@@ -193,7 +193,7 @@
                                 </div>
 
                                 <div class="col-lg-12">
-                                    <p class="mb10">Tiene alberca, 3 habitaciones, 2 baños, sala y comedor</p>
+                                    <p class="mb10">{{$property->amenities}}</p>
                                 </div>
 
                             </div>
@@ -205,8 +205,8 @@
                             <div class="property_video p0">
                                 <div class="thumb">
                                     @php
-                                       /*  $map =  htmlentities($detail->map);
-                                        echo html_entity_decode($map); */
+                                        $map =  htmlentities($detail->map);
+                                        echo html_entity_decode($map); 
                                     @endphp
                                 </div>
                             </div>

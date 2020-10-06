@@ -56,19 +56,19 @@
 		        <ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
 
 		           <li class="last">
-		                <a href="{{ route('home') }}"><span class="title">@lang('message.nav_home')</span></a>
+		                <a href="{{ route('home') }}"><span class="title">@lang('home.nav_home')</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('about') }}"><span class="title">@lang('message.nav_company')</span></a>
+		                <a href="{{ route('about') }}"><span class="title">@lang('home.nav_company')</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('search') }}"><span class="title">@lang('message.nav_properties')</span></a>
+		                <a href="{{ route('search') }}"><span class="title">@lang('home.nav_properties')</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('home') }}"><span class="title">@lang('message.nav_buy')</span></a>
+		                <a href="{{ route('howtobuy') }}"><span class="title">How to buy</span></a>
 		            </li>
 		            <li class="last">
-		                <a href="{{ route('contact') }}"><span class="title">@lang('message.nav_contact')</span></a>
+		                <a href="{{ route('contact') }}"><span class="title">@lang('home.nav_contact')</span></a>
                     </li>
 
                     <li class="last" style="margin-right: -25px">
@@ -101,11 +101,11 @@
 		</div><!-- /.mobile-menu -->
 		<nav id="menu" class="stylehome1">
 			<ul>
-				<li><span><a href="{{ route('home') }}">@lang('message.nav_home')</a></span></li>
-				<li><span><a href="{{ route('about') }}">@lang('message.nav_company')</a></span></li>
-				<li><span><a href="{{ route('search') }}">@lang('message.nav_properties')</a></span></li>
-				<li><span><a href="{{ route('home') }}">@lang('message.nav_buy')</a></span></li>
-				<li><span><a href="{{ route('contact') }}">@lang('message.nav_contact')</a></span></li>
+				<li><span><a href="{{ route('home') }}">@lang('home.nav_home')</a></span></li>
+				<li><span><a href="{{ route('about') }}">@lang('home.nav_company')</a></span></li>
+				<li><span><a href="{{ route('search') }}">@lang('home.nav_properties')</a></span></li>
+				<li><span><a href="{{ route('howtobuy') }}">How to buy</a></span></li>
+				<li><span><a href="{{ route('contact') }}">@lang('home.nav_contact')</a></span></li>
 
 			</ul>
 		</nav>
@@ -121,7 +121,7 @@
 					<div class="footer_about_widget">
                         <img src="{{ asset('cliente/assets/images/logo_white.png')}}" alt=""> <br><br>
 
-						<p>@lang('message.footer_text')</p>
+						<p>@lang('home.footer_text')</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
@@ -132,7 +132,7 @@
 
 				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
 					<div class="footer_contact_widget">
-						<h4>@lang('message.footer_contact_us')</h4>
+						<h4>@lang('home.footer_contact_us')</h4>
 						<ul class="list-unstyled">
 							<li><a href="#">numus-inmobiliaria@hotmail.com</a></li>
 							<li><a href="#">Colonia Itzimna</a></li>
@@ -152,7 +152,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-xl-6">
 					<div class="copyright-widget text-left">
-						<p>© 2020 Numus - @lang('message.footer_developer') Búho Solutions.</p>
+						<p>© 2020 Numus - @lang('home.footer_developer') Búho Solutions.</p>
 					</div>
 				</div>
 				<div class="col-lg-6 col-xl-6">

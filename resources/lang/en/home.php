@@ -17,7 +17,7 @@ return [
     //home text
     'home_title' => 'Find your next property',
     'home_subtitle' => 'Properties of all kinds from $ 50,000',
-    'home_recomend' => 'Recommended Properties',
+    'home_recomend' => 'Featured properties',
     'home_subtitle_recomend' => 'Recommended by our expert advisors.',
     'home_title_find' => 'Find properties in this area',
     'home_subtitle_find' => 'Properties in the most prestigious areas',
@@ -46,4 +46,13 @@ return [
     'offer_type_sale' => 'For sale',
     'offer_type_rent' => 'For rent',
     'btn_seach' => 'Search',
+
+
+
+    // Page Search
+    'results_search' => 'Search results',
+    'no_results_search' => 'No search results',
+    'outstanding' => 'outstanding',
+    'advanced_search' => 'Advanced search',
+    
 ];

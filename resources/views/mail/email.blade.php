@@ -7,5 +7,9 @@
 </head>
 <body>
     <h1>Hola</h1>
+    <p>Reciviste un mesaje de: {{ $msg['name'] }} - {{ $msg['email'] }}</p>
+    <p>Asunto: {{ $msg['subject'] }}</p>
+    <p>Contenido: {{ $msg['message'] }}</p>
+    
 </body>
 </html>

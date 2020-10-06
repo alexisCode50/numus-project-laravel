@@ -9,8 +9,8 @@
 				<div class="col-lg-12">
 					<div class="home_content">
 						<div class="home-text text-center">
-							<h2 class="fz55">@lang('message.home_title')</h2>
-							<p class="fz18 color-white">@lang('message.home_subtitle')</p>
+							<h2 class="fz55">@lang('home.home_title')</h2>
+							<p class="fz18 color-white">@lang('home.home_subtitle')</p>
 						</div>
 						<div class="home_adv_srch_opt">
 
@@ -21,18 +21,18 @@
 											<ul class="h1ads_1st_list mb0">
 												<li class="list-inline-item" >
 													<div class="form-group">
-														<input type="text" class="form-control" name="title" id="exampleInputName1" placeholder="@lang('message.key_word')">
+														<input type="text" class="form-control" name="title" id="exampleInputName1" placeholder="@lang('home.key_word')">
 													</div>
 												</li>
 												<li class="list-inline-item">
 													<div class="search_option_two">
 														<div class="candidate_revew_select">
 															<select class="selectpicker w100 show-tick" name="type_property">
-																<option value="">@lang('message.type_property')</option>
-																<option>@lang('message.department')</option>
+																<option value="">@lang('home.type_property')</option>
+																<option>@lang('home.department')</option>
 																<option>Townhouse</option>
-																<option>@lang('message.house')</option>
-																<option>@lang('message.land')</option>
+																<option>@lang('home.house')</option>
+																<option>@lang('home.land')</option>
 															</select>
 														</div>
 													</div>
@@ -41,7 +41,7 @@
 													<div class="search_option_two">
 														<div class="candidate_revew_select">
 															<select class="selectpicker w100 show-tick" name="location">
-																<option value="">@lang('message.location')</option>
+																<option value="">@lang('home.location')</option>
 																@foreach($location as $item)
 																	<option value="{{ $item->id }}">{{ $item->name }}</option>
 																@endforeach
@@ -53,9 +53,9 @@
 													<div class="search_option_two">
 														<div class="candidate_revew_select">
 															<select class="selectpicker w100 show-tick">
-																<option value="">@lang('message.offer_type')</option>
-																<option>@lang('message.offer_type_sale')</option>
-																<option>@lang('message.offer_type_rent')</option>
+																<option value="">@lang('home.offer_type')</option>
+																<option>@lang('home.offer_type_sale')</option>
+																<option>@lang('home.offer_type_rent')</option>
 															</select>
 														</div>
 													</div>
@@ -63,7 +63,7 @@
 
 												<li class="list-inline-item">
 													<div class="search_option_button">
-														<button type="submit" class="btn btn-thm" style="font-size: 16px;">@lang('message.btn_seach')</button>
+														<button type="submit" class="btn btn-thm" style="font-size: 16px;">@lang('home.btn_seach')</button>
 													</div>
 												</li>
 											</ul>
@@ -86,8 +86,8 @@
 					<a href="#feature-property">
 				    	<div class="mouse_scroll">
 			        		<div class="icon">
-					    		<h4>@lang('message.btn_slide')</h4>
-					    		<p>@lang('message.btn_slide_sub')</p>
+					    		<h4>@lang('home.btn_slide')</h4>
+					    		<p>@lang('home.btn_slide_sub')</p>
 			        		</div>
 			        		<div class="thumb">
 			        			<img src="{{ asset('cliente/assets/images/resource/mouse.png')}}" alt="mouse.png">
@@ -101,13 +101,8 @@
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
 					<div class="main-title text-center mb40">
-<<<<<<< HEAD
-						<h2>@lang('message.home_recomend')</h2>
-						<p>@lang('message.home_subtitle_recomend')</p>
-=======
-						<h2>Propiedades Destacadas</h2>
-						<p>Recomendadas por nuestros asesores expertos.</p>
->>>>>>> b293b41dd774bcce6e84d8916d2f9a600ac9cca1
+						<h2>@lang('home.home_recomend')</h2>
+						<p>@lang('home.home_subtitle_recomend')</p>
 					</div>
 				</div>
 				<div class="col-lg-12">
@@ -151,8 +146,8 @@
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
 					<div class="main-title text-center">
-						<h2>@lang('message.home_title_find')</h2>
-						<p>@lang('message.home_subtitle_find')</p>
+						<h2>@lang('home.home_title_find')</h2>
+						<p>@lang('home.home_subtitle_find')</p>
 					</div>
 				</div>
 			</div>
@@ -216,8 +211,8 @@
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
 					<div class="main-title text-center">
-						<h2>@lang('message.home_question')</h2>
-						<p>@lang('message.home_subtitle_question')</p>
+						<h2>@lang('home.home_question')</h2>
+						<p>@lang('home.home_subtitle_question')</p>
 					</div>
 				</div>
 			</div>
@@ -228,8 +223,8 @@
 							<span class="flaticon-high-five"></span>
 						</div>
 						<div class="details">
-							<h4>@lang('message.home_option_one')</h4>
-							<p>@lang('message.home_text_option_one')</p>
+							<h4>@lang('home.home_option_one')</h4>
+							<p>@lang('home.home_text_option_one')</p>
 						</div>
 					</div>
 				</div>
@@ -239,8 +234,8 @@
 							<span class="flaticon-home-1"></span>
 						</div>
 						<div class="details">
-							<h4>@lang('message.home_option_two')</h4>
-							<p>@lang('message.home_text_option_two')</p>
+							<h4>@lang('home.home_option_two')</h4>
+							<p>@lang('home.home_text_option_two')</p>
 						</div>
 					</div>
 				</div>
@@ -250,8 +245,8 @@
 							<span class="flaticon-profit"></span>
 						</div>
 						<div class="details">
-							<h4>@lang('message.home_option_three')</h4>
-							<p>@lang('message.home_text_option_three')</p>
+							<h4>@lang('home.home_option_three')</h4>
+							<p>@lang('home.home_text_option_three')</p>
 						</div>
 					</div>
 				</div>
@@ -267,13 +262,13 @@
 			<div class="row">
 				<div class="col-lg-8">
 					<div class="start_partner tac-smd">
-						<h2>@lang('message.home_question_info')</h2>
-						<p>@lang('message.home_subtitle_question_info')</p>
+						<h2>@lang('home.home_question_info')</h2>
+						<p>@lang('home.home_subtitle_question_info')</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="parner_reg_btn text-right tac-smd">
-						<a class="btn btn-thm2" href="#">@lang('message.home_btn_info')</a>
+						<a class="btn btn-thm2" href="#">@lang('home.home_btn_info')</a>
 					</div>
 				</div>
 			</div>

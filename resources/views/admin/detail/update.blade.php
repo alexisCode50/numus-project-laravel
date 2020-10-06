@@ -35,7 +35,7 @@
                         <input type="text" class="form-control" id="size_property" name="size_property" value="{{ $detail->size_property }}">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="size_land">Tamaño del Inmueble</label>
+                        <label for="size_land">Tamaño del Terreno</label>
                         <input type="text" class="form-control" id="size_land" name="size_land" value="{{ $detail->size_land }}">
                     </div>
                 </div>
