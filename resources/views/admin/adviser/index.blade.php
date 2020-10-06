@@ -2,7 +2,7 @@
 
 @section('admin')
 
-    <h1>Detalles</h1>
+    <h1>Asesores</h1>
 
     <div class="row">
         <div class="col-md-12">
@@ -20,6 +20,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
+                            <th scope="col">ID</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Telefono</th>
                             <th scope="col">Email</th>
@@ -29,6 +30,7 @@
                     <tbody>
                         @foreach ($data as $item)
                             <tr>
+                                <td>{{ $item->id }}</td>
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->phone }}</td>
                                 <td>{{ $item->email }}</td>

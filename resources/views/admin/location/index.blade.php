@@ -2,7 +2,7 @@
 
 @section('admin')
 
-    <h1>Localizaciones</h1>
+    <h1>Ubicaciones</h1>
 
     <div class="row">
         <div class="col-md-4">

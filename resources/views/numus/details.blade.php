@@ -221,9 +221,9 @@
                             <div class="media">
 
                                 <div class="media-body">
-                                    <h5 class="mt-0 mb0">Samul Williams</h5>
-                                    <p class="mb0">(123)456-7890</p>
-                                    <p class="mb0">info@findhouse.com</p>
+                                    <h5 class="mt-0 mb0">{{ $adviser->name }}</h5>
+                                    <p class="mb0">{{ $adviser->phone }}</p>
+                                    <p class="mb0">{{ $adviser->email }}</p>
                                   </div>
                             </div>
                             <hr>

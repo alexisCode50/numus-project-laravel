@@ -41,6 +41,17 @@
                 </div>
 
                 <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="front_land">Frente del terreno</label>
+                        <input type="text" class="form-control" id="front_land" name="front_land" value="{{ $detail->front_land }}">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="back_land">Fondo del terreno</label>
+                        <input type="text" class="form-control" id="back_land" name="back_land" value="{{ $detail->back_land }}">
+                    </div>
+                </div>
+
+                <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="bedroom">Recamaras</label>
                         <input type="number" class="form-control" id="bedroom" name="bedroom" value="{{ $detail->bedroom }}">
@@ -58,6 +69,7 @@
                         <input type="number" class="form-control" id="garage" name="garage" value="{{ $detail->garage }}" >
                     </div>
                 </div>
+                
 
                 <div class="form-row">
                     <div class="form-group col-md-12">
@@ -66,11 +78,19 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-4">
                         <label for="pool">Picina</label>
                         <select class="form-control" id="pool" name="pool" value="{{ $detail->pool }}">
                             <option value="1">Si</option>
                             <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="pool">Asesor</label>
+                        <select class="form-control" id="adviser_id" name="adviser_id" value="{{ $detail->adviser_id  }}">
+                            @foreach($advisers as $item)
+                                <option value="{{ $item->id }}">{{$item->name}}</option>
+                            @endforeach
                         </select>
                     </div>
                 </div>

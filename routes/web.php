@@ -26,7 +26,7 @@ Route::post('/send-email', 'EmailController@sendEmail')->name('send-email');
 // admin routes
 Route::middleware('auth')->group(function () {
 
-    Route::get('/admin', 'AdminController@home')->name('admin');
+    Route::get('/admin/home', 'AdminController@home')->name('admin');
 
     // route properties en español
     Route::get('/admin/es/properties', 'AdminController@index')->name('properties-es');

@@ -34,8 +34,16 @@
                             <td>{{ $detail->size_property }}</td>
                         </tr>
                         <tr>
-                            <th>Mts Terreno</th>
+                            <th>Area Terreno</th>
                             <td>{{ $detail->size_land }}</td>
+                        </tr>
+                        <tr>
+                            <th>Frente del Terreno</th>
+                            <td>{{ $detail->front_land }}</td>
+                        </tr>
+                        <tr>
+                            <th>Fondo del Terreno</th>
+                            <td>{{ $detail->back_land }}</td>
                         </tr>
                         <tr>
                             <th>Recamaras</th>

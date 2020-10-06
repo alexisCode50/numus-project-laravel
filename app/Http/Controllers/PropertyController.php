@@ -8,6 +8,7 @@ use App\Property;
 use App\Image;
 use App\Location;
 use App\Detail;
+use App\Adviser;
 
 class PropertyController extends Controller
 {
@@ -15,6 +16,7 @@ class PropertyController extends Controller
     {
         $lang = request()->route()->parameter("lang");
         \App::setLocale($lang);
+        $property = array();
 
         if($lang == 'es'){
             $property = Propiedad::all();
@@ -36,6 +38,7 @@ class PropertyController extends Controller
         if($lang == 'es'){
             $property = Propiedad::find($id);
             $detail = Detail::where('unique_key_property', $property->unique_key)->first();
+            $adviser = Adviser::find($detail->adviser_id);
             $images = Image::where('unique_key', $property->unique_key)->get();
         } else if($lang == 'en'){
             $property = Property::find($id);
@@ -45,7 +48,7 @@ class PropertyController extends Controller
         
         $location = Location::all();
 
-        return view('numus.details', ['property' => $property, 'detail' => $detail, 'location' => $location, 'images' => $images]);
+        return view('numus.details', ['property' => $property, 'detail' => $detail, 'adviser' => $adviser, 'location' => $location, 'images' => $images]);
     }
 
     public function search(Request $request)

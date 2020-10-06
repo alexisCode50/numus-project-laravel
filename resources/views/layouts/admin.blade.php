@@ -79,7 +79,7 @@
                     <li class="nav-item">
                     <a class="nav-link" href="{{ route('location') }}">
                         <i class="fas fa-fw fa-layegrr-oup"></i>
-                        <span>Localizaciones</span></a>
+                        <span>Ubicaciones</span></a>
                     </li>
 
 

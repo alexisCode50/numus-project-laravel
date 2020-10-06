@@ -17,13 +17,16 @@ class CreateDetailsTable extends Migration
             $table->id();
             $table->string('unique_key_property')->unique();
             $table->string('size_property'); // tamaño de la propiedad (metros construidos)
-            $table->string('size_land'); // tamaño de terreno
+            $table->string('size_land'); // area de terreno
+            $table->string('front_land'); // frente del terreno
+            $table->string('back_land'); // fondo del terreno
             $table->string('bedroom');
             $table->string('complete_bathroom');
             $table->string('half_baths');
             $table->string('garage');
             $table->text('map'); // iframe
             $table->integer('pool')->default(0);
+            $table->integer('adviser_id');
             $table->timestamps();
         });
     }
