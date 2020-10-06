@@ -43,6 +43,7 @@ class PropertyController extends Controller
         } else if($lang == 'en'){
             $property = Property::find($id);
             $detail = Detail::where('unique_key_property', $property->unique_key)->first();
+            $adviser = Adviser::find($detail->adviser_id);
             $images = Image::where('unique_key', $property->unique_key)->get();
         }
         
