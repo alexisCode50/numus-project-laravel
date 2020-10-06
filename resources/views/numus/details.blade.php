@@ -48,12 +48,12 @@
                         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
                         <div class="sidebar_listing_list style2 mobile_sytle_sidebar mb0">
                             <div class="sidebar_advanced_search_widget">
-                                <h4 class="mb25">Búsqueda Avanzada<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
+                                <h4 class="mb25">@lang('home.detail_advanced_search')<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
                                 <form action="{{ route('search') }}" method="GET">
                                     <ul class="sasw_list style2 mb0">
                                         <li class="search_area">
                                             <div class="form-group">
-                                                <input type="text" name="title" class="form-control" id="title" placeholder="Palabra clave">
+                                                <input type="text" class="form-control" name="title" id="title" placeholder="@lang('home.key_word')">
                                                 <label for="title"><span class="flaticon-magnifying-glass"></span></label>
                                             </div>
                                         </li>
@@ -61,33 +61,32 @@
                                             <div class="search_option_two">
                                                 <div class="candidate_revew_select">
                                                     <select class="selectpicker w100 show-tick" name="type_property">
-                                                        <option>Tipo de propiedad</option>
-                                                        <option>Departamento</option>
-                                                        <option>Casa</option>
+                                                        <option value="">@lang('home.type_property')</option>
+                                                        <option>@lang('home.department')</option>
                                                         <option>Townhouse</option>
-                                                        <option>Terreno</option>
+                                                        <option>@lang('home.house')</option>
+                                                        <option>@lang('home.land')</option>
                                                     </select>
                                                 </div>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="search_option_two">
-                                                <div class="candidate_revew_select">
-                                                    <select class="selectpicker w100 show-tick" name="location">
-                                                        <option>Ubicación</option>
-                                                        <option>Colonia Mexico</option>
-                                                        <option>Montes de Ame</option>
-                                                    </select>
-                                                </div>
+                                            <div class="form-group">
+                                                <select class="selectpicker w100 show-tick" name="location">
+                                                    <option value="">@lang('home.location')</option>
+                                                    @foreach($location as $item)
+                                                        <option value="{{ $item->id }}">{{ $item->name }}</option>
+                                                    @endforeach
+                                                </select>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="search_option_two">
                                                 <div class="candidate_revew_select">
                                                     <select class="selectpicker w100 show-tick">
-                                                        <option>Tipo de Oferta</option>
-                                                        <option>Renta</option>
-                                                        <option>Venta</option>
+                                                        <option value="">@lang('home.offer_type')</option>
+                                                        <option>@lang('home.offer_type_sale')</option>
+                                                        <option>@lang('home.offer_type_rent')</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -95,7 +94,7 @@
 
                                         <li>
                                             <div class="search_option_button">
-                                                <button type="submit" class="btn btn-block btn-thm">Buscar</button>
+                                                <button type="submit" class="btn btn-block btn-thm">@lang('home.btn_seach')</button>
                                             </div>
                                         </li>
                                     </ul>
@@ -129,25 +128,22 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="listing_single_description">
-                            <h4 class="mb30">Descripción</h4>
+                            <h4 class="mb30">@lang('home.detail_description')</h4>
                             <p class="mb25">{{ $property->description }}</p>
-
-
-
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="additional_details">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h4 class="mb15">Detalles de la propiedad</h4>
+                                    <h4 class="mb15">@lang('home.detail_property_details')</h4>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
                                     <ul class="list-inline-item">
                                         <li><p>ID : </p></a></li>
-                                        <li><p>Precio : </p></a></li>
-                                        <li><p>Property Size : </p></a></li>
-                                        <li><p>Mts Built : </p></a></li>
+                                        <li><p>@lang('home.detail_price') : </p></a></li>
+                                        <li><p>@lang('home.detail_land') : </p></a></li>
+                                        <li><p>@lang('home.detail_built') : </p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
                                         <li><p><span>{{ $property->unique_key }}</span></p></a></li>
@@ -158,22 +154,24 @@
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
                                     <ul class="list-inline-item">
-                                        <li><p>Bedrooms :</p></a></li>
-                                        <li><p>Bathrooms :</p></a></li>
-                                        <li><p>Garage :</p></a></li>
-                                        <li><p>Pool :</p></a></li>
+                                        <li><p>@lang('home.detail_bedrooms') :</p></a></li>
+                                        <li><p>@lang('home.detail_complete_bathroom') :</p></a></li>
+                                        <li><p>@lang('home.detail_half_baths') :</p></a></li>
+                                        <li><p>@lang('home.detail_garage') :</p></a></li>
+                                        <li><p>@lang('home.detail_pool') :</p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
                                         <li><p><span>{{ $detail->bedroom }}</span></p></a></li>
-                                        <li><p><span>{{ $detail->bathroom }}</span></p></a></li>
+                                        <li><p><span>{{ $detail->complete_bathroom }}</span></p></a></li>
+                                        <li><p><span>{{ $detail->half_baths }}</span></p></a></li>
                                         <li><p><span>{{ $detail->garage }}</span></p></a></li>
                                         <li><p><span>@if($detail->pool == 1) Si @else No @endif </span></p></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
                                     <ul class="list-inline-item">
-                                        <li><p>Tipo de la propiedad :</p></a></li>
-                                        <li><p>Estatus de la propiedad :</p></a></li>
+                                        <li><p>@lang('home.detail_property_type') :</p></a></li>
+                                        <li><p>@lang('home.detail_offer_type') :</p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
                                         <li><p><span>{{ $property->type_property }}</span></p></a></li>
@@ -189,7 +187,7 @@
                         <div class="application_statics mt30">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h4 class="mb10">Amenidades</h4>
+                                    <h4 class="mb10">@lang('home.detail_amenities')</h4>
                                 </div>
 
                                 <div class="col-lg-12">
@@ -201,7 +199,7 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="application_statics mt30">
-                            <h4 class="mb30">Ubicación <small class="float-right">{{ $property->direction }}</small></h4>
+                            <h4 class="mb30">@lang('home.detail_location') <small class="float-right">{{ $property->direction }}</small></h4>
                             <div class="property_video p0">
                                 <div class="thumb">
                                     @php
@@ -233,49 +231,57 @@
 
                                 <div class="media-body">
 
-                                    <p class="mb0">Nombre de la propiedad</p>
+                                    <p class="mb0">{{ $property->title }}</p>
                                     <p class="mb0">ID: {{ $property->unique_key}}</p>
 
                                   </div>
                             </div>
                         </div>
-                        <ul class="sasw_list mb0">
-                            <li class="search_area">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Nombre completo">
-                                </div>
-                            </li>
-                            <li class="search_area">
-                                <div class="form-group">
-                                    <input type="number" class="form-control" id="exampleInputName2" placeholder="Teléfono">
-                                </div>
-                            </li>
-                            <li class="search_area">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
-                                </div>
-                            </li>
-                            <li class="search_area">
-                                <div class="form-group">
-                                    <textarea id="form_message" name="form_message" class="form-control required" rows="5" required="required" placeholder="Me interesa este inmueble">Me interesa este inmueble </textarea>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="search_option_button">
-                                    <button type="submit" class="btn btn-block btn-thm">Buscar</button>
-                                </div>
-                            </li>
-                        </ul>
+                        <form class="contact_form" action="{{ route('send-email') }}" method="POST">
+                            @csrf
+                            <ul class="sasw_list mb0">
+                                <li class="search_area">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="@lang('home.form_name')">
+                                    </div>
+                                </li>
+                                <li class="search_area">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="@lang('home.form_email')">
+                                    </div>
+                                </li>
+                                <li class="search_area">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="phone" name="phone"  placeholder="@lang('home.form_phone')">
+                                    </div>
+                                </li>
+                                <li class="search_area">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="@lang('home.form_subject')">
+                                    </div>
+                                </li>
+                                <li class="search_area">
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message" id="message" class="form-control required" rows="5" required="required" placeholder="@lang('home.form_message')"></textarea>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="search_option_button">
+                                        <button type="submit" class="btn btn-block btn-thm">@lang('home.form_btn_send')</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
                     </div>
                 </div>
                 <div class="sidebar_listing_list style2 mobile_sytle_sidebar mb0">
                     <div class="sidebar_advanced_search_widget">
-                        <h4 class="mb25">Búsqueda Avanzada<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
+                        <h4 class="mb25">@lang('home.detail_advanced_search')<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
                         <form action="{{ route('search') }}" method="GET">
                             <ul class="sasw_list style2 mb0">
                                 <li class="search_area">
                                     <div class="form-group">
-                                        <input type="text" name="title" class="form-control" id="title" placeholder="Palabra clave">
+                                        <input type="text" class="form-control" name="title" id="title" placeholder="@lang('home.key_word')">
                                         <label for="title"><span class="flaticon-magnifying-glass"></span></label>
                                     </div>
                                 </li>
@@ -283,33 +289,32 @@
                                     <div class="search_option_two">
                                         <div class="candidate_revew_select">
                                             <select class="selectpicker w100 show-tick" name="type_property">
-                                                <option>Tipo de propiedad</option>
-                                                <option>Departamento</option>
-                                                <option>Casa</option>
+                                                <option value="">@lang('home.type_property')</option>
+                                                <option>@lang('home.department')</option>
                                                 <option>Townhouse</option>
-                                                <option>Terreno</option>
+                                                <option>@lang('home.house')</option>
+                                                <option>@lang('home.land')</option>
                                             </select>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="search_option_two">
-                                        <div class="candidate_revew_select">
-                                            <select class="selectpicker w100 show-tick" name="location">
-                                                <option>Ubicación</option>
-                                                <option>Colonia Mexico</option>
-                                                <option>Montes de Ame</option>
-                                            </select>
-                                        </div>
+                                    <div class="form-group">
+                                        <select class="selectpicker w100 show-tick" name="location">
+                                            <option value="">@lang('home.location')</option>
+                                            @foreach($location as $item)
+                                                <option value="{{ $item->id }}">{{ $item->name }}</option>
+                                            @endforeach
+                                        </select>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="search_option_two">
                                         <div class="candidate_revew_select">
                                             <select class="selectpicker w100 show-tick">
-                                                <option>Tipo de Oferta</option>
-                                                <option>Renta</option>
-                                                <option>Venta</option>
+                                                <option value="">@lang('home.offer_type')</option>
+                                                <option>@lang('home.offer_type_sale')</option>
+                                                <option>@lang('home.offer_type_rent')</option>
                                             </select>
                                         </div>
                                     </div>
@@ -317,7 +322,7 @@
 
                                 <li>
                                     <div class="search_option_button">
-                                        <button type="submit" class="btn btn-block btn-thm">Buscar</button>
+                                        <button type="submit" class="btn btn-block btn-thm">@lang('home.btn_seach')</button>
                                     </div>
                                 </li>
                             </ul>
@@ -325,7 +330,7 @@
                     </div>
                 </div>
                 <div class="terms_condition_widget">
-                    <h4 class="title">Propiedades destacadas</h4>
+                    <h4 class="title">@lang('home.home_recomend')</h4>
                     <div class="sidebar_feature_property_slider">
                         <div class="item">
                             <div class="feat_property home7 agent">

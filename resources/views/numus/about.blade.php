@@ -8,9 +8,9 @@
                 <div class="breadcrumb_content">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Numus</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+                        <li class="breadcrumb-item active" aria-current="page">@lang('home.nav_company')</li>
                     </ol>
-                    <h1 class="breadcrumb_title">¿Quiénes somos?</h1>
+                    <h1 class="breadcrumb_title">@lang('home.company_about_us')</h1>
                 </div>
             </div>
         </div>
@@ -23,20 +23,22 @@
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
                 <div class="main-title text-center">
-                    <h2 class="mt0">Nuestra misión es encontrar tu próximo sueño</h2>
+                    <h2 class="mt0">@lang('home.company_title_one')</h2>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8 col-xl-7">
                 <div class="about_content">
-                    <p class="large">Numus Inmobiliaria y su equipo saben y entienden que no se trata de casas.</p>
-                    <p> Se trata de la comunidad, las personas y las relaciones que importan dentro de la casa  y la zona escogida para vivir. Se trata de comprender los matices de su estilo de vida, ya sea que esté en el mercado para vender o comprar. Permítanos ayudarlo a encontrar y definir lo que el lujo significa para usted.
-                    </p>
-                    <p>Somos un equipo de asesores inmobiliarios residiendo en Merida, Yucatán, la ciudad con mejor calidad de vida para vivir en mexico y Latinoamérica, estamos aquí dispuestos a ayudarlos a encontrar la mejor opción para vivir o invertir en el sureste de mexico.
+                    <p class="large">@lang('home.company_subtitle_one')</p>
+                    <p>
+                        @lang('home.company_description_one')
                     </p>
                     <p>
-                        Nuestro objetivo es brindar lo último en servicios profesionales de bienes raíces tanto residenciales y comerciales, como al igual oportunidades de inversión. Enfocándonos en propiedades en el mercado premium que satisfagan las necesidades de nuestros clientes.
+                        @lang('home.company_description_two')
+                    </p>
+                    <p>
+                        @lang('home.company_description_three')
                     </p>
                     <ul class="ab_counting">
                         <li class="list-inline-item">
@@ -44,7 +46,7 @@
                                 <div class="icon"><span class="flaticon-user"></span></div>
                                 <div class="details">
                                     <h3>80,123</h3>
-                                    <p>Clientes satisfechos</p>
+                                    <p>@lang('home.company_customers')</p>
                                 </div>
                             </div>
                         </li>
@@ -53,7 +55,7 @@
                                 <div class="icon"><span class="flaticon-home"></span></div>
                                 <div class="details">
                                     <h3>332</h3>
-                                    <p>Propiedades</p>
+                                    <p>@lang('home.company_properties')</p>
                                 </div>
                             </div>
                         </li>
@@ -61,8 +63,8 @@
                             <div class="about_counting">
                                 <div class="icon"><span class="flaticon-transfer"></span></div>
                                 <div class="details">
-                                    <h3>$468 Millones</h3>
-                                    <p>En ahorros</p>
+                                    <h3>$468 @lang('home.company_millions')</h3>
+                                    <p>@lang('home.company_savings')</p>
                                 </div>
                             </div>
                         </li>
@@ -79,8 +81,8 @@
         <div class="row mt50">
             <div class="col-lg-6 offset-lg-3">
                 <div class="main-title text-center">
-                    <h2>¿Por qué somos tu mejor opción?</h2>
-                    <p>Garantizamos tu próximo sueño</p>
+                    <h2>@lang('home.home_question')</h2>
+					<p>@lang('home.home_subtitle_question')</p>
                 </div>
             </div>
         </div>
@@ -91,8 +93,8 @@
                         <span class="flaticon-high-five"></span>
                     </div>
                     <div class="details">
-                        <h4>Clientes satisfechos</h4>
-                        <p>Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
+                        <h4>@lang('home.home_option_one')</h4>
+						<p>@lang('home.home_text_option_one')</p>
                     </div>
                 </div>
             </div>
@@ -102,8 +104,8 @@
                         <span class="flaticon-home-1"></span>
                     </div>
                     <div class="details">
-                        <h4>Todo tipo de propiedades</h4>
-                        <p>Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
+                        <h4>@lang('home.home_option_two')</h4>
+						<p>@lang('home.home_text_option_two')</p>
                     </div>
                 </div>
             </div>
@@ -113,8 +115,8 @@
                         <span class="flaticon-profit"></span>
                     </div>
                     <div class="details">
-                        <h4>Asesoría financiera</h4>
-                        <p>Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis.</p>
+                        <h4>@lang('home.home_option_three')</h4>
+						<p>@lang('home.home_text_option_three')</p>
                     </div>
                 </div>
             </div>

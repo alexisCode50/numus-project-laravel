@@ -22,8 +22,9 @@ class PropertyController extends Controller
     {
         $property = Propiedad::find($id);
         $detail = Detail::where('unique_key_property', $property->unique_key)->first();
+        $location = Location::all();
         $images = Image::where('unique_key', $property->unique_key)->get();
-        return view('numus.details', ['property' => $property, 'detail' => $detail, 'images' => $images]);
+        return view('numus.details', ['property' => $property, 'detail' => $detail, 'location' => $location, 'images' => $images]);
     }
 
     public function search(Request $request)

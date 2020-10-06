@@ -54,5 +54,59 @@ return [
     'no_results_search' => 'No search results',
     'outstanding' => 'outstanding',
     'advanced_search' => 'Advanced search',
-    
+
+
+    // Page Nostros or Company
+    'company_about_us' => 'About us?',
+    'company_title_one' => 'Our mission is to find your next dream',
+    'company_subtitle_one' => 'Numus Inmobiliaria and its team know and understand that it is not about houses.',
+    'company_description_one' => "It is about the community, the people and the relationships that matter within the home and chosen area to live in. It's about understanding the nuances of your lifestyle, whether you're in the market to sell or buy. Let us help you find and define what luxury means to you.",
+    'company_description_two' => 'We are a team of real estate advisers residing in Merida, Yucatán, the city with the best quality of life to live in Mexico and Latin America, we are here ready to help you find the best option to live or invest in the southeast of Mexico.',
+    'company_description_three' => 'Our goal is to provide the latest in professional residential and commercial real estate services, as well as investment opportunities. Focusing on properties in the premium market that meet the needs of our clients.',
+    'company_customers' => 'Satisfied customers',
+    'company_properties' => 'Properties',
+    'company_savings' => 'In savings',
+    'company_millions' => 'Millions',
+
+    // Page How to buy
+    'how_title' => 'Steps you need to know to buy your new home',
+    'how_step_one' => 'Step 1',
+    'how_step_two' => 'Step 2',
+    'how_step_three' => 'Step 3',
+    'how_step_one_text' => "It is about the community, the people and the relationships that matter within the home and chosen area to live in. It's about understanding the nuances of your lifestyle, whether you're in the market to sell or buy. Let us help you find and define what luxury means to you.",
+    'how_step_two_text' => 'We are a team of real estate advisers residing in Merida, Yucatán, the city with the best quality of life to live in Mexico and Latin America, we are here ready to help you find the best option to live or invest in the southeast of Mexico.',
+    'how_step_three_text' => 'Our goal is to provide the latest in professional residential and commercial real estate services, as well as investment opportunities. Focusing on properties in the premium market that meet the needs of our clients.',
+
+    // Page Contact
+    'contact_us' => 'Contact us',
+    'contact_title' => 'Send us a message',
+    'contact_text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida quis libero eleifend ornare. Maecenas mattis enim at arcu feugiat, sit amet blandit nisl iaculis',
+    'form_name' => 'Name',
+    'form_email' => 'Email',
+    'form_phone' => 'Phone',
+    'form_subject' => 'Subject',
+    'form_message' => 'Message',
+    'form_btn_send' => 'Send!',
+    'contact_location' => 'Location',
+    'contact_follow' => 'Follow us on our networks',
+
+
+    // page details
+    'detail_description' => 'Description',
+    'detail_property_details' => 'Property details',
+    'detail_price' => 'Price',
+    'detail_land' => 'Land size',
+    'detail_built' => 'Mts Built',
+    'detail_bedrooms' => 'Bedrooms',
+    'detail_complete_bathroom' => 'Complete bathroom',
+    'detail_half_baths' => 'Half Baths',
+    'detail_garage' => 'Garage',
+    'detail_pool' => 'Pool',
+    'detail_property_type' => 'Property type',
+    'detail_offer_type' => 'Offer type',
+    'detail_amenities' => 'Amenities',
+    'detail_location' => 'Location',
+    'detail_property_name' => 'Property name',
+    'detail_advanced_search' => 'Advanced search',
+    'detail_recomend' => 'Featured properties',
 ];
