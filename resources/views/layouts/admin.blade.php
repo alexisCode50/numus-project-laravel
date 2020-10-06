@@ -23,17 +23,14 @@
     <div id="page-top">
 
         <div id="wrapper">
-        
+
             @auth
                 <!-- Sidebar -->
                 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                     <!-- Sidebar - Brand -->
-                    <a class="sidebar-brand d-flex align-items-center justify-content-center" hhref="{{ route('admin') }}">
-                    <div class="sidebar-brand-icon">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="sidebar-brand-text mx-3">Admin</div>
+                    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('admin') }}">
+                        <img class="nav_logo_img img-fluid" src="{{ asset('cliente/assets/images/logo_white.png')}}" alt="header-logo.png" style="width: 150px;">
                     </a>
 
                     <!-- Divider -->
@@ -43,7 +40,7 @@
                     <li class="nav-item active">
                     <a class="nav-link" href="{{ route('admin') }}">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard</span></a>
+                        <span>Panel de Administrador</span></a>
                     </li>
 
                     <!-- Divider -->
@@ -54,7 +51,7 @@
                         Secciones
                     </div>
 
-                    
+
                     <li class="nav-item">
                     <a class="nav-link" href="{{ route('properties-es') }}">
                         <i class="fas fa-fw fa-layegrr-oup"></i>
@@ -85,7 +82,7 @@
                         <span>Localizaciones</span></a>
                     </li>
 
-                    
+
                     <!-- Divider -->
                     <hr class="sidebar-divider d-none d-md-block">
 
