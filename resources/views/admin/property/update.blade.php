@@ -63,10 +63,10 @@
                         <input type="number" class="form-control" id="price" name="price" value="{{ $property->price }}">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="state_property">Estado de Propiedad</label>
-                        <select class="form-control" id="state_property" name="state_property" value="{{ $property->state_property }}">
-                            <option>Venta</option>
-                            <option>Renta</option>
+                        <label for="state_property">Tipo de Oferta</label>
+                        <select class="form-control" id="state_property" name="state_property">
+                            <option>For Sale</option>
+                            <option>For Rent</option>
                         </select>
                     </div>
                 </div>

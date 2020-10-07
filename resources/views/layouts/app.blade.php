@@ -87,7 +87,7 @@
 
 				</div>
 				<ul class="menu_bar_home2">
-	                <li class="list-inline-item list_s"><a href="page-register.html"><span class="flaticon-user"></span></a></li>
+	                <li class="list-inline-item list_s"></a></li>
 					<li class="list-inline-item"><a href="#menu"><span></span></a></li>
 				</ul>
 			</div>
@@ -155,7 +155,7 @@
 							<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" style="color: #5277a3"></i></a></li>
 							<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" style="color: #5277a3"></i></a></li>
                             <li class="list-inline-item"><a href="#"><i class="fa fa-whatsapp" style="color: #5277a3"></i></a></li>
-                            <li class="list-inline-item"><a href="#"> </a><i class="btn flaticon-user" style="color: #5277a3"></i> </li>
+                            <li class="list-inline-item"><a href="{{ route('admin') }}"><i class="btn flaticon-user" style="color: #5277a3"></i> </a></li>
 
 						</ul>
 					</div>

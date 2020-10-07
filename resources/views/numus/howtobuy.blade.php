@@ -7,8 +7,8 @@
             <div class="col-xl-6">
                 <div class="breadcrumb_content">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Numus</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">how to buy</li>
+                        <li class="breadcrumb-item"><a href="{{ route('home', App::getLocale()) }}">Numus</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">How to buy</li>
                     </ol>
                     <h1 class="breadcrumb_title">How to buy</h1>
                 </div>

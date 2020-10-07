@@ -4,7 +4,7 @@
     <!-- Page Heading -->
     <h1 class="h1 mb-2 text-gray-800">Agregar Imagenes a la Propiedad</h1>
 
-    <a href="/admin" class="btn btn-warning btn-icon-split my-3">
+    <a href="{{ route('properties-es') }}" class="btn btn-warning btn-icon-split my-3">
         <span class="text">Regresar</span>
     </a>
 

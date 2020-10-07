@@ -237,7 +237,7 @@
                                   </div>
                             </div>
                         </div>
-                        <form class="contact_form" action="{{ route('send-email') }}" method="POST">
+                        <form class="contact_form" action="{{ route('send-email', App::getLocale()) }}" method="POST">
                             @csrf
                             <ul class="sasw_list mb0">
                                 <li class="search_area">
@@ -332,66 +332,31 @@
                 <div class="terms_condition_widget">
                     <h4 class="title">@lang('home.home_recomend')</h4>
                     <div class="sidebar_feature_property_slider">
-                        <div class="item">
-                            <div class="feat_property home7 agent">
-                                <div class="thumb">
-                                    <img class="img-whp" src="images/property/fp1.jpg" alt="fp1.jpg">
-                                    <div class="thmb_cntnt">
-                                        <ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">Venta</a></li>
-                                            <li class="list-inline-item"><a href="#">Destacada</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>/mo</small></a>
-                                        <h4 class="posr color-white">Renovated Apartment</h4>
+                        @foreach($outstanding as $item)
+                            <div class="item">
+                                <div class="feat_property">
+                                    <div class="thumb" style="height: 220px;">
+                                        <img class="img-whp" src="{{ asset('images/'.$item->profile_picture) }}" alt="{{ $item->title }}" >
+                                        <div class="thmb_cntnt">
+                                            <ul class="tag mb0">
+                                                <li class="list-inline-item" style="background-color: rgb(62, 76, 102);"><a>{{ $item->state_property }}</a></li>
+                                                @if($item->outstanding == 1)
+                                                    <li class="list-inline-item"><a>@lang('home.outstanding')</a></li>
+                                                @endif
+                                            </ul>
+                                            <a class="fp_price" href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">$ {{ number_format($item->price) }}</a>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="tc_content">
+                                            <p class="text-thm">{{ $item->type_property }}</p>
+                                            <h4><a href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">{{ $item->title }}</a></h4>
+                                            <p><span class="flaticon-placeholder"></span>{{ $item->direction }}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="feat_property home7 agent">
-                                <div class="thumb">
-                                    <img class="img-whp" src="images/property/fp2.jpg" alt="fp2.jpg">
-                                    <div class="thmb_cntnt">
-                                        <ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">For Rent</a></li>
-                                            <li class="list-inline-item"><a href="#">Featured</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>/mo</small></a>
-                                        <h4 class="posr color-white">Renovated Apartment</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="feat_property home7 agent">
-                                <div class="thumb">
-                                    <img class="img-whp" src="images/property/fp3.jpg" alt="fp3.jpg">
-                                    <div class="thmb_cntnt">
-                                        <ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">For Rent</a></li>
-                                            <li class="list-inline-item"><a href="#">Featured</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>/mo</small></a>
-                                        <h4 class="posr color-white">Renovated Apartment</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="feat_property home7 agent">
-                                <div class="thumb">
-                                    <img class="img-whp" src="images/property/fp4.jpg" alt="fp4.jpg">
-                                    <div class="thmb_cntnt">
-                                        <ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">For Rent</a></li>
-                                            <li class="list-inline-item"><a href="#">Featured</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>/mo</small></a>
-                                        <h4 class="posr color-white">Renovated Apartment</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+						@endforeach
                         <div class="item">
                             <div class="feat_property home7 agent">
                                 <div class="thumb">

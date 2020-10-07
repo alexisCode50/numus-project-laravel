@@ -16,11 +16,8 @@ Route::group([
     Route::get('/contact', 'PropertyController@contact')->name('contact');
     Route::get('/about', 'PropertyController@about')->name('about');
     Route::get('/howtobuy', 'PropertyController@howtobuy')->name('howtobuy');
-    
+    Route::post('/send-email', 'EmailController@sendEmail')->name('send-email'); 
 });
-
-
-Route::post('/send-email', 'EmailController@sendEmail')->name('send-email');
 
 
 // admin routes

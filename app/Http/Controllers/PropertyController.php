@@ -19,9 +19,9 @@ class PropertyController extends Controller
         $property = array();
 
         if($lang == 'es'){
-            $property = Propiedad::all();
+            $property = Propiedad::where('outstanding', 1)->get();
         } else if($lang == 'en'){
-            $property = Property::all();
+            $property = Property::where('outstanding', 1)->get();
         }
 
         $location = Location::all();
@@ -39,17 +39,19 @@ class PropertyController extends Controller
             $property = Propiedad::find($id);
             $detail = Detail::where('unique_key_property', $property->unique_key)->first();
             $adviser = Adviser::find($detail->adviser_id);
+            $outstanding = Propiedad::where('outstanding', 1)->get();
             $images = Image::where('unique_key', $property->unique_key)->get();
         } else if($lang == 'en'){
             $property = Property::find($id);
             $detail = Detail::where('unique_key_property', $property->unique_key)->first();
             $adviser = Adviser::find($detail->adviser_id);
+            $outstanding = Property::where('outstanding', 1)->get();
             $images = Image::where('unique_key', $property->unique_key)->get();
         }
         
         $location = Location::all();
 
-        return view('numus.details', ['property' => $property, 'detail' => $detail, 'adviser' => $adviser, 'location' => $location, 'images' => $images]);
+        return view('numus.details', ['property' => $property, 'detail' => $detail, 'adviser' => $adviser, 'location' => $location, 'outstanding' => $outstanding, 'images' => $images]);
     }
 
     public function search(Request $request)
@@ -73,6 +75,8 @@ class PropertyController extends Controller
             } else {
                 $data = Propiedad::paginate(10);
             }
+
+            $outstanding = Propiedad::where('outstanding', 1)->get();
         } else if($lang == 'en'){
             if($request->get('title') || $request->get('type_property') || $request->get('location')){
                 $title = $request->get('title');
@@ -88,11 +92,13 @@ class PropertyController extends Controller
             } else {
                 $data = Property::paginate(10);
             }
+
+            $outstanding = Property::where('outstanding', 1)->get();
         }
 
         $location = Location::all();
 
-        return view('numus.search', ['data' => $data, 'location' => $location]);
+        return view('numus.search', ['data' => $data, 'location' => $location, 'outstanding' => $outstanding]);
     }
 
     public function contact(){

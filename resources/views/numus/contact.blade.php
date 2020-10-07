@@ -7,7 +7,7 @@
             <div class="col-xl-6">
                 <div class="breadcrumb_content">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Numus</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('home', App::getLocale()) }}">Numus</a></li>
                         <li class="breadcrumb-item active" aria-current="page">@lang('home.nav_contact')</li>
                     </ol>
                     <h4 class="breadcrumb_title">@lang('home.contact_us')</h4>
@@ -25,7 +25,7 @@
                 <div class="form_grid">
                     <h4 class="mb5">@lang('home.contact_title')</h4>
                     <p>@lang('home.contact_text')</p>
-                    <form class="contact_form" action="{{ route('send-email') }}" method="POST">
+                    <form class="contact_form" action="{{ route('send-email', App::getLocale()) }}" method="POST">
                         @csrf
                         <div class="row">
                             <div class="col-md-6">

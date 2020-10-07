@@ -11,6 +11,9 @@ class EmailController extends Controller
 {
     public function sendEmail(Request $request){
 
+        $lang = request()->route()->parameter("lang");
+        \App::setLocale($lang);
+
         $msg = request()->validate([
             'name' => 'required|string',
             'email' => 'required|email',
@@ -19,8 +22,14 @@ class EmailController extends Controller
             'message' => 'required|string',
         ]);
 
-        Mail::to('skrillex_ja14@hotmail.com')->queue(new SendEmail($msg));
+        if($lang == 'es'){
+            Mail::to('skrillex_ja14@hotmail.com')->queue(new SendEmail($msg));
+            \Session::flash('message', 'Mensaje Enviado!');
+        } else if($lang == 'en'){
+            Mail::to('skrillex_ja14@hotmail.com')->queue(new SendEmail($msg));
+            \Session::flash('message', 'Send Message!');
+        }
 
-        return 'enviado';
+        return redirect()-back();
     }
 }
