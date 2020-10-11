@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hola</h1>
-    <p>Reciviste un mesaje de: {{ $msg['name'] }} - {{ $msg['email'] }}</p>
+    <p>Recibiste un mesaje de: {{ $msg['name'] }} - {{ $msg['email'] }}</p>
+    <p>Numero de Telefono: {{ $msg['phone'] }}</p>
     <p>Asunto: {{ $msg['subject'] }}</p>
     <p>Contenido: {{ $msg['message'] }}</p>
     

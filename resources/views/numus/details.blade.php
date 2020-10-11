@@ -140,25 +140,27 @@
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
                                     <ul class="list-inline-item">
-                                        <li><p>ID : </p></a></li>
-                                        <li><p>@lang('home.detail_price') : </p></a></li>
-                                        <li><p>@lang('home.detail_land') : </p></a></li>
-                                        <li><p>@lang('home.detail_built') : </p></a></li>
+                                        <li><p>ID: </p></a></li>
+                                        <li><p>@lang('home.detail_land'): </p></a></li>
+                                        <li><p>@lang('home.detail_built'): </p></a></li>
+                                        <li><p>@lang('home.detail_front'): </p></a></li>
+                                        <li><p>@lang('home.detail_fund'): </p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
                                         <li><p><span>{{ $property->unique_key }}</span></p></a></li>
-                                        <li><p><span>$ {{ number_format($property->price) }}</span></p></a></li>
                                         <li><p><span>{{ $detail->size_property }}</span></p></a></li>
                                        <li><p><span>{{ $detail->size_land }}</span></p></a></li>
+                                       <li><p><span>{{ $detail->front_land }}</span></p></a></li>
+                                       <li><p><span>{{ $detail->back_land }}</span></p></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-4">
                                     <ul class="list-inline-item">
-                                        <li><p>@lang('home.detail_bedrooms') :</p></a></li>
-                                        <li><p>@lang('home.detail_complete_bathroom') :</p></a></li>
-                                        <li><p>@lang('home.detail_half_baths') :</p></a></li>
-                                        <li><p>@lang('home.detail_garage') :</p></a></li>
-                                        <li><p>@lang('home.detail_pool') :</p></a></li>
+                                        <li><p>@lang('home.detail_bedrooms'):</p></a></li>
+                                        <li><p>@lang('home.detail_complete_bathroom'):</p></a></li>
+                                        <li><p>@lang('home.detail_half_baths'):</p></a></li>
+                                        <li><p>@lang('home.detail_garage'):</p></a></li>
+                                        <li><p>@lang('home.detail_pool'):</p></a></li>
                                     </ul>
                                     <ul class="list-inline-item">
                                         <li><p><span>{{ $detail->bedroom }}</span></p></a></li>
@@ -357,21 +359,6 @@
                                 </div>
                             </div>
 						@endforeach
-                        <div class="item">
-                            <div class="feat_property home7 agent">
-                                <div class="thumb">
-                                    <img class="img-whp" src="images/property/fp5.jpg" alt="fp5.jpg">
-                                    <div class="thmb_cntnt">
-                                        <ul class="tag mb0">
-                                            <li class="list-inline-item"><a href="#">For Rent</a></li>
-                                            <li class="list-inline-item"><a href="#">Featured</a></li>
-                                        </ul>
-                                        <a class="fp_price" href="#">$13,000<small>/mo</small></a>
-                                        <h4 class="posr color-white">Renovated Apartment</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -30,6 +30,9 @@
     </div>
     <div class="row my-3">
         <div class="col-md-8 m-auto">
+            <div class="alert alert-warning" role="alert">
+                No subir mas de 4 imagenes a la vez
+            </div>
             <form action="{{ route('image-save') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="input-group">

@@ -30,6 +30,6 @@ class EmailController extends Controller
             \Session::flash('message', 'Send Message!');
         }
 
-        return redirect()-back();
+        return redirect()->back();
     }
 }

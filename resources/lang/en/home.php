@@ -97,6 +97,8 @@ return [
     'detail_price' => 'Price',
     'detail_land' => 'Land size',
     'detail_built' => 'Mts Built',
+    'detail_front' => 'Front',
+    'detail_fund' => 'Fund',
     'detail_bedrooms' => 'Bedrooms',
     'detail_complete_bathroom' => 'Complete bathroom',
     'detail_half_baths' => 'Half Baths',

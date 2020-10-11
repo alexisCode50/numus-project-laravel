@@ -93,6 +93,8 @@ return [
     'detail_price' => 'Precio',
     'detail_land' => 'Tamaño del terreno',
     'detail_built' => 'Mts Construidos',
+    'detail_front' => 'Frente',
+    'detail_fund' => 'Fondo',
     'detail_bedrooms' => 'Recamaras',
     'detail_complete_bathroom' => 'Baños Completos',
     'detail_half_baths' => 'Medios Baños',

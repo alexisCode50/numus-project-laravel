@@ -70,7 +70,7 @@
             <div class="col-lg-6" >
                 <div class="breadcrumb_content style2 mb0-991">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Numus</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('home', App::getLocale()) }}">Numus</a></li>
                         <li class="breadcrumb-item active text-thm" aria-current="page">@lang('home.nav_properties')</li>
                     </ol>
                     <h2 class="breadcrumb_title">@lang('home.nav_properties')</h2>
@@ -168,21 +168,6 @@
                                     </div>
                                 </div>
                             @endforeach
-                            <div class="item">
-                                <div class="feat_property home7 agent">
-                                    <div class="thumb">
-                                        <img class="img-whp" src="images/property/fp5.jpg" alt="fp5.jpg">
-                                        <div class="thmb_cntnt">
-                                            <ul class="tag mb0">
-                                                <li class="list-inline-item"><a href="#">For Rent</a></li>
-                                                <li class="list-inline-item"><a href="#">Featured</a></li>
-                                            </ul>
-                                            <a class="fp_price" href="#">$13,000<small>/mo</small></a>
-                                            <h4 class="posr color-white">Renovated Apartment</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
                         </div>
                     </div>
