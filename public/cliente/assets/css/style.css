@@ -4337,7 +4337,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  height: 330px;
+  height: 350px;
 }
 .feat_property:hover{
   cursor: pointer;
