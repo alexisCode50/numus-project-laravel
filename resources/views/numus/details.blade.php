@@ -206,160 +206,158 @@
                                 <div class="thumb">
                                     @php
                                         $map =  htmlentities($detail->map);
-                                        echo html_entity_decode($map); 
+                                        echo html_entity_decode($map);
                                     @endphp
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
-            <div class="col-lg-4 col-xl-4 mt50">
-                <div class="sidebar_listing_list">
-                    <div class="sidebar_advanced_search_widget">
-                        <div class="sl_creator">
-                            <div class="media">
+        </div>
+        <div class="col-lg-4 col-xl-4 mt50">
+            <div class="sidebar_listing_list">
+                <div class="sidebar_advanced_search_widget">
+                    <div class="sl_creator">
+                        <div class="media">
 
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb0">{{ $adviser->name }}</h5>
-                                    <p class="mb0">{{ $adviser->phone }}</p>
-                                    <p class="mb0">{{ $adviser->email }}</p>
-                                  </div>
-                            </div>
-                            <hr>
-                            <div class="media">
-
-                                <div class="media-body">
-
-                                    <p class="mb0">{{ $property->title }}</p>
-                                    <p class="mb0">ID: {{ $property->unique_key}}</p>
-
-                                  </div>
-                            </div>
+                            <div class="media-body">
+                                <h5 class="mt-0 mb0">{{ $adviser->name }}</h5>
+                                <p class="mb0">{{ $adviser->phone }}</p>
+                                <p class="mb0">{{ $adviser->email }}</p>
+                              </div>
                         </div>
-                        <form class="contact_form" action="{{ route('send-email', App::getLocale()) }}" method="POST">
-                            @csrf
-                            <ul class="sasw_list mb0">
-                                <li class="search_area">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="@lang('home.form_name')">
-                                    </div>
-                                </li>
-                                <li class="search_area">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="@lang('home.form_email')">
-                                    </div>
-                                </li>
-                                <li class="search_area">
-                                    <div class="form-group">
-                                        <input type="number" class="form-control" id="phone" name="phone"  placeholder="@lang('home.form_phone')">
-                                    </div>
-                                </li>
-                                <li class="search_area">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="@lang('home.form_subject')">
-                                    </div>
-                                </li>
-                                <li class="search_area">
-                                    <div class="form-group">
-                                        <textarea id="form_message" name="message" id="message" class="form-control required" rows="5" required="required" placeholder="@lang('home.form_message')"></textarea>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="search_option_button">
-                                        <button type="submit" class="btn btn-block btn-thm">@lang('home.form_btn_send')</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </form>
+                        <hr>
+                        <div class="media">
+
+                            <div class="media-body">
+
+                                <p class="mb0">{{ $property->title }}</p>
+                                <p class="mb0">ID: {{ $property->unique_key}}</p>
+
+                              </div>
+                        </div>
                     </div>
+                    <form class="contact_form" action="{{ route('send-email', App::getLocale()) }}" method="POST">
+                        @csrf
+                        <ul class="sasw_list mb0">
+                            <li class="search_area">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="@lang('home.form_name')">
+                                </div>
+                            </li>
+                            <li class="search_area">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="@lang('home.form_email')">
+                                </div>
+                            </li>
+                            <li class="search_area">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="phone" name="phone"  placeholder="@lang('home.form_phone')">
+                                </div>
+                            </li>
+                            <li class="search_area">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="@lang('home.form_subject')">
+                                </div>
+                            </li>
+                            <li class="search_area">
+                                <div class="form-group">
+                                    <textarea id="form_message" name="message" id="message" class="form-control required" rows="5" required="required" placeholder="@lang('home.form_message')"></textarea>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_option_button">
+                                    <button type="submit" class="btn btn-block btn-thm">@lang('home.form_btn_send')</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
                 </div>
-                <div class="sidebar_listing_list style2 mobile_sytle_sidebar mb0">
-                    <div class="sidebar_advanced_search_widget">
-                        <h4 class="mb25">@lang('home.detail_advanced_search')<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
-                        <form action="{{ route('search', App::getLocale()) }}" method="GET">
-                            <ul class="sasw_list style2 mb0">
-                                <li class="search_area">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="title" id="title" placeholder="@lang('home.key_word')">
-                                        <label for="title"><span class="flaticon-magnifying-glass"></span></label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="search_option_two">
-                                        <div class="candidate_revew_select">
-                                            <select class="selectpicker w100 show-tick" name="type_property">
-                                                <option value="">@lang('home.type_property')</option>
-                                                <option>@lang('home.department')</option>
-                                                <option>Townhouse</option>
-                                                <option>@lang('home.house')</option>
-                                                <option>@lang('home.land')</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-group">
-                                        <select class="selectpicker w100 show-tick" name="location">
-                                            <option value="">@lang('home.location')</option>
-                                            @foreach($location as $item)
-                                                <option value="{{ $item->id }}">{{ $item->name }}</option>
-                                            @endforeach
+            </div>
+            <div class="sidebar_listing_list style2 mobile_sytle_sidebar mb0">
+                <div class="sidebar_advanced_search_widget">
+                    <h4 class="mb25">@lang('home.detail_advanced_search')<a class="filter_closed_btn float-right" href="#"><small></small> <span class="flaticon-close"></span></a></h4>
+                    <form action="{{ route('search', App::getLocale()) }}" method="GET">
+                        <ul class="sasw_list style2 mb0">
+                            <li class="search_area">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="title" id="title" placeholder="@lang('home.key_word')">
+                                    <label for="title"><span class="flaticon-magnifying-glass"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_option_two">
+                                    <div class="candidate_revew_select">
+                                        <select class="selectpicker w100 show-tick" name="type_property">
+                                            <option value="">@lang('home.type_property')</option>
+                                            <option>@lang('home.department')</option>
+                                            <option>Townhouse</option>
+                                            <option>@lang('home.house')</option>
+                                            <option>@lang('home.land')</option>
                                         </select>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="search_option_two">
-                                        <div class="candidate_revew_select">
-                                            <select class="selectpicker w100 show-tick">
-                                                <option value="">@lang('home.offer_type')</option>
-                                                <option>@lang('home.offer_type_sale')</option>
-                                                <option>@lang('home.offer_type_rent')</option>
-                                            </select>
-                                        </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-group">
+                                    <select class="selectpicker w100 show-tick" name="location">
+                                        <option value="">@lang('home.location')</option>
+                                        @foreach($location as $item)
+                                            <option value="{{ $item->id }}">{{ $item->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="search_option_two">
+                                    <div class="candidate_revew_select">
+                                        <select class="selectpicker w100 show-tick">
+                                            <option value="">@lang('home.offer_type')</option>
+                                            <option>@lang('home.offer_type_sale')</option>
+                                            <option>@lang('home.offer_type_rent')</option>
+                                        </select>
                                     </div>
-                                </li>
+                                </div>
+                            </li>
 
-                                <li>
-                                    <div class="search_option_button">
-                                        <button type="submit" class="btn btn-block btn-thm">@lang('home.btn_seach')</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
+                            <li>
+                                <div class="search_option_button">
+                                    <button type="submit" class="btn btn-block btn-thm">@lang('home.btn_seach')</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
                 </div>
-                <div class="terms_condition_widget">
-                    <h4 class="title">@lang('home.home_recomend')</h4>
-                    <div class="sidebar_feature_property_slider">
-                        @foreach($outstanding as $item)
-                            <div class="item">
-                                <div class="feat_property">
-                                    <div class="thumb" style="height: 220px;">
-                                        <img class="img-whp" src="{{ asset('images/'.$item->profile_picture) }}" alt="{{ $item->title }}" >
-                                        <div class="thmb_cntnt">
-                                            <ul class="tag mb0">
-                                                <li class="list-inline-item" style="background-color: rgb(62, 76, 102);"><a>{{ $item->state_property }}</a></li>
-                                                @if($item->outstanding == 1)
-                                                    <li class="list-inline-item"><a>@lang('home.outstanding')</a></li>
-                                                @endif
-                                            </ul>
-                                            <a class="fp_price" href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">$ {{ number_format($item->price) }}</a>
-                                        </div>
+            </div>
+            <div class="terms_condition_widget">
+                <h4 class="title">@lang('home.home_recomend')</h4>
+                <div class="sidebar_feature_property_slider">
+                    @foreach($outstanding as $item)
+                        <div class="item">
+                            <div class="feat_property">
+                                <div class="thumb" style="height: 220px;">
+                                    <img class="img-whp" src="{{ asset('images/'.$item->profile_picture) }}" alt="{{ $item->title }}" >
+                                    <div class="thmb_cntnt">
+                                        <ul class="tag mb0">
+                                            <li class="list-inline-item" style="background-color: rgb(62, 76, 102);"><a>{{ $item->state_property }}</a></li>
+                                            @if($item->outstanding == 1)
+                                                <li class="list-inline-item"><a>@lang('home.outstanding')</a></li>
+                                            @endif
+                                        </ul>
+                                        <a class="fp_price" href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">$ {{ number_format($item->price) }}</a>
                                     </div>
-                                    <div class="details">
-                                        <div class="tc_content">
-                                            <p class="text-thm">{{ $item->type_property }}</p>
-                                            <h4><a href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">{{ $item->title }}</a></h4>
-                                            <p><span class="flaticon-placeholder"></span>{{ $item->direction }}</p>
-                                        </div>
+                                </div>
+                                <div class="details">
+                                    <div class="tc_content">
+                                        <p class="text-thm">{{ $item->type_property }}</p>
+                                        <h4><a href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">{{ $item->title }}</a></h4>
+                                        <p><span class="flaticon-placeholder"></span>{{ $item->direction }}</p>
                                     </div>
                                 </div>
                             </div>
-						@endforeach
-                    </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
