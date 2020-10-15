@@ -16413,3 +16413,17 @@ button.gm-ui-hover-effect:focus {
 .gm-style-iw-d p span{
   margin-right: 10px;
 }
+
+
+
+@media screen and (max-width: 600px) {
+    .ocultar-en-movil{
+    display:none;
+    }
+    }
+
+@media screen and (max-width: 600px) {
+    .ocultar-en-movil2{
+    padding-top: 35px;
+    }
+    }

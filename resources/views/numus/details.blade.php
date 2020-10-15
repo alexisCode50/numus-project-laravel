@@ -154,7 +154,7 @@
                                        <li><p><span>{{ $detail->back_land }}</span></p></a></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="col-md-6 col-lg-6 col-xl-3">
                                     <ul class="list-inline-item">
                                         <li><p>@lang('home.detail_bedrooms'):</p></a></li>
                                         <li><p>@lang('home.detail_complete_bathroom'):</p></a></li>
@@ -170,7 +170,7 @@
                                         <li><p><span>@if($detail->pool == 1) Si @else No @endif </span></p></a></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                <div class="col-md-6 col-lg-6 col-xl-5">
                                     <ul class="list-inline-item">
                                         <li><p>@lang('home.detail_property_type') :</p></a></li>
                                         <li><p>@lang('home.detail_offer_type') :</p></a></li>

@@ -9,8 +9,8 @@
 				<div class="col-lg-12">
 					<div class="home_content">
 						<div class="home-text text-center">
-							<h2 class="fz55">@lang('home.home_title')</h2>
-							<p class="fz18 color-white">@lang('home.home_subtitle')</p>
+							<h2 class="fz55 ocultar-en-movil2">@lang('home.home_title')</h2>
+							<p class="fz18 color-white ocultar-en-movil">@lang('home.home_subtitle')</p>
 						</div>
 						<div class="home_adv_srch_opt">
 
