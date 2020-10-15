@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    @lang('home.nav_properties')
+@endsection
+
 @section('content')
 <section class="our-listing bgc-f7 pb30-991">
     <div class="container">

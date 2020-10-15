@@ -8,6 +8,7 @@ return [
     'nav_properties' => 'Properties',
     'nav_buy' => 'How to buy',
     'nav_contact' => 'Contact',
+    'nav_Detail' => 'Details',
 
     //footer
     'footer_text' => 'We’re reimagining how you buy, sell and rent. It’s now easier to get into a place you love. So let’s do this, together.',

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    @lang('home.nav_contact')
+@endsection
+
 @section('content')
 <section class="inner_page_breadcrumb">
     <div class="container">

@@ -8,6 +8,7 @@ return [
     'nav_properties' => 'Propiedades',
     'nav_buy' => 'Como comprar',
     'nav_contact' => 'Contacto',
+    'nav_Detail' => 'Detalles',
 
     //footer
     'footer_text' => 'Estamos reinventando la forma de comprar, vender y alquilar. Ahora es más fácil llegar a un lugar que te encanta. Así que hagamos esto juntos.',
@@ -82,7 +83,7 @@ return [
     'form_email' => 'Correo Electronico',
     'form_phone' => 'Telefono',
     'form_subject' => 'Asunto',
-    'form_message' => 'Tema',
+    'form_message' => 'Mensaje',
     'form_btn_send' => '¡Enviar!',
     'contact_location' => 'Ubicación',
     'contact_follow' => 'Siguenos en nuestras redes',

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    @lang('home.nav_Detail')
+@endsection
+
 @section('content')
 <div class="single_page_listing_tab">
     <div class="container">

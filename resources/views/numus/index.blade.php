@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+	@lang('home.nav_home')
+@endsection
+
 @section('content')
 
 	<!-- Home Design -->

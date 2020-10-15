@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="{{ asset('cliente/assets/css/responsive.css')}}">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 <!-- Title -->
-<title>Numus</title>
+<title>Numus | @yield('title')</title>
 <!-- Favicon -->
 <link href="{{ asset('cliente/assets/images/icon_black.svg')}}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
 <link href="{{ asset('cliente/assets/images/icon_black.svg')}}" sizes="128x128" rel="shortcut icon" />

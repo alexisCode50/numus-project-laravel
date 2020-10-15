@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'How to buy')
+
 @section('content')
 <section class="inner_page_breadcrumb">
     <div class="container">
