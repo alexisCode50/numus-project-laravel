@@ -33,7 +33,7 @@
 		    <nav>
 		        <!-- Menu Toggle btn-->
 		        <div class="menu-toggle">
-		            <img class="nav_logo_img img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo.png">
+		            <img class="nav_logo_img img-fluid" src="{{ asset('cliente/assets/images/logo_black.svg')}}" alt="header-logo.png">
 		            <button type="button" id="menu-btn">
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
@@ -41,8 +41,8 @@
 		            </button>
 		        </div>
 		        <a href="#" class="navbar_brand float-left dn-smd">
-		            <img class="logo1 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo.png" style="height: 40px;padding-left: 20px;">
-		            <img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo2.png" style="height: 40px;padding-left: 20px;">
+		            <img class="logo1 img-fluid" src="{{ asset('cliente/assets/images/logo_black.svg')}}" alt="header-logo.png" style="height: 40px;padding-left: 20px;">
+		            <img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/logo_black.svg')}}" alt="header-logo2.png" style="height: 40px;padding-left: 20px;">
 		            <span></span>
 		        </a>
 		        <!-- Responsive Menu Structure-->
@@ -83,7 +83,7 @@
 		<div class="mobile-menu">
 			<div class="header stylehome1">
 				<div class="main_logo_home2 text-center">
-		            <img class="nav_logo_img img-fluid mt20" src="{{ asset('cliente/assets/images/logo_black.png')}}" style="max-width: 40%;" alt="header-logo2.png">
+		            <img class="nav_logo_img img-fluid mt20" src="{{ asset('cliente/assets/images/logo_black.svg')}}" style="max-width: 40%;" alt="header-logo2.png">
 
 				</div>
 				<ul class="menu_bar_home2">
@@ -145,7 +145,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-xl-6">
 					<div class="copyright-widget text-left">
-						<p>© 2020 Numus - @lang('home.footer_developer') Búho Solutions.</p>
+						<p>© 2020 Numus - @lang('home.footer_developer') <a href="https://www.buho-solutions.com/" style="color: rgb(255, 120, 124);" target="_blank">Búho Solutions</a> .</p>
 					</div>
 				</div>
 				<div class="col-lg-6 col-xl-6">

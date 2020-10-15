@@ -4394,7 +4394,7 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 .feat_property .thumb .thmb_cntnt ul.tag,
 .properti_city.home6 .thumb .thmb_cntnt ul.tag{
   position: absolute;
-  left: 12px;
+  left: 1px;
   top: 10px;
 }
 .feat_property .thumb .thmb_cntnt ul.tag li,
@@ -16425,5 +16425,11 @@ button.gm-ui-hover-effect:focus {
 @media screen and (max-width: 600px) {
     .ocultar-en-movil2{
     padding-top: 35px;
+    }
+    }
+
+@media screen and (max-width: 600px) {
+    .arreglo{
+    padding-left: 12px;
     }
     }

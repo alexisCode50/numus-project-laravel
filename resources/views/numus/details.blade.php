@@ -109,7 +109,7 @@
             <div class="col-lg-7 col-xl-8">
                 <div class="dn db-991 mt30 mb0" style="padding-top: 0.1rem;">
                     <div id="main2">
-                        <span id="open2" class="flaticon-filter-results-button filter_open_btn style3" style="left: 95px;"> Show Filter</span>
+                        <span id="open2" class="flaticon-filter-results-button filter_open_btn style3" style="left: 95px;">Buscador</span>
                     </div>
                 </div>
                 <div class="single_property_title mt30-767 mb30-767">
@@ -162,7 +162,7 @@
                                         <li><p>@lang('home.detail_garage'):</p></a></li>
                                         <li><p>@lang('home.detail_pool'):</p></a></li>
                                     </ul>
-                                    <ul class="list-inline-item">
+                                    <ul class="list-inline-item arreglo">
                                         <li><p><span>{{ $detail->bedroom }}</span></p></a></li>
                                         <li><p><span>{{ $detail->complete_bathroom }}</span></p></a></li>
                                         <li><p><span>{{ $detail->half_baths }}</span></p></a></li>
