@@ -123,7 +123,7 @@
 										</div>
 									</div>
 									<div class="details">
-										<div class="tc_content">
+										<div class="tc_content" >
 											<p class="text-thm">{{ $item->type_property }}</p>
 											<h4><a href="{{ route('detail-pro', [App::getLocale(), $item->id]) }}">{{ $item->title }}</a></h4>
 											<p><span class="flaticon-placeholder"></span>{{ $item->direction }}</p>
@@ -193,7 +193,7 @@
 							<div class="overlay">
 								<div class="details">
 									<h4>Dzitya</h4>
-									
+
 								</div>
 							</div>
 						</div>

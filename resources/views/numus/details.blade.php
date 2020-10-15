@@ -206,14 +206,12 @@
                                 <div class="thumb">
                                     @php
                                         $map =  htmlentities($detail->map);
-                                        echo html_entity_decode($map); 
+                                        echo html_entity_decode($map);
                                     @endphp
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
             <div class="col-lg-4 col-xl-4 mt50">
@@ -358,11 +356,12 @@
                                     </div>
                                 </div>
                             </div>
-						@endforeach
+                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </section>
 
