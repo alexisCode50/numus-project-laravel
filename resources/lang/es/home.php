@@ -11,7 +11,7 @@ return [
     'nav_Detail' => 'Detalles',
 
     //footer
-    'footer_text' => 'Estamos reinventando la forma de comprar, vender y alquilar. Ahora es más fácil llegar a un lugar que te encanta. Así que hagamos esto juntos.',
+    'footer_text' => 'Somos una empresa joven en busca de brindar nuevas oportunidades de inversión a todos nuestros clientes por medio de la venta y renta de inmuebles en el sureste mexicano.',
     'footer_contact_us' => 'Contáctanos',
     'footer_developer' => 'Desarrollado por',
 
@@ -27,13 +27,13 @@ return [
     'home_option_one'=> 'Clientes satisfechos',
     'home_option_two' => 'Todo tipo de propiedades',
     'home_option_three' => 'Asesoría financiera',
-    'home_text_option_one' => 'Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis',
-    'home_text_option_two' => 'Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis',
-    'home_text_option_three' => 'Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus vel felis',
+    'home_text_option_one' => '',
+    'home_text_option_two' => 'En Numus manejamos todo tipo de propiedades, desde casas residenciales, lotes comerciales y residenciales hasta locales y bodegas comerciales, bajo las modalidades de venta y renta de propiedades.',
+    'home_text_option_three' => 'En Numus caminamos junto a ti el recorrido en busca de la propiedad de tus sueños. Estamos encantados, junto con nuestro grupo selecto de asesores, de acompañarte y apoyarte a lo largo de tu trayectoria.',
     'home_question_info' => '¿Tienes alguna duda?',
     'home_subtitle_question_info' => '¡Mándanos un mensaje y con gusto te apoyaremos!',
     'home_btn_info' => 'Más información',
-    'btn_slide' => 'Desliza', 
+    'btn_slide' => 'Desliza',
     'btn_slide_sub' => 'para descubrir más',
 
     // searcher text
@@ -58,9 +58,13 @@ return [
     'company_about_us' => '¿Quiénes somos?',
     'company_title_one' => 'Nuestra misión es encontrar tu próximo sueño',
     'company_subtitle_one' => 'Numus Inmobiliaria y su equipo saben y entienden que no se trata de casas.',
-    'company_description_one' => "Se trata de la comunidad, las personas y las relaciones que importan dentro de la casa y la zona escogida para vivir. Se trata de comprender los matices de su estilo de vida, ya sea que esté en el mercado para vender o comprar. Permítanos ayudarlo a encontrar y definir lo que el lujo significa para usted.",
-    'company_description_two' => 'Somos un equipo de asesores inmobiliarios residiendo en Merida, Yucatán, la ciudad con mejor calidad de vida para vivir en mexico y Latinoamérica, estamos aquí dispuestos a ayudarlos a encontrar la mejor opción para vivir o invertir en el sureste de mexico.',
-    'company_description_three' => 'Nuestro objetivo es brindar lo último en servicios profesionales de bienes raíces tanto residenciales y comerciales, como al igual oportunidades de inversión. Enfocándonos en propiedades en el mercado premium que satisfagan las necesidades de nuestros clientes.',
+
+    'company_description_one' => "En Numus inmobiliaria sabemos y entendemos que no se trata de solo una casa. Se trata de la comunidad, las personas y las relaciones que importan dentro de la casa, y la zona escogida para vivir. Se trata de comprender los matices de su estilo de vida, ya sea que esté en el mercado para vender o comprar. Permítanos ayudarlo a encontrar y definir lo que el lujo significa para usted.",
+
+    'company_description_two' => 'Somos un equipo de asesores inmobiliarios residiendo en Mérida, Yucatán, la ciudad con mejor calidad de vida para vivir en México y Latinoamérica. Estamos dispuestos a ayudarlos a encontrar la mejor opción para vivir o invertir en el sureste de México.',
+
+    'company_description_three' => 'Nuestro objetivo es brindar lo último en servicios profesionales de bienes raíces, tanto residenciales y comerciales, al igual que oportunidades de inversión, enfocándonos en propiedades en el mercado premium que satisfagan las necesidades de nuestros clientes.',
+
     'company_customers' => 'Clientes satisfechos',
     'company_properties' => 'Propiedades',
     'company_savings' => 'En ahorros',
@@ -78,7 +82,7 @@ return [
     // Page Contact
     'contact_us' => 'Contáctanos',
     'contact_title' => 'Mándanos un mensaje',
-    'contact_text' => 'Donec lacus odio, malesuada eu libero sit amet, congue aliquam leo. In hac habitasse platea dictumst.',
+    'contact_text' => '¿Quieres vender o comprar algún inmueble? ¡No dudes en contactarnos, un equipo de asesores inmobiliarios te espera para encontrar la propiedad de tus sueños!',
     'form_name' => 'Nombre',
     'form_email' => 'Correo Electronico',
     'form_phone' => 'Telefono',
@@ -87,7 +91,7 @@ return [
     'form_btn_send' => '¡Enviar!',
     'contact_location' => 'Ubicación',
     'contact_follow' => 'Siguenos en nuestras redes',
-    
+
     // page details
     'detail_description' => 'Descrición',
     'detail_property_details' => 'Detalles de la propiedad',

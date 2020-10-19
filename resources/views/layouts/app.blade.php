@@ -127,11 +127,11 @@
 					<div class="footer_contact_widget">
 						<h4>@lang('home.footer_contact_us')</h4>
 						<ul class="list-unstyled">
-							<li><a href="#">numus-inmobiliaria@hotmail.com</a></li>
-							<li><a href="#">Colonia Itzimna</a></li>
-							<li><a href="#">CP: 96233.</a></li>
-							<li><a href="#">9991 123 1234</a></li>
-							<li><a href="#">9992 123 1234</a></li>
+							<li><a href="#">info@numusinmobiliaria.com</a></li>
+							<li><a href="#">Dirección</a></li>
+
+							<li><a href="#">9993682670</a></li>
+
 						</ul>
 					</div>
 				</div>
@@ -152,9 +152,9 @@
 					<div class="copyright-widget text-right">
 						<ul class="mb30">
 
-							<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" style="color: #5277a3"></i></a></li>
-							<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" style="color: #5277a3"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fa fa-whatsapp" style="color: #5277a3"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.facebook.com/Numus-Inmobiliaria-105428674678016/"><i class="fa fa-facebook" style="color: #5277a3"></i></a></li>
+							<li class="list-inline-item"><a href="https://instagram.com/numusinmobiliaria?igshid=yv9st75ljb96"><i class="fa fa-instagram" style="color: #5277a3"></i></a></li>
+                            <li class="list-inline-item"><a href="https://api.whatsapp.com/send?phone=529993682670&text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20sus%20servicios"><i class="fa fa-whatsapp" style="color: #5277a3"></i></a></li>
                             <li class="list-inline-item"><a href="{{ route('admin') }}"><i class="btn flaticon-user" style="color: #5277a3"></i> </a></li>
 
 						</ul>
