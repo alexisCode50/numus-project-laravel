@@ -9,6 +9,7 @@ use App\Image;
 use App\Location;
 use App\Detail;
 use App\Adviser;
+use App\Section;
 
 class PropertyController extends Controller
 {
@@ -25,8 +26,9 @@ class PropertyController extends Controller
         }
 
         $location = Location::all();
+        $section = Section::all();
 
-        return view('numus.index', ['property' => $property, 'location' => $location]);
+        return view('numus.index', ['property' => $property, 'location' => $location, 'section' => $section]);
     }
 
     public function details()

@@ -23,10 +23,10 @@ class EmailController extends Controller
         ]);
 
         if($lang == 'es'){
-            Mail::to('skrillex_ja14@hotmail.com')->queue(new SendEmail($msg));
+            Mail::to('info@numusinmobiliaria.com')->queue(new SendEmail($msg));
             \Session::flash('message', 'Mensaje Enviado!');
         } else if($lang == 'en'){
-            Mail::to('skrillex_ja14@hotmail.com')->queue(new SendEmail($msg));
+            Mail::to('info@numusinmobiliaria.com')->queue(new SendEmail($msg));
             \Session::flash('message', 'Send Message!');
         }
 

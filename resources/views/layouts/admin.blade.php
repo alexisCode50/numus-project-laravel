@@ -85,6 +85,12 @@
                         <span>Ubicaciones</span></a>
                     </li>
 
+                    <li class="nav-item">
+                    <a class="nav-link" href="{{ route('sections') }}">
+                        <i class="fas fa-fw fa-layegrr-oup"></i>
+                        <span>Secciones</span></a>
+                    </li>
+
 
                     <!-- Divider -->
                     <hr class="sidebar-divider d-none d-md-block">

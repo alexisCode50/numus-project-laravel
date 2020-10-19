@@ -72,5 +72,14 @@ Route::middleware('auth')->group(function () {
     Route::put('/admin/advisers/update/{id}', 'AdviserController@update')->name('advisers-update');
     Route::delete('/admin/advisers/delete/{id}', 'AdviserController@destroy')->name('advisers-delete');
 
+    // seccions routes
+    Route::get('/admin/sections', 'SectionController@index')->name('sections');
+    Route::get('/admin/sections/view/title/{id}', 'SectionController@edit')->name('sections-view-title');
+    Route::post('/admin/sections/update/title/{id}', 'SectionController@update')->name('sections-update-title');
+    
+    Route::get('/admin/sections/view/image/{id}', 'SectionController@addView')->name('sections-view-add-image');
+    Route::post('/admin/sections/add/image/{id}', 'SectionController@addImage')->name('sections-add-image');
+    Route::delete('/admin/sections/remove/image/{id}', 'SectionController@remove')->name('sections-remove-image');
+
 });
 

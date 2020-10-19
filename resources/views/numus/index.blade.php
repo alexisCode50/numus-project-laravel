@@ -155,53 +155,52 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-xl-4">
-					<a href="http://127.0.0.1:8000/search?title=&type_property=&location=5">
-						<div class="properti_city">
-							<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/home/p2.jpg')}}" alt="pc1.jpg"></div>
-							<div class="overlay">
-								<div class="details">
-									<h4>Montecristo</h4>
-								</div>
+					<div class="properti_city">
+						<div class="thumb">
+							<img class="img-fluid w100" src="{{ asset('sections/'.$section[0]['image'] ) }}" >
+						</div>
+						<div class="overlay">
+							<div class="details">
+								<h4>{{ $section[0]['title'] }}</h4>
 							</div>
 						</div>
-					</a>
+					</div>
 				</div>
 				<div class="col-lg-8 col-xl-8">
-					<a href="http://127.0.0.1:8000/search?title=&type_property=&location=6">
-						<div class="properti_city">
-							<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/home/p1.jpg')}}" alt="p2.jpg"></div>
-							<div class="overlay">
-								<div class="details">
-									<h4>Country Club</h4>
-								</div>
+					<div class="properti_city">
+						<div class="thumb">
+							<img class="img-fluid w100" src="{{ asset('sections/'.$section[1]['image'] ) }}" >
+						</div>
+						<div class="overlay">
+							<div class="details">
+								<h4>{{ $section[1]['title'] }}</h4>
 							</div>
 						</div>
-					</a>
+					</div>
 				</div>
 				<div class="col-lg-8 col-xl-8">
-					<a href="http://127.0.0.1:8000/search?title=&type_property=&location=7">
-						<div class="properti_city">
-							<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/home/p4.jpg')}}" alt="pc3.jpg"></div>
-							<div class="overlay">
-								<div class="details">
-									<h4>Temozón</h4>
-								</div>
+					<div class="properti_city">
+						<div class="thumb">
+							<img class="img-fluid w100" src="{{ asset('sections/'.$section[2]['image'] ) }}" >
+						</div>
+						<div class="overlay">
+							<div class="details">
+								<h4>{{ $section[2]['title'] }}</h4>
 							</div>
 						</div>
-					</a>
+					</div>
 				</div>
 				<div class="col-lg-4 col-xl-4">
-					<a href="http://127.0.0.1:8000/search?title=&type_property=&location=1">
-						<div class="properti_city">
-							<div class="thumb"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/home/p3.jpg')}}" alt="pc4.jpg"></div>
-							<div class="overlay">
-								<div class="details">
-									<h4>Dzitya</h4>
-
-								</div>
+					<div class="properti_city">
+						<div class="thumb">
+							<img class="img-fluid w100" src="{{ asset('sections/'.$section[3]['image'] ) }}" >
+						</div>
+						<div class="overlay">
+							<div class="details">
+								<h4>{{ $section[3]['title'] }}</h4>
 							</div>
 						</div>
-					</a>
+					</div>
 				</div>
 			</div>
 		</div>
