@@ -71,6 +71,11 @@ Route::middleware('auth')->group(function () {
     Route::post('/admin/advisers/create', 'AdviserController@store')->name('advisers-create');
     Route::put('/admin/advisers/update/{id}', 'AdviserController@update')->name('advisers-update');
     Route::delete('/admin/advisers/delete/{id}', 'AdviserController@destroy')->name('advisers-delete');
+    /// images advisers
+    Route::get('/admin/advisers/view-image/{id}', 'AdviserController@add')->name('advisers-view-image');
+    Route::post('/admin/advisers/save-image/{id}', 'AdviserController@save')->name('advisers-save-image');
+    Route::delete('/admin/advisers/remove-image/{id}', 'AdviserController@remove')->name('advisers-delete-image');
+
 
     // seccions routes
     Route::get('/admin/sections', 'SectionController@index')->name('sections');

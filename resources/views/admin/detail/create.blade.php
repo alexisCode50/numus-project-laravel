@@ -34,7 +34,7 @@
                         <input type="text" class="form-control" id="size_property" name="size_property">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="size_land">Tamaño del Terreno</label>
+                        <label for="size_land">Area del Terreno</label>
                         <input type="text" class="form-control" id="size_land" name="size_land">
                     </div>
                 </div>
@@ -53,19 +53,19 @@
                 <div class="form-row">
                     <div class="form-group col-md-3">
                         <label for="bedroom">Recamaras</label>
-                        <input type="number" class="form-control" id="bedroom" name="bedroom">
+                        <input type="text" class="form-control" id="bedroom" name="bedroom">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="complete_bathroom">Baños Completos</label>
-                        <input type="number" class="form-control" id="complete_bathroom" name="complete_bathroom">
+                        <input type="text" class="form-control" id="complete_bathroom" name="complete_bathroom">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="half_baths">Medios Baños</label>
-                        <input type="number" class="form-control" id="half_baths" name="half_baths">
+                        <input type="text" class="form-control" id="half_baths" name="half_baths">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="garage">Garage</label>
-                        <input type="number" class="form-control" id="garage" name="garage">
+                        <input type="text" class="form-control" id="garage" name="garage">
                     </div>
                 </div>
 
@@ -75,21 +75,26 @@
                         <textarea class="form-control" id="map" name="map" rows="3"></textarea>
                     </div>
                 </div>
+
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="pool">Picina</label>
                         <select class="form-control" id="pool" name="pool">
                             <option value="1">Si</option>
                             <option value="0">No</option>
                         </select>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="pool">Asesor</label>
                         <select class="form-control" id="adviser_id" name="adviser_id">
                             @foreach($advisers as $item)
                                 <option value="{{ $item->id }}">{{$item->name}}</option>
                             @endforeach
                         </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="comision">Comision</label>
+                        <input type="text" class="form-control" id="comision" name="comision">
                     </div>
                 </div>
                 

@@ -24,7 +24,9 @@
                             <th scope="col">Nombre</th>
                             <th scope="col">Telefono</th>
                             <th scope="col">Email</th>
-                            <th></th>
+                            <th scope="col">Imagen</th>
+                            <th scope="col">Registros</th>
+                            <th scope="col">Imagen</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,20 +36,47 @@
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->phone }}</td>
                                 <td>{{ $item->email }}</td>
+                                <td class="text-center">
+                                    @if($item->image == null || $item->image == '')
+                                        No se ha selecionado una imagen
+                                    @else
+                                        <img src="{{ asset('images/'.$item->image) }}" width="100" height="100" class="img-fluid">
+                                    @endif
+                                </td>
                                 <td>
+
                                     <form action="{{ route('advisers-delete', $item->id) }}" method="POST">
-                            
-                                        <a href="{{ route('advisers-update-view', $item->id) }}" class="btn btn-primary btn-circle btn-sm mb-1">
+                                    
+                                        <a href="{{ route('advisers-update-view', $item->id) }}" class="btn btn-primary btn-circle btn-sm" title="Editar Asesor">
                                             <i class="fas fa-pen"></i>
                                         </a>
-                                        
+
                                         @csrf
                                         @method('DELETE')
                         
-                                        <button type="submit" class="btn btn-danger btn-circle btn-sm">
-                                            <i class="fas fa-trash"></i>
+                                        <button type="submit" class="btn btn-danger btn-circle btn-sm" title="Borrar Asesor">
+                                            <i class="fas fa-user-times"></i>
                                         </button>
                                     </form>
+                                </td>
+                                <td>
+                                    <form action="{{ route('advisers-delete-image', $item->id) }}" method="POST">
+                                        @if($item->image == null || $item->image == '')
+                                            <a href="{{ route('advisers-view-image', $item->id) }}"  class="btn btn-success btn-circle btn-sm" title="Agregar Imagen">
+                                                <i class="fas fa-image"></i>
+                                            </a>
+                                        @endif
+
+                                        @csrf
+                                        @method('DELETE')
+                                        
+                                        @if($item->image != null || $item->image != '')
+                                            <button type="submit" class="btn btn-warning btn-circle btn-sm" title="Borrar Imagen" title="Borrar Imagen">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        @endif
+                                    </form>
+
                                 </td>
                             </tr>
                         @endforeach

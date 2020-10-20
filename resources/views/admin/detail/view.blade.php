@@ -81,6 +81,10 @@
                                 @endif
                             </td>
                         </tr>
+                        <tr>
+                            <th>Comicion</th>
+                            <td>{{ number_format($detail->comision) }}</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

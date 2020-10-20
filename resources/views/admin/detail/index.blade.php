@@ -32,6 +32,7 @@
                             <th scope="col">Mapa</th>
                             <th scope="col">Picina</th>
                             <th scope="col">ID del Asesor</th>
+                            <th scope="col">Comision</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -62,6 +63,7 @@
                                     @endif
                                 </td>
                                 <td>{{ $item->adviser_id }}</td>
+                                <td>{{ number_format($item->comision) }}</td>
                                 <td>
                                     <form action="{{ route('details-delete', $item->id) }}" method="POST">
                             
