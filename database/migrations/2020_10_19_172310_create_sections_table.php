@@ -17,7 +17,7 @@ class CreateSectionsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('size');
-            $table->string('image')->nullable();;
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

@@ -83,9 +83,9 @@
 
                     <h5>@lang('home.contact_follow')</h5>
                     <ul class="contact_form_social_area">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/Numus-Inmobiliaria-105428674678016/"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://api.whatsapp.com/send?phone=529993682670&text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20sus%20servicios"><i class="fa fa-whatsapp"></i></a></li>
+                        <li class="list-inline-item"><a href="https://instagram.com/numusinmobiliaria?igshid=yv9st75ljb96"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
