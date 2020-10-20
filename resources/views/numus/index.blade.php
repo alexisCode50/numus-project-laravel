@@ -261,7 +261,7 @@
 	<section class="start-partners bgc-thm pt50 pb50">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8">
+				<div class="col-lg-8 alineado">
 					<div class="start_partner tac-smd">
 						<h2>@lang('home.home_question_info')</h2>
 						<p>@lang('home.home_subtitle_question_info')</p>

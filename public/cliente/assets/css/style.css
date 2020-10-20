@@ -16414,8 +16414,6 @@ button.gm-ui-hover-effect:focus {
   margin-right: 10px;
 }
 
-
-
 @media screen and (max-width: 600px) {
     .ocultar-en-movil{
     display:none;
@@ -16431,5 +16429,17 @@ button.gm-ui-hover-effect:focus {
 @media screen and (max-width: 600px) {
     .arreglo{
     padding-left: 12px;
+    }
+    }
+
+.alineado{
+    padding-left: 0px;
+    margin-left: -5px;
+}
+
+@media screen and (max-width: 600px) {
+    .alineado{
+        margin-left: 0px;
+        padding-left: 15px;
     }
     }

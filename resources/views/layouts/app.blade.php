@@ -145,7 +145,7 @@
 			<div class="row">
 				<div class="col-lg-6 col-xl-6">
 					<div class="copyright-widget text-left">
-						<p>© 2020 Numus - @lang('home.footer_developer') <a href="https://www.buho-solutions.com/" style="color: rgb(255, 120, 124);" target="_blank">Búho Solutions</a> .</p>
+						<p style="margin-left: -15px;">© 2020 Numus - @lang('home.footer_developer') <a href="https://www.buho-solutions.com/" style="color: rgb(255, 120, 124);" target="_blank">Búho Solutions</a> .</p>
 					</div>
 				</div>
 				<div class="col-lg-6 col-xl-6">
