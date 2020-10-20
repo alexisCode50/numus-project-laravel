@@ -223,7 +223,7 @@
                     <div class="sidebar_advanced_search_widget">
                         <div class="sl_creator">
                             <div class="media">
-
+                                <img class="mr-3" src="{{asset('cliente/assets/images/team/lc1.png')}}" alt="lc1.png">
                                 <div class="media-body">
                                     <h5 class="mt-0 mb0">{{ $adviser->name }}</h5>
                                     <p class="mb0">{{ $adviser->phone }}</p>
