@@ -2,7 +2,7 @@
 
 @section('admin')
     <!-- Page Heading -->
-    <h1 class="h1 mb-2 text-gray-800">Agregar Imagenes a la Seccion</h1>
+    <h1 class="h1 mb-2 text-gray-800">Agregar Imagenes a la Zona</h1>
 
     <a href="{{ route('sections') }}" class="btn btn-warning btn-icon-split my-3">
         <span class="text">Regresar</span>

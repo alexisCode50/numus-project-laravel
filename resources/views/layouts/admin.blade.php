@@ -88,7 +88,7 @@
                     <li class="nav-item">
                     <a class="nav-link" href="{{ route('sections') }}">
                         <i class="fas fa-fw fa-layegrr-oup"></i>
-                        <span>Secciones</span></a>
+                        <span>Zonas</span></a>
                     </li>
 
 

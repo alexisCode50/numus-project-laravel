@@ -112,4 +112,8 @@ return [
     'detail_property_name' => 'Property name',
     'detail_advanced_search' => 'Advanced search',
     'detail_recomend' => 'Featured properties',
+
+    // yes or not
+    'yes' => 'Yes',
+    'not' => 'Not',
 ];

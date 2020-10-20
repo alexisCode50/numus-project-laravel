@@ -16443,3 +16443,10 @@ button.gm-ui-hover-effect:focus {
         padding-left: 15px;
     }
     }
+
+.imagen-adviser {
+  max-width: 100%;
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+}
