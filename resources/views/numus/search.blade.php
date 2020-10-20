@@ -204,7 +204,7 @@
                                         <div class="tc_content">
                                             <div class="dtls_headr">
                                                 <ul class="tag">
-                                                    <li class="list-inline-item"><a>{{ $item->state_property }}</a></li>
+                                                    <li class="list-inline-item" style="background-color: rgb(62, 76, 102);"><a>{{ $item->state_property }}</a></li>
                                                     @if($item->outstanding == 1)
                                                         <li class="list-inline-item">
                                                             <a>
@@ -231,7 +231,7 @@
 
                     {{ $data->links() }}
 
-                    
+
                 </div>
             </div>
         </div>
