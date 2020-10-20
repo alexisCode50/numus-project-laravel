@@ -2,7 +2,7 @@
 
 @section('admin')
     <!-- Page Heading -->
-    <h1 class="h1 mb-2 text-gray-800">Agregar Imagenes a la Zona</h1>
+    <h1 class="h1 mb-2 text-gray-800">Agregar Imagenes al Usuario</h1>
 
     <a href="{{ route('sections') }}" class="btn btn-warning btn-icon-split my-3">
         <span class="text">Regresar</span>
@@ -31,7 +31,7 @@
 
     <div class="row my-3">
         <div class="col-md-8 m-auto">
-            <form action="{{ route('sections-add-image', $section->id) }}" method="POST" enctype="multipart/form-data">
+            <form action="{{ route('advisers-save-image', $adviser->id ) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="input-group">
                     <div class="custom-file">

@@ -2,7 +2,7 @@
 
 @section('admin')
 
-    <h1>Secciones</h1>
+    <h1>Zonas</h1>
 
     <div class="row">
         <div class="col-md-12">

@@ -34,13 +34,14 @@ class DetailController extends Controller
             'size_land' => 'required|string',
             'front_land' => 'required',
             'back_land' => 'required',
-            'bedroom' => 'required|numeric',
-            'complete_bathroom' => 'required|numeric',
-            'half_baths' => 'required|numeric',
-            'garage' => 'required|numeric',
+            'bedroom' => 'required',
+            'complete_bathroom' => 'required',
+            'half_baths' => 'required',
+            'garage' => 'required',
             'map' => 'required|string',
             'pool' => 'required|numeric',
             'adviser_id' => 'required|numeric',
+            'comision' => 'required|numeric',
         ]);
 
         $detail = new Detail();
@@ -56,6 +57,7 @@ class DetailController extends Controller
         $detail->map = $request->map;
         $detail->pool = $request->pool;
         $detail->adviser_id = $request->adviser_id;
+        $detail->comision = $request->comision;
         $detail->save();
 
         \Session::flash('message', 'Registro Guardado');
@@ -84,6 +86,7 @@ class DetailController extends Controller
             'map' => 'required|string',
             'pool' => 'required|numeric',
             'adviser_id' => 'required|numeric',
+            'comision' => 'required|numeric',
         ]);
 
         $detail = Detail::find($id);
@@ -98,6 +101,7 @@ class DetailController extends Controller
         $detail->map = $request->map;
         $detail->pool = $request->pool;
         $detail->adviser_id = $request->adviser_id;
+        $detail->comision = $request->comision;
         $detail->save();
 
         \Session::flash('message', 'Registro Actualizado');

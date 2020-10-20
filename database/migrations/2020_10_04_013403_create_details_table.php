@@ -27,6 +27,7 @@ class CreateDetailsTable extends Migration
             $table->text('map'); // iframe
             $table->integer('pool')->default(0);
             $table->integer('adviser_id');
+            $table->integer('comision')->nullable(); // nuevo
             $table->timestamps();
         });
     }

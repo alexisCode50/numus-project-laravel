@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Adviser;
+
 class AdviserController extends Controller
 {
 
@@ -68,12 +70,80 @@ class AdviserController extends Controller
     {
         try {
             $adviser = Adviser::find($id);
-            $adviser->delete();
-            \Session::flash('message', 'Registro Eliminado');
+
+            if($adviser->image != null || $adviser->image != ''){
+
+                $path = public_path() . '/images/' . $adviser->image;
+
+                if (unlink($path)) {
+                    $adviser->delete();
+                    \Session::flash('message', 'Registro Eliminado');
+                } 
+            } else {
+                $adviser->delete();
+                \Session::flash('message', 'Registro Eliminado');
+            }
+            
         } catch (\Throwable $th) {
             \Session::flash('message', 'Error al eliminar el registro');
         }
 
         return redirect()->route('advisers');
     }
+
+    ///// IMAGES /////
+    public function add($id)
+    {
+        $adviser = Adviser::find($id);
+        return view('admin.adviser.add', ['adviser' => $adviser]);
+    }
+
+    public function save(Request $request, $id)
+    {
+        $this->validate($request, [
+            'image' => 'required'
+        ]);
+
+        try {
+            if($request->has('image')){
+                $image = $request->file('image');
+                $path = public_path() . '/images';
+                $fileName = uniqid() . $image->getClientOriginalName();
+                $image->move($path, $fileName);
+
+                $adviser = Adviser::find($id);
+                $adviser->image = $fileName;
+                $adviser->save();
+    
+                \Session::flash('message', 'Imagen Agregada');
+            }
+        } catch (\Throwable $th) {
+            \Session::flash('message', 'Ocurrio un error');
+        }
+        
+        return redirect()->route('advisers');
+    }
+
+    public function remove($id)
+    {
+        try {
+            $adviser = Adviser::find($id);
+            $path = public_path() . '/images/' . $adviser->image;
+
+            if (unlink($path)) {
+
+                DB::table('advisers')
+                    ->where('id', $id)
+                    ->update(['image' => '']);
+
+                \Session::flash('message', 'Imagen Eliminada');
+            }
+            
+        } catch (\Exception $e) {
+            \Session::flash('message', 'No se puede eliminar el imagen');
+        }
+
+        return redirect()->back();
+    }
+
 }

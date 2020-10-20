@@ -112,4 +112,8 @@ return [
     'detail_property_name' => 'Nombre de la propiedad',
     'detail_advanced_search' => 'Búsqueda Avanzada',
     'detail_recomend' => 'Propiedades destacadas',
+
+    // yes or not
+    'yes' => 'Si',
+    'not' => 'No',
 ];

@@ -35,7 +35,7 @@
                         <input type="text" class="form-control" id="size_property" name="size_property" value="{{ $detail->size_property }}">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="size_land">Tamaño del Terreno</label>
+                        <label for="size_land">Area del Terreno</label>
                         <input type="text" class="form-control" id="size_land" name="size_land" value="{{ $detail->size_land }}">
                     </div>
                 </div>
@@ -77,21 +77,26 @@
                         <textarea class="form-control" id="map" name="map" rows="3">{{ $detail->map }}</textarea>
                     </div>
                 </div>
+
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label for="pool">Picina</label>
-                        <select class="form-control" id="pool" name="pool" value="{{ $detail->pool }}">
+                        <select class="form-control" id="pool" name="pool">
                             <option value="1">Si</option>
                             <option value="0">No</option>
                         </select>
                     </div>
                     <div class="form-group col-md-4">
                         <label for="pool">Asesor</label>
-                        <select class="form-control" id="adviser_id" name="adviser_id" value="{{ $detail->adviser_id  }}">
+                        <select class="form-control" id="adviser_id" name="adviser_id">
                             @foreach($advisers as $item)
                                 <option value="{{ $item->id }}">{{$item->name}}</option>
                             @endforeach
                         </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="comision">Comision</label>
+                        <input type="text" class="form-control" id="comision" name="comision" value="{{ $detail->comision }}">
                     </div>
                 </div>
                 

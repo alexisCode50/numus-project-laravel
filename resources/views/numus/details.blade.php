@@ -171,7 +171,12 @@
                                         <li><p><span>{{ $detail->complete_bathroom }}</span></p></a></li>
                                         <li><p><span>{{ $detail->half_baths }}</span></p></a></li>
                                         <li><p><span>{{ $detail->garage }}</span></p></a></li>
-                                        <li><p><span>@if($detail->pool == 1) Si @else No @endif </span></p></a></li>
+                                        <li><p><span>
+                                            @if($detail->pool == 1) 
+                                                @lang('home.yes') 
+                                            @else 
+                                                @lang('home.not') 
+                                            @endif </span></p></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-5">
@@ -223,7 +228,7 @@
                     <div class="sidebar_advanced_search_widget">
                         <div class="sl_creator">
                             <div class="media">
-                                <img class="mr-3" src="{{asset('cliente/assets/images/team/lc1.png')}}" alt="lc1.png">
+                                <img class="mr-3 imagen-adviser" src="{{ asset('images/'.$adviser->image) }}" >
                                 <div class="media-body">
                                     <h5 class="mt-0 mb0">{{ $adviser->name }}</h5>
                                     <p class="mb0">{{ $adviser->phone }}</p>
