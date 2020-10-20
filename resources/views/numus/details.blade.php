@@ -256,7 +256,7 @@
                                 </li>
                                 <li class="search_area">
                                     <div class="form-group">
-                                        <input type="number" class="form-control" id="phone" name="phone"  placeholder="@lang('home.form_phone')">
+                                        <input type="text" class="form-control" id="phone" name="phone"  placeholder="@lang('home.form_phone')">
                                     </div>
                                 </li>
                                 <li class="search_area">
