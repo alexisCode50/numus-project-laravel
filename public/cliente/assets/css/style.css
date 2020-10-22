@@ -13100,7 +13100,7 @@ a.btn.btn_error{
   color: #ff4b53;
 }
 .bgc-thm {
-  background-color: #5a6481 !important;
+  background-color:  #EA555C !important;
 }
 .bgc-thm2 {
   background-color: #ff787c !important;
@@ -16450,3 +16450,13 @@ button.gm-ui-hover-effect:focus {
   width: 90px;
   object-fit: cover;
 }
+
+.footertamanio{
+    height: 220px;
+}
+
+@media screen and (max-width: 600px) {
+    .footertamanio{
+        height: 450px;
+    }
+    }

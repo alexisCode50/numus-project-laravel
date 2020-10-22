@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<section class="inner_page_breadcrumb">
+<section class="inner_page_breadcrumb" style="background-image: url(../cliente/assets/images/about/about_us-min.jpg); background-size: cover;">
     <div class="container">
         <div class="row">
             <div class="col-xl-6">
@@ -77,7 +77,7 @@
             </div>
             <div class="col-lg-4 col-xl-5">
                 <div class="about_thumb">
-                    <img class="img-fluid w100" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="1.jpg">
+                    <img class="img-fluid w100" src="{{ asset('cliente/assets/images/about/about_us2-min.jpg')}}" alt="1.jpg">
 
                 </div>
             </div>

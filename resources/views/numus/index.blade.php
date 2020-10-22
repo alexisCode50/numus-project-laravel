@@ -269,7 +269,7 @@
 				</div>
 				<div class="col-lg-4">
 					<div class="parner_reg_btn text-right tac-smd">
-						<a class="btn btn-thm2" href="#">@lang('home.home_btn_info')</a>
+						<a class="btn btn-thm2" style="font-weight: bold;" href="#">@lang('home.home_btn_info')</a>
 					</div>
 				</div>
 			</div>

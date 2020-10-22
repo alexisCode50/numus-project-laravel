@@ -18,8 +18,8 @@
 <!-- Title -->
 <title>Numus | @yield('title')</title>
 <!-- Favicon -->
-<link href="{{ asset('cliente/assets/images/icon_black.svg')}}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-<link href="{{ asset('cliente/assets/images/icon_black.svg')}}" sizes="128x128" rel="shortcut icon" />
+<link href="{{ asset('cliente/assets/images/favicon_numus.svg')}}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+<link href="{{ asset('cliente/assets/images/favicon_numus.svg')}}" sizes="128x128" rel="shortcut icon" />
 
 </head>
 <body>
@@ -107,30 +107,30 @@
     @yield('content')
 
 	<!-- Our Footer -->
-	<section class="footer_one">
-		<div class="container">
+	<section class="footer_one footertamanio" >
+		<div class="container" style="margin-top: -45px;">
 			<div class="row">
-				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 pr0 pl0">
-					<div class="footer_about_widget">
+				<div class="col-sm-5 col-md-6 col-lg-3 col-xl-3 pr0 pl0">
+					<div class="footer_about_widget" style="margin-top: 20px">
                         <img src="{{ asset('cliente/assets/images/logo_white.png')}}" alt=""> <br><br>
+                        <p>Arq. Fernando Berny | Arq. Renán Solís</p>
 
-						<p>@lang('home.footer_text')</p>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+				<div class="col-sm-6 col-md-6 col-lg-6 col-xl-5">
 					<div class="footer_about_widget">
 
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-					<div class="footer_contact_widget">
+				<div class="col-sm-7 col-md-6 col-lg-3 col-xl-4">
+					<div class="footer_contact_widget" style="text-align: right">
 						<h4>@lang('home.footer_contact_us')</h4>
 						<ul class="list-unstyled">
-							<li><a href="#">info@numusinmobiliaria.com</a></li>
-							<li><a href="#">Dirección</a></li>
+							<li><a href="#">Email: info@numusinmobiliaria.com</a></li>
+							<li><a href="#">Dirección: Av. Alemán #103 x 19 y 21, Mérida Yucatán.</a></li>
 
-							<li><a href="#">9993682670</a></li>
+							<li><a href="#">Teléfono: (999)3682670 | (999)301882</a></li>
 
 						</ul>
 					</div>
@@ -142,7 +142,7 @@
 	<!-- Our Footer Bottom Area -->
 	<section class="footer_middle_area pt40 pb40">
 		<div class="container">
-			<div class="row">
+			<div class="row" style="margin-top: 10px;">
 				<div class="col-lg-6 col-xl-6">
 					<div class="copyright-widget text-left">
 						<p style="margin-left: -15px;">© 2020 Numus - @lang('home.footer_developer') <a href="https://www.buho-solutions.com/" style="color: rgb(255, 120, 124);" target="_blank">Búho Solutions</a> .</p>
@@ -155,7 +155,7 @@
 							<li class="list-inline-item"><a href="https://www.facebook.com/Numus-Inmobiliaria-105428674678016/"><i class="fa fa-facebook" style="color: #5277a3"></i></a></li>
 							<li class="list-inline-item"><a href="https://instagram.com/numusinmobiliaria?igshid=yv9st75ljb96"><i class="fa fa-instagram" style="color: #5277a3"></i></a></li>
                             <li class="list-inline-item"><a href="https://api.whatsapp.com/send?phone=529993682670&text=Hola,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20acerca%20de%20sus%20servicios"><i class="fa fa-whatsapp" style="color: #5277a3"></i></a></li>
-                            <li class="list-inline-item"><a href="{{ route('admin') }}"><i class="btn flaticon-user" style="color: #5277a3"></i> </a></li>
+                            <li class="list-inline-item"><a href="{{ route('admin') }}"><i class="fa fa-user" style="color: #5277a3"></i> </a></li>
 
 						</ul>
 					</div>

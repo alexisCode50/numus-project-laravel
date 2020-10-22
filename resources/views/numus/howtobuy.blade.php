@@ -3,7 +3,7 @@
 @section('title', 'How to buy')
 
 @section('content')
-<section class="inner_page_breadcrumb">
+<section class="inner_page_breadcrumb" style="background-image: url(../cliente/assets/images/about/how_to_buy-min.jpg); background-size: cover;">
     <div class="container">
         <div class="row">
             <div class="col-xl-6">
@@ -32,14 +32,14 @@
         <div class="row">
             <div class="col-lg-4 col-xl-5">
                 <div class="about_thumb">
-                    <img class="img-fluid w100" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="1.jpg">
+                    <img class="img-fluid w100" src="{{ asset('cliente/assets/images/about/how_to_buy2.jpg')}}" alt="1.jpg">
 
                 </div>
             </div>
             <div class="col-lg-8 col-xl-7">
                 <div class="about_content">
                     <p class="large">@lang('home.how_step_one'):</p>
-                    <p> 
+                    <p>
                         @lang('home.how_step_one_text')
                     </p>
                     <p class="large">@lang('home.how_step_two'):</p>
