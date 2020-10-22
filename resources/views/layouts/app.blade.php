@@ -111,8 +111,8 @@
 		<div class="container" style="margin-top: -45px;">
 			<div class="row">
 				<div class="col-sm-5 col-md-6 col-lg-3 col-xl-3 pr0 pl0">
-					<div class="footer_about_widget" style="margin-top: 20px">
-                        <img src="{{ asset('cliente/assets/images/logo_white.png')}}" alt=""> <br><br>
+					<div class="footer_about_widget footerlogo" style="margin-top: 20px">
+                        <img src="{{ asset('cliente/assets/images/logo_white.png')}}" alt="" class="minimo"> <br><br>
                         <p>Arq. Fernando Berny | Arq. Renán Solís</p>
 
 					</div>
@@ -123,8 +123,8 @@
 					</div>
 				</div>
 
-				<div class="col-sm-7 col-md-6 col-lg-3 col-xl-4">
-					<div class="footer_contact_widget" style="text-align: right">
+				<div class="col-sm-7 col-md-6 col-lg-3 col-xl-4 centrado">
+					<div class="footer_contact_widget" >
 						<h4>@lang('home.footer_contact_us')</h4>
 						<ul class="list-unstyled">
 							<li><a href="#">Email: info@numusinmobiliaria.com</a></li>
