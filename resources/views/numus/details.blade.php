@@ -24,7 +24,7 @@
                                 <div class="banner-style-one owl-theme owl-carousel">
                                     @foreach($images as $item)
                                         <div class="slide slide-one">
-                                            <img src="{{ asset('images/' . $item->route_img) }}" height="600">
+                                            <img src="{{ asset('images/' . $item->route_img) }}" height="600" class="carrusellfinal">
                                         </div>
                                     @endforeach
                                 </div>

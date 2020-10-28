@@ -16488,3 +16488,8 @@ button.gm-ui-hover-effect:focus {
         margin-left: 11px;
     }
     }
+
+@media only screen and (max-width: 580px){
+  .carrusellfinal{height: 200px;}
+
+}

@@ -752,7 +752,7 @@
 @media only screen and (max-width:630px){
 
 	.mobile-menu .header_user_notif{right: 12%;}
-	.banner-style-one .slide{padding: 165px 15px;}
+	.banner-style-one .slide{padding: 5px 15px; height: 200px;}
 	.banner-style-one .banner-btn{display: block;}
 	.menu_bar_home2 li.list-inline-item:first-child:after{right: 0;}
 	ul.view_edit_delete_list{display: block !important;float: none !important;margin-top: 15px;}

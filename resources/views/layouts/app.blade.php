@@ -8,7 +8,7 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <meta name="keywords" content="">
 <meta name="robots" content="index"/>
-<meta name="description" content="Somos una inmobiliaria ubicada al norte de Mérida, Yucatán">
+<meta name="description" content="Somos una inmobiliaria ubicada en Mérida, Yucatán">
 <!-- css file -->
 <link rel="stylesheet" href="{{ asset('cliente/assets/css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{ asset('cliente/assets/css/style.css') }}">
@@ -33,7 +33,7 @@
 		    <nav>
 		        <!-- Menu Toggle btn-->
 		        <div class="menu-toggle">
-		            <img class="nav_logo_img img-fluid" src="{{ asset('cliente/assets/images/logo_black.svg')}}" alt="header-logo.png">
+		            <img class="nav_logo_img img-fluid" src="{{ asset('cliente/assets/images/logo_black.svg')}}" alt="header-logo.png" href="{{ route('home', App::getLocale()) }}">
 		            <button type="button" id="menu-btn">
 		                <span class="icon-bar"></span>
 		                <span class="icon-bar"></span>
@@ -113,7 +113,7 @@
 				<div class="col-sm-5 col-md-6 col-lg-3 col-xl-3 pr0 pl0">
 					<div class="footer_about_widget footerlogo" style="margin-top: 20px">
                         <img src="{{ asset('cliente/assets/images/logo_white.png')}}" alt="" class="minimo"> <br><br>
-                        <p>Arq. Fernando Berny | Arq. Renán Solís</p>
+                        
 
 					</div>
 				</div>
