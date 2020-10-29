@@ -16493,3 +16493,13 @@ button.gm-ui-hover-effect:focus {
   .carrusellfinal{height: 200px;}
 
 }
+
+.letraadmin{
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .letraadmin{
+    font-size: .65rem;
+  }
+  }

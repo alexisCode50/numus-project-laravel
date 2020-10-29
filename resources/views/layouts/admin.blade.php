@@ -9,9 +9,9 @@
 
     <title>Numus</title>
 
-    <link href="{{ asset('cliente/assets/images/icon_black.svg')}}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
-    <link href="{{ asset('cliente/assets/images/icon_black.svg')}}" sizes="128x128" rel="shortcut icon" />
-
+    <link href="{{ asset('cliente/assets/images/favicon_numus.svg')}}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
+    <link href="{{ asset('cliente/assets/images/favicon_numus.svg')}}" sizes="128x128" rel="shortcut icon" />
+    <link rel="stylesheet" href="{{ asset('cliente/assets/css/bootstrap.min.css')}}">
 
     <!-- Styles Css -->
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
@@ -54,24 +54,40 @@
                         Secciones
                     </div>
 
+                    <div class="pos-f-t">
+                        <nav class="navbar letraadmin" style="margin-left: 10px;">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span style="color: rgba(255,255,255,.8); font-size: 16px;" >Propiedades</span>
+                            </button>
+                          </nav>
+                        <div class="collapse" id="navbarToggleExternalContent" style="margin-bottom: -25px;">
+                          <div class=" p-4">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('properties-es') }}">
+                                    <i class="fas fa-fw fa-layegrr-oup"></i>
+                                    <span>Registro en Español</span></a>
+                                </li>
+            
+                                <li class="nav-item">
+                                <a class="nav-link" href="{{ route('properties-en') }}">
+                                    <i class="fas fa-fw fa-layegrr-oup"></i>
+                                    <span>Registro en Inglés</span></a>
+                                </li>
+            
+                                <li class="nav-item">
+                                <a class="nav-link" href="{{ route('details') }}">
+                                    <i class="fas fa-fw fa-layegrr-oup"></i>
+                                    <span>Detalles</span></a>
+                                </li>
+                          </div>
+                        </div>
+                        
+                      </div>
 
-                    <li class="nav-item">
-                    <a class="nav-link" href="{{ route('properties-es') }}">
-                        <i class="fas fa-fw fa-layegrr-oup"></i>
-                        <span>Propiedades Es</span></a>
-                    </li>
 
-                    <li class="nav-item">
-                    <a class="nav-link" href="{{ route('properties-en') }}">
-                        <i class="fas fa-fw fa-layegrr-oup"></i>
-                        <span>Propiedades En</span></a>
-                    </li>
+                    
 
-                    <li class="nav-item">
-                    <a class="nav-link" href="{{ route('details') }}">
-                        <i class="fas fa-fw fa-layegrr-oup"></i>
-                        <span>Detalles</span></a>
-                    </li>
+
 
                     <li class="nav-item">
                     <a class="nav-link" href="{{ route('advisers') }}">
@@ -148,5 +164,7 @@
     <script src="{{asset('datatables/jquery.dataTables.min.js')}}"></script>
     <script src="{{asset('datatables/dataTables.bootstrap4.min.js')}}"></script>
     <script src="{{asset('js/datatables-demo.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('cliente/assets/js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('cliente/assets/js/bootstrap-select.min.js')}}"></script>
 </body>
 </html>

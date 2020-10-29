@@ -41,8 +41,8 @@
 		            </button>
 		        </div>
 		        <a href="#" class="navbar_brand float-left dn-smd">
-		            <img class="logo1 img-fluid" src="{{ asset('cliente/assets/images/logo_black.svg')}}" alt="header-logo.png" style="height: 40px;padding-left: 20px;">
-		            <img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/logo_black.svg')}}" alt="header-logo2.png" style="height: 40px;padding-left: 20px;">
+		            <img class="logo1 img-fluid" src="{{ asset('cliente/assets/images/logo_black.svg')}}" alt="header-logo.png" style="height: 40px;padding-left: 20px;" href="{{ route('home', App::getLocale()) }}">
+		            <img class="logo2 img-fluid" src="{{ asset('cliente/assets/images/logo_black.svg')}}" alt="header-logo2.png" style="height: 40px;padding-left: 20px;" href="{{ route('home', App::getLocale()) }}">
 		            <span></span>
 		        </a>
 		        <!-- Responsive Menu Structure-->

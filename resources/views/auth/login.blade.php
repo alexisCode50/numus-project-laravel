@@ -10,8 +10,8 @@
                         <div class="col-lg-12">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <img class="nav_logo_img img-fluid" src="{{ asset('cliente/assets/images/logo_black.png')}}" alt="header-logo.png" style="width: 150px;padding-bottom: 20px;">
-                                    <h1 class="h4 text-gray-900 mb-4">Bienvenido</h1>
+                                    <img class="nav_logo_img img-fluid" src="{{ asset('cliente/assets/images/logo_black.svg')}}" alt="header-logo.png" style="width: 150px;padding-bottom: 20px;">
+                                    <h1 class="h4 text-gray-900 mb-4">Panel de Administrador</h1>
                                     <form method="POST" action="{{ route('login') }}" class="user">
                                         @csrf
                                         <div class="form-group">
