@@ -16495,11 +16495,31 @@ button.gm-ui-hover-effect:focus {
 }
 
 .letraadmin{
-  font-size: 16px;
+  font-size: 13px;
 }
 
 @media screen and (max-width: 600px) {
   .letraadmin{
     font-size: .65rem;
+
   }
   }
+
+  .margentitulo{
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .margentitulo{
+      margin-left: 0px;
+  
+    }
+    }
+
+    
+  @media screen and (max-width: 600px) {
+    .margensubtitulo{
+      margin-left: -10px;
+  
+    }
+    }

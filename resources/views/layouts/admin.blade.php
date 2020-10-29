@@ -12,6 +12,7 @@
     <link href="{{ asset('cliente/assets/images/favicon_numus.svg')}}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
     <link href="{{ asset('cliente/assets/images/favicon_numus.svg')}}" sizes="128x128" rel="shortcut icon" />
     <link rel="stylesheet" href="{{ asset('cliente/assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('cliente/assets/css/style.css') }}">
 
     <!-- Styles Css -->
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
@@ -55,12 +56,12 @@
                     </div>
 
                     <div class="pos-f-t">
-                        <nav class="navbar letraadmin" style="margin-left: 10px;">
+                        <nav class="navbar margentitulo" >
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span style="color: rgba(255,255,255,.8); font-size: 13px;" >Propiedades</span>
+                              <span style="color: rgba(255,255,255,.8);" class="letraadmin">Propiedades</span>
                             </button>
                           </nav>
-                        <div class="collapse" id="navbarToggleExternalContent" style="margin-bottom: -25px;">
+                        <div class="collapse margensubtitulo" id="navbarToggleExternalContent" style="margin-bottom: -25px;">
                           <div class=" p-4">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('properties-es') }}">
@@ -113,7 +114,7 @@
 
                     <!-- Sidebar Toggler Sidebar -->
                     <div class="text-center d-none d-md-inline">
-                    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                    
                 </div>
 
                 </ul>
