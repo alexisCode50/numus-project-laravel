@@ -57,7 +57,7 @@
                     <div class="pos-f-t">
                         <nav class="navbar letraadmin" style="margin-left: 10px;">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span style="color: rgba(255,255,255,.8); font-size: 16px;" >Propiedades</span>
+                              <span style="color: rgba(255,255,255,.8); font-size: 13px;" >Propiedades</span>
                             </button>
                           </nav>
                         <div class="collapse" id="navbarToggleExternalContent" style="margin-bottom: -25px;">
