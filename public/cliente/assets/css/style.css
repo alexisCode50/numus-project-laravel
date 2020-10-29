@@ -16523,3 +16523,14 @@ button.gm-ui-hover-effect:focus {
   
     }
     }
+
+.tamaniobusqueda{
+  height: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .tamaniobusqueda{
+    height: 350px;
+
+  }
+  }

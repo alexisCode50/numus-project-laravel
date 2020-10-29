@@ -24,10 +24,14 @@
                                 <div class="banner-style-one owl-theme owl-carousel">
                                     @foreach($images as $item)
                                         <div class="slide slide-one">
-                                            <img src="{{ asset('images/' . $item->route_img) }}" height="600" class="carrusellfinal">
+                                            <img src="{{ asset('images/' . $item->route_img) }}" height="600" class="carrusellfinal"> 
+                                            
                                         </div>
                                     @endforeach
                                 </div>
+
+                               
+
                                 <div class="carousel-btn-block banner-carousel-btn">
                                     <span class="carousel-btn left-btn"><i class="flaticon-left-arrow-1 left"></i></span>
                                     <span class="carousel-btn right-btn"><i class="flaticon-right-arrow right"></i></span>
@@ -38,7 +42,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 
@@ -107,6 +110,9 @@
                         </div>
                     </div>
                 </div>
+
+                
+
             </div>
         </div>
         <div class="row">
@@ -373,5 +379,7 @@
 
     </div>
 </section>
+
+
 
 @endsection

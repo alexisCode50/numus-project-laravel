@@ -196,7 +196,7 @@
                         @foreach($data as $item)
 
                             <div class="col-lg-12">
-                                <div class="feat_property list" style="height: 150px;">
+                                <div class="feat_property list tamaniobusqueda">
                                     <div class="thumb">
                                         <img class="img-whp" src="{{ asset('images/'.$item->profile_picture) }}" alt="{{ $item->title }}">
                                     </div>
@@ -239,3 +239,5 @@
 </section>
 
 @endsection
+
+
