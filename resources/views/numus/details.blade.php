@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class="single_page_listing_tab">
+{{-- <div class="single_page_listing_tab">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -25,18 +25,56 @@
                                     @foreach($images as $item)
                                         <div class="slide slide-one">
                                             <img src="{{ asset('images/' . $item->route_img) }}" height="600" class="carrusellfinal"> 
-                                            
                                         </div>
                                     @endforeach
                                 </div>
-
-                               
-
                                 <div class="carousel-btn-block banner-carousel-btn">
                                     <span class="carousel-btn left-btn"><i class="flaticon-left-arrow-1 left"></i></span>
                                     <span class="carousel-btn right-btn"><i class="flaticon-right-arrow right"></i></span>
-                                </div><!-- /.carousel-btn-block banner-carousel-btn -->
-                            </div><!-- /.main-banner-wrapper -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+
+
+<div class="single_page_listing_style">
+    <div class="container-fluid p0">
+        <div class="row">
+            <div class="col-sm-6 col-lg-6 p0">
+                <div class="row m0">
+                    <div class="col-lg-12 p0">
+                        <div class="spls_style_one pr1 1px">
+                            <img class="img-fluid w100" src="{{ asset('cliente/assets/images/property/ls1.jpg')}}" alt="ls1.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 p0">
+                <div class="row m0">
+                    <div class="col-sm-6 col-lg-6 p0">
+                        <div class="spls_style_one">
+                            <a class="popup-img" href="images/property/ls2.jpg"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/property/ls2.jpg')}}" alt="ls2.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6 p0">
+                        <div class="spls_style_one">
+                            <a class="popup-img" href="images/property/ls3.jpg"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/property/ls3.jpg')}}" alt="ls3.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6 p0">
+                        <div class="spls_style_one">
+                            <a class="popup-img" href="images/property/ls4.jpg"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/property/ls4.jpg')}}" alt="ls4.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6 p0">
+                        <div class="spls_style_one">
+                            <a class="popup-img" href="images/property/ls5.jpg"><img class="img-fluid w100" src="{{ asset('cliente/assets/images/property/ls5.jpg')}}" alt="ls5.jpg"></a>
                         </div>
                     </div>
                 </div>
@@ -44,6 +82,32 @@
         </div>
     </div>
 </div>
+<section class="p0">
+    <div class="container">
+        <div class="row listing_single_row">
+            <div class="col-sm-6 col-lg-7 col-xl-8">
+                <div class="single_property_title">
+                    <a href="images/property/ls1.jpg" class="upload_btn popup-img"><span class="flaticon-photo-camera"></span> View Photos</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-5 col-xl-4">
+                <div class="single_property_social_share">
+                    <div class="spss style2 mt10 text-right tal-400">
+                        <ul class="mb0">
+                            <li class="list-inline-item"><a href="#"><span class="flaticon-transfer-1"></span></a></li>
+                            <li class="list-inline-item"><a href="#"><span class="flaticon-heart"></span></a></li>
+                            <li class="list-inline-item"><a href="#"><span class="flaticon-share"></span></a></li>
+                            <li class="list-inline-item"><a href="#"><span class="flaticon-printer"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
 <!-- Agent Single Grid View -->
 <section class="our-agent-single bgc-f7 pb30-991">

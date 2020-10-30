@@ -172,6 +172,8 @@
 <script type="text/javascript" src="{{ asset('cliente/assets/js/bootstrap.min.js')}}"></script>
 <script type="text/javascript" src="{{ asset('cliente/assets/js/jquery.mmenu.all.js')}}"></script>
 <script type="text/javascript" src="{{ asset('cliente/assets/js/ace-responsive-menu.js')}}"></script>
+<script type="text/javascript" src="{{ asset('cliente/assets/js/chart.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('cliente/assets/js/chart-custome.js')}}"></script>
 <script type="text/javascript" src="{{ asset('cliente/assets/js/bootstrap-select.min.js')}}"></script>
 <script type="text/javascript" src="{{ asset('cliente/assets/js/isotop.js')}}"></script>
 <script type="text/javascript" src="{{ asset('cliente/assets/js/snackbar.min.js')}}"></script>
@@ -181,9 +183,10 @@
 <script type="text/javascript" src="{{ asset('cliente/assets/js/jquery-scrolltofixed-min.js')}}"></script>
 <script type="text/javascript" src="{{ asset('cliente/assets/js/jquery.counterup.js')}}"></script>
 <script type="text/javascript" src="{{ asset('cliente/assets/js/wow.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('cliente/assets/js/jquery.counterup.js')}}"></script>
 <script type="text/javascript" src="{{ asset('cliente/assets/js/slider.js')}}"></script>
 <script type="text/javascript" src="{{ asset('cliente/assets/js/timepicker.js')}}"></script>
-<script type="text/javascript" src="{{ asset('cliente/assets/js/isotop.js')}}"></script>
+
 <!-- Custom script for all pages -->
 <script type="text/javascript" src="{{ asset('cliente/assets/js/script.js')}}"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM&callback=initMap"type="text/javascript"></script>
