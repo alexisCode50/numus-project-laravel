@@ -16534,3 +16534,9 @@ button.gm-ui-hover-effect:focus {
 
   }
   }
+
+  @media screen and (max-width: 600px) {
+    .bodymovil{
+      width: 345px;
+    }
+    }
