@@ -16447,7 +16447,7 @@ button.gm-ui-hover-effect:focus {
 .imagen-adviser {
   max-width: 100%;
   height: 90px;
-  width: 90px;
+  width: 70px;
   object-fit: cover;
 }
 
@@ -16540,3 +16540,9 @@ button.gm-ui-hover-effect:focus {
       width: 345px;
     }
     }
+
+    @media screen and (max-width: 600px) {
+      .tamanioletra{
+        font-size: 11px;
+      }
+      }
