@@ -43,7 +43,7 @@
 
 
 
-<div class="bodymovil">
+<div class="">
 
     <div class="single_page_listing_tab">
         <div class="container">

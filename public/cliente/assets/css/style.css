@@ -16541,8 +16541,22 @@ button.gm-ui-hover-effect:focus {
     }
     }
 
-    @media screen and (max-width: 600px) {
-      .tamanioletra{
-        font-size: 11px;
-      }
-      }
+@media screen and (max-width: 600px) {
+  .tamanioletra{
+    font-size: 11px;
+  }
+}
+
+.contactanos{
+  height: 200px;
+}
+
+.letrascontactanos{
+  margin-top: -130px;
+}
+
+@media screen and (max-width: 600px) {
+  .letrascontactanos{
+    margin-top: -145px;
+  }
+}

@@ -5,10 +5,10 @@
 @endsection
 
 @section('content')
-<section class="inner_page_breadcrumb" style="background-image: url(../cliente/assets/images/about/contact-min.jpg); background-size: cover;">
+<section class="inner_page_breadcrumb contactanos" style="background-image: url(../cliente/assets/images/about/contact-min.jpg); background-size: cover;">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 letrascontactanos">
                 <div class="breadcrumb_content">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{ route('home', App::getLocale()) }}">Numus</a></li>
@@ -74,11 +74,11 @@
                     </div>
                     <div class="content_list">
                         <h5>@lang('home.form_phone')</h5>
-                        <p>+52 9991 123 1234</p>
+                        <p>+52 9993 682 670</p>
                     </div>
                     <div class="content_list">
                         <h5>@lang('home.form_email')</h5>
-                        <p>contacto@numus.com</p>
+                        <p>info@numusinmobiliaria.com</p>
                     </div>
 
                     <h5>@lang('home.contact_follow')</h5>
@@ -94,7 +94,7 @@
     <div class="container-fluid p0 mt50">
         <div class="row">
             <div class="col-lg-12">
-                <div class="h600" id="map-canvas"></div>
+                <div class="h600" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.051563331066!2d-89.60823068553437!3d20.99057008601914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5671361f330aff%3A0x25a696d62a160381!2sAv.%20Aleman%20103%2C%20Itzimn%C3%A1%2C%2097100%20M%C3%A9rida%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1604677673489!5m2!1ses-419!2smx" width="600" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
             </div>
         </div>
     </div>
