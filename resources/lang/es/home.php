@@ -93,7 +93,7 @@ return [
     'contact_follow' => 'Siguenos en nuestras redes',
 
     // page details
-    'detail_description' => 'Descrición',
+    'detail_description' => 'Descripción',
     'detail_property_details' => 'Detalles de la propiedad',
     'detail_price' => 'Precio',
     'detail_land' => 'Tamaño del terreno',
